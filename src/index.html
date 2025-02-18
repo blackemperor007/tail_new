@@ -7,7 +7,9 @@
     <title>Abo-Tracking </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
     <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         #switch.active {
             background-color: #2A0A55;
@@ -112,32 +114,75 @@
 
     <!-----banner section-->
     <section class="w-full p-4 lg:p-6 lg:h-screen flex items-center justify-center bg-blue-900/20">
-        <div class="w-full md:w-auto xl:w-5/6 mx-auto space-y-8 lg:space-y-0 lg:flex items-center justify-between">
-            
-            <div class="w-full md:w-auto xl:w-2/5 space-y-8">
-                <h2
-                    class="text-black text-3xl leading-[50px] lg:text-[42px] text-center lg:text-justify lg:justify-normal font-extrabold">
-                    le suivi qui fait la différence ! Réduisez vos coûts, améliorez votre logistique.</h2>
-                <p class="text-black text-lg lg:text-[16px] text-center lg:text-justify">
-                    Une plateforme unique pour sécuriser, optimiser et rentabiliser vos opérations. Gérez vos opérations
-                    en toute sécurité, avec plus d’efficacité et de profits.</p>
-                <div
-                    class="w-full pt-4 space-y-12 md:space-y-0 md:space-x-4 flex flex-col md:flex-row justify-center items-center xl:justify-normal">
-                    <p><a href="#"
-                            class="px-6 py-4 bg-[#081828] font-semibold hover:bg-blue-950 text-white duration-300 rounded">Commencez
-                            Maintenant</a></p>
-                    <p><a href="#"
-                            class="px-16 md:px-8 py-4 font-semibold border border-[#081828] hover:bg-[#081828] text-[#081828] hover:text-white rounded">En
-                            Savoir Plus</a></p>
+        <div class="w-full md:w-auto xl:w-5/6 mx-auto space-y-20">
+            <!-- Hero Content -->
+            <div class="lg:flex items-center justify-between space-y-8 lg:space-y-0">
+                <!-- Left side - Text content -->
+                <div class="w-full md:w-auto xl:w-2/5 space-y-8">
+                    <h2 class="text-black text-3xl leading-[50px] lg:text-[42px] text-center lg:text-justify lg:justify-normal font-extrabold">
+                        le suivi qui fait la différence ! Réduisez vos coûts, améliorez votre logistique
+                    </h2>
+                    <p class="text-black text-lg lg:text-[16px] text-center lg:text-justify">
+                        Une plateforme unique pour sécuriser, optimiser et rentabiliser vos opérations. Gérez vos opérations en toute sécurité, avec plus d’efficacité et de profits.
+                    </p>
+                    <div class="w-full pt-4 space-y-12 md:space-y-0 md:space-x-4 flex flex-col md:flex-row justify-center items-center xl:justify-normal">
+                        <p><a href="#"
+                                class="px-6 py-4 bg-[#081828] font-semibold hover:bg-blue-950 text-white duration-300 rounded">Commencez
+                                Maintenant</a></p>
+                        <p><a href="#"
+                                class="px-16 md:px-8 py-4 font-semibold border border-[#081828] hover:bg-[#081828] text-[#081828] hover:text-white rounded">En
+                                Savoir Plus</a></p>
+                    </div>
+                </div>
+
+                <!-- Right side - Video -->
+                <div class="w-full xl:w-2/5">
+                    <div class="rounded-2xl overflow-hidden shadow-lg bg-none p-2 max-w-2xl mx-auto">
+                        <video class="w-full h-full object-cover rounded-xl" controls autoplay muted loop>
+                            <source src="images/app-ss/videos_presentation.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la lecture de vidéos.
+                        </video>
+                    </div>
                 </div>
             </div>
-            <div class="w-full xl:w-2/5">
-                <div class="rounded-2xl overflow-hidden shadow-lg bg-transparent p-2 max-w-2xl mx-auto">
-                    <!-- <img src="images/app-ss/app-1.jpg" alt="video_presentation"> -->
-                    <video class="w-full h-full object-cover rounded-xl" controls autoplay muted loop>
-                        <source src="images/app-ss/videos_presentation.mp4" type="video/mp4">
-                        Votre navigateur ne supporte pas la lecture de vidéos.
-                    </video>
+
+            <!-- Stats Section - Full width below hero content -->
+            <div class="w-full bg-[#1B1E3D] rounded-xl overflow-hidden">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+                    <!-- Number of deploys -->
+                    <div class="p-8 border-b sm:border-r sm:border-b-0 lg:border-b-0 border-gray-700/50">
+                        <div class="space-y-2">
+                            <p class="text-gray-400 text-sm">Number of deploys</p>
+                            <p class="text-white text-4xl font-bold">405</p>
+                        </div>
+                    </div>
+
+                    <!-- Average deploy time -->
+                    <div class="p-8 border-b lg:border-r lg:border-b-0 border-gray-700/50">
+                        <div class="space-y-2">
+                            <p class="text-gray-400 text-sm">Average deploy time</p>
+                            <div class="flex items-baseline space-x-1">
+                                <p class="text-white text-4xl font-bold">3.65</p>
+                                <span class="text-gray-400">mins</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Number of servers -->
+                    <div class="p-8 border-b sm:border-r sm:border-b-0 border-gray-700/50">
+                        <div class="space-y-2">
+                            <p class="text-gray-400 text-sm">Number of servers</p>
+                            <p class="text-white text-4xl font-bold">3</p>
+                        </div>
+                    </div>
+
+                    <!-- Success rate -->
+                    <div class="p-8">
+                        <div class="space-y-2">
+                            <p class="text-gray-400 text-sm">Success rate</p>
+                            <p class="text-white text-4xl font-bold">98.5%</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -719,7 +764,7 @@
     </section>
 
     <section class="w-full p-4 space-y-4">
-        <h3 class="text-3xl text-gray-800 font-bold text-center">Wialon key functionality</h3>
+        <h3 class="text-3xl text-gray-800 font-bold text-center">Abo-tracking key functionality</h3>
         <div class="flex flex-wrap items-center justify-center space-x-4 lg:space-x-12 py-6">
             <div class="group  space-y-1">
                 <a href="#" class="block text-lg text-gray-500">Real-time fleet tracking</a>
@@ -778,8 +823,181 @@
         </div>
     </section>
 
+<!-- Form Section -->
+<section class="min-h-screen bg-[#1B1E3D] flex items-center justify-center p-4">
+    <div class="w-full max-w-2xl bg-white rounded-2xl p-8">
+        <h2 class="text-2xl font-bold text-[#1B1E3D] mb-6">
+            Veuillez remplir un formulaire de demande pour commencer à travailler avec Abo-Tracking, un logiciel de gestion de flotte
+        </h2>
 
-    
+        <!-- Usage Type Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 mb-8">
+            <button class="flex-1 flex items-center justify-center gap-2 px-6 py-3 rounded-lg border-2 border-blue-100 bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                </svg>
+                Un usage professionnel
+            </button>
+            <button class="flex-1 flex items-center justify-center gap-2 px-6 py-3 rounded-lg border-2 border-gray-200 hover:bg-gray-50 transition-colors">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                </svg>
+                Un usage personnel
+            </button>
+        </div>
+
+        <!-- Radio Group -->
+        <div class="space-y-6">
+            <h3 class="text-lg font-semibold text-gray-900">
+                Pourquoi êtes-vous intéressé par Abo-Tracking ?*
+            </h3>
+            
+            <div class="space-y-4">
+                <label class="flex items-center p-4 bg-gray-50 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors">
+                    <input type="radio" name="usage" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                    <span class="ml-3 text-gray-700">
+                        Nous sommes propriétaires d'une flotte et souhaitons suivre les véhicules de notre entreprise
+                    </span>
+                </label>
+
+                <label class="flex items-center p-4 bg-gray-50 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors">
+                    <input type="radio" name="usage" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                    <span class="ml-3 text-gray-700">
+                        Nous allons démarrer une entreprise de gestion de flotte et suivre les véhicules de nos clients
+                    </span>
+                </label>
+
+                <label class="flex items-center p-4 bg-gray-50 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors">
+                    <input type="radio" name="usage" class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                    <span class="ml-3 text-gray-700">
+                        Nous sommes déjà présents dans le secteur de la gestion de flotte, mais souhaitons élargir notre portefeuille de produits
+                    </span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Next Button -->
+        <div class="flex justify-end mt-8">
+            <button class="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
+                Suivant
+            </button>
+        </div>
+    </div>
+</section>
+
+  <!-- Footer Section -->
+<footer class="w-full bg-[#081828] pt-20">
+    <!-- Newsletter Section -->
+    <div class="container mx-auto px-4 mb-16">
+        <div class="max-w-6xl mx-auto p-8 rounded-xl border border-gray-700/50 bg-[#0a1f35]">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="space-y-3">
+                    <h2 class="text-2xl md:text-3xl font-bold text-white">
+                        Abonnez-vous à notre Newsletter
+                    </h2>
+                    <p class="text-gray-300 text-sm md:text-base">
+                        Recevez nos dernières actualités et offres directement dans votre boîte mail.
+                    </p>
+                </div>
+                <div class="w-full md:w-auto flex flex-col sm:flex-row gap-3">
+                    <input 
+                        type="email" 
+                        placeholder="Votre adresse email" 
+                        class="w-full sm:w-80 px-4 py-3 rounded-lg bg-gray-700/50 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#2A0A55]"
+                    >
+                    <button class="w-full sm:w-auto px-6 py-3 bg-[#2A0A55] hover:bg-[#3B1B66] text-white font-semibold rounded-lg transition duration-300">
+                        S'abonner
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Footer Content -->
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            <!-- Company Info -->
+            <div class="space-y-6">
+                <div class="flex items-center space-x-2">
+                    <img src="../icons/brand-logo.svg" alt="Abo-Tracking" class="h-8 w-8">
+                    <span class="text-white text-2xl font-bold">Abo-Tracking</span>
+                </div>
+                <p class="text-gray-400 text-sm">
+                    Votre bouclier GPS-4G à votre portée. Solutions de tracking professionnel pour votre sécurité.
+                </p>
+                <!-- Social Media Icons -->
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-[#2A0A55] hover:text-white transition-all">
+                        <i class="lni lni-facebook"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-[#2A0A55] hover:text-white transition-all">
+                        <i class="lni lni-twitter-old"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-[#2A0A55] hover:text-white transition-all">
+                        <i class="lni lni-instagram"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-[#2A0A55] hover:text-white transition-all">
+                        <i class="lni lni-linkedin"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-[#2A0A55] hover:text-white transition-all">
+                        <i class="lni lni-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="space-y-4">
+                <h3 class="text-white text-xl font-semibold">Navigation</h3>
+                <ul class="space-y-3">
+                    <li><a href="../index.html" class="text-gray-400 hover:text-white transition-colors">Accueil</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Solutions</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Support</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Ressources</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Community</a></li>
+                </ul>
+            </div>
+
+            <!-- Services -->
+            <div class="space-y-4">
+                <h3 class="text-white text-xl font-semibold">Nos Services</h3>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Suivi GPS</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Gestion de Flotte</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Sécurité Véhicules</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Analyse de Données</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Support Technique</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="space-y-4">
+                <h3 class="text-white text-xl font-semibold">Contact</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-center space-x-3 text-gray-400">
+                        <i class="lni lni-phone"></i>
+                        <span>+33 1 23 45 67 89</span>
+                    </li>
+                    <li class="flex items-center space-x-3 text-gray-400">
+                        <i class="lni lni-envelope-1"></i>
+                        <span>contact@abo-tracking.com</span>
+                    </li>
+                    <li class="flex items-center space-x-3 text-gray-400">
+                        <i class="lni lni-map-marker-5"></i>
+                        <span>Paris, France</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="py-8 border-t border-gray-800 text-center">
+            <p class="text-gray-400 text-sm">
+                © 2025 Abo-Tracking. Tous droits réservés.
+            </p>
+        </div>
+    </div>
+</footer>
+
 
 
     <section class="w-full px-8 lg:px-0 flex items-center justify-center">
