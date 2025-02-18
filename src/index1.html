@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleet management software</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+
+<body style="font-family:Arial, Helvetica, sans-serif" ;>
+    <!------Menu navigation bar-->
+    <header class="w-full fixed bg-white z-20">
+        <div class="w-full items-center flex justify-between h-14 px-4 shadow xl:shadow-none">
+            <div class="flex space-x-8 items-center">
+                <div class="w-24">
+                    <img src="icons/brand-logo.svg" alt="brand_logo">
+                </div>
+                <div class="lg:flex items-center space-x-3 hidden">
+                    <div class="w-3 h-3 rounded-full bg-red-500 animate-pulse"></div>
+                    <p class="text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas.</p>
+                </div>
+            </div>
+            <div class="flex items-center h-full space-x-2">
+                <div class="h-full hidden md:flex items-center"> <a href="#"
+                        class="px-4 py-1 rounded-full bg-blue-100 hover:bg-blue-200 font-semibold text-blue-600">Find a
+                        partner</a></div>
+                <div class="px-4 h-full border border-t-0 border-b-0 border-gray-200 flex items-center">
+                    <img src="icons/search-interface-symbol.png" width="20" height="20" alt="">
+                </div>
+                <div class="p-4 h-full flex items-center space-x-4">
+                    <select name="languages" class="outline-none text-base text-gray-600" id="">
+                        <option value="en">EN</option>
+                        <option value="fr">FR</option>
+                        <!-- <option value="de">Deutsch</option>
+                        <option value="es">Español</option>
+                        <option value="it">Italiano</option>
+                        <option value="ru">Русский</option>
+                        <option value="zh">中文</option>
+                        <option value="ja">日本語</option>
+                        <option value="ko">한국어</option>
+                        <option value="pt">Português</option>
+                        <option value="vi">Tiếng Việt</option>
+                        <option value="tr">Türkçe</option>
+                        <option value="ar">العربية</option>
+                        <option value="ur">اردو</option> -->
+                    </select>
+                    <div class=" flex xl:hidden">
+                        <img src="icons/menu.png" width="20" height="20" alt="menu_bar">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="w-full hidden xl:flex xl:flex-row items-center justify-between border-t xl:h-14 shadow-xl ">
+            <div class="border-r relative w-1/3 group border-gray-300 h-full ">
+
+                <div
+                    class="w-full h-full group-hover:bg-gradient-to-t from-blue-100 to-white group-hover:duration-200 via-blue-50  flex items-center justify-between text-gray-500 text-md font-serif p-2">
+
+                    Wialon ecosystem
+                    <img src="icons/down.png" class="group-hover:-rotate-180 duration-200 transform" width="12"
+                        height="12" alt="down">
+                </div>
+                <div
+                    class="hidden w-[1000px] absolute top-28 transform -translate-y-[70px] group-hover:duration-300 xl:grid grid-cols-12 grid-flow-row gap-x-6 gap-y-2 shadow xl:group-hover:bg-white px-8 py-12">
+                    <div class="col-span-4  hidden group-hover:flex px-4 py-3 space-x-6 bg-white hover:bg-[#F4FAFF]">
+                        <div>
+                            <img src="icons/wialon_ecosystem/wialon.png" width="40" height="40" alt="wialon">
+                        </div>
+                        <div class="">
+                            <a href="#" class="text-base hover:text-[#598cb6]">wialon</a>
+                            <p class="text-[13px] text-gray-600">Lorem ipsum dolor sit amet consuitliti.</p>
+                        </div>
+                    </div>
+                    <div class="col-span-4  hidden group-hover:flex px-4 py-3 space-x-6 bg-white hover:bg-[#F4FAFF]">
+                        <div>
+                            <img src="icons/wialon_ecosystem/hw.png" width="40" height="40" alt="hw">
+                        </div>
+                        <div class="">
+                            <a href="#" class="text-base hover:text-[#598cb6]">Integrated devices</a>
+                            <p class="text-[13px] text-gray-600">Lorem ipsum dolor sit amet consuitliti.</p>
+                        </div>
+                    </div>
+                    <div class="col-span-4 hidden group-hover:flex px-4 py-3 space-x-6 bg-white hover:bg-[#F4FAFF]">
+                        <div>
+                            <img src="icons/wialon_ecosystem/device.png" width="40" height="40" alt="device">
+                        </div>
+                        <div class="">
+                            <a href="#" class="text-base hover:text-[#598cb6]">Hardware manufacturers</a>
+                            <p class="text-[13px] text-gray-600">Lorem ipsum dolor sit amet consuitliti.</p>
+                        </div>
+                    </div>
+                    <div class="col-span-4  hidden group-hover:flex px-4 py-3 space-x-6 bg-white hover:bg-[#F4FAFF]">
+                        <div>
+                            <img src="icons/wialon_ecosystem/marketplace.png" width="40" height="40" alt="marketplace">
+                        </div>
+                        <div class="">
+                            <a href="#" class="text-base hover:text-[#598cb6]">Market place</a>
+                            <p class="text-[13px] text-gray-600">Lorem ipsum dolor sit amet consuitliti.</p>
+                        </div>
+                    </div>
+                    <div class="col-span-4 hidden group-hover:flex px-4 py-3 space-x-6 bg-white hover:bg-[#F4FAFF]">
+                        <div>
+                            <img src="icons/wialon_ecosystem/developer.png" width="40" height="40" alt="device">
+                        </div>
+                        <div class="">
+                            <a href="#" class="text-base hover:text-[#598cb6]">Software developer</a>
+                            <p class="text-[13px] text-gray-600">Lorem ipsum dolor sit amet consuitliti.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-r group w-1/3  border-gray-300 h-full">
+                <div
+                    class="w-full h-full group-hover:bg-gradient-to-t from-blue-100 to-white group-hover:duration-200 via-blue-50  flex items-center justify-between text-gray-500 text-md font-serif p-2">
+
+                    Solution
+                    <img src="icons/down.png" class="group-hover:-rotate-180 duration-200 transform" width="12"
+                        height="12" alt="down">
+                </div>
+
+                <div
+                    class="hidden absolute top-28 transform -translate-y-[70px] group-hover:duration-300 xl:grid grid-cols-12 grid-flow-row gap-x-6 gap-y-2 group-hover:shadow xl:group-hover:bg-white px-8 py-12">
+                    <div class="col-span-4  hidden group-hover:flex px-4 py-3 space-x-6 bg-white hover:bg-[#F4FAFF]">
+                        <div>
+                            <img src="icons/wialon_ecosystem/wialon.png" width="40" height="40" alt="wialon">
+                        </div>
+                        <div class="">
+                            <a href="#" class="text-base hover:text-[#598cb6]">wialon</a>
+                            <p class="text-[13px] text-gray-600">Lorem ipsum dolor sit amet consuitliti.</p>
+                        </div>
+                    </div>
+                    <div class="col-span-4  hidden group-hover:flex px-4 py-3 space-x-6 bg-white hover:bg-[#F4FAFF]">
+                        <div>
+                            <img src="icons/wialon_ecosystem/hw.png" width="40" height="40" alt="hw">
+                        </div>
+                        <div class="">
+                            <a href="#" class="text-base hover:text-[#598cb6]">Integrated devices</a>
+                            <p class="text-[13px] text-gray-600">Lorem ipsum dolor sit amet consuitliti.</p>
+                        </div>
+                    </div>
+                    <div class="col-span-4 hidden group-hover:flex px-4 py-3 space-x-6 bg-white hover:bg-[#F4FAFF]">
+                        <div>
+                            <img src="icons/wialon_ecosystem/device.png" width="40" height="40" alt="device">
+                        </div>
+                        <div class="">
+                            <a href="#" class="text-base hover:text-[#598cb6]">Hardware manufacturers</a>
+                            <p class="text-[13px] text-gray-600">Lorem ipsum dolor sit amet consuitliti.</p>
+                        </div>
+                    </div>
+                    <div class="col-span-4  hidden group-hover:flex px-4 py-3 space-x-6 bg-white hover:bg-[#F4FAFF]">
+                        <div>
+                            <img src="icons/wialon_ecosystem/marketplace.png" width="40" height="40" alt="marketplace">
+                        </div>
+                        <div class="">
+                            <a href="#" class="text-base hover:text-[#598cb6]">Market place</a>
+                            <p class="text-[13px] text-gray-600">Lorem ipsum dolor sit amet consuitliti.</p>
+                        </div>
+                    </div>
+                    <div class="col-span-4 hidden group-hover:flex px-4 py-3 space-x-6 bg-white hover:bg-[#F4FAFF]">
+                        <div>
+                            <img src="icons/wialon_ecosystem/developer.png" width="40" height="40" alt="device">
+                        </div>
+                        <div class="">
+                            <a href="#" class="text-base hover:text-[#598cb6]">Software developer</a>
+                            <p class="text-[13px] text-gray-600">Lorem ipsum dolor sit amet consuitliti.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-r w-1/3 group border-gray-300 h-full">
+                <div
+                    class="w-full h-full group-hover:bg-gradient-to-t from-blue-100 to-white group-hover:duration-200 via-blue-50  flex items-center justify-between text-gray-500 text-md font-serif p-2">
+
+                    Support
+                    <img src="icons/down.png" class="group-hover:-rotate-180 duration-200 transform" width="12"
+                        height="12" alt="down">
+                </div>
+            </div>
+            <div class="border-r w-1/3 group border-gray-300 h-full">
+                <div
+                    class="w-full h-full group-hover:bg-gradient-to-t from-blue-100 to-white group-hover:duration-200 via-blue-50  flex items-center justify-between text-gray-500 text-md font-serif p-2">
+
+                    Ressources
+                    <img src="icons/down.png" class="group-hover:-rotate-180 duration-200 transform" width="12"
+                        height="12" alt="down">
+                </div>
+            </div>
+            <div class="border-r w-1/3 group border-gray-300 h-full">
+                <div
+                    class="w-full h-full group-hover:bg-gradient-to-t from-blue-100 to-white group-hover:duration-200 via-blue-50  flex items-center justify-between text-gray-500 text-md font-serif p-2">
+
+                    Community
+                    <img src="icons/down.png" class="group-hover:-rotate-180 duration-200 transform duration-200"
+                        width="12" height="12" alt="down">
+                </div>
+            </div>
+            <div class="border-r w-1/3 group border-gray-300 h-full ">
+                <div
+                    class="w-full h-full group-hover:bg-gradient-to-t from-blue-100 to-white group-hover:duration-200 via-blue-50  flex items-center justify-between text-gray-500 text-md font-serif p-2">
+
+                    Contacts
+                    <img src="icons/down.png" class="group-hover:-rotate-180 duration-200 transform duration-200"
+                        width="12" height="12" alt="down">
+                </div>
+            </div>
+            <div class="border-r group w-1/3 border-gray-300 h-full">
+                <div
+                    class="w-full h-full group-hover:bg-gradient-to-t from-blue-100 to-white group-hover:duration-200 via-blue-50  flex items-center justify-between text-gray-500 text-md font-serif p-2">
+                    Personnal account
+                </div>
+
+            </div>
+            <div class=" w-1/3 flex items-center justify-center">
+                <button
+                    class=" px-4 py-2.5 bg-blue-700 rounded text-white text-md font-semibold shadow outline-none border-0">GET
+                    STARTED
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-----banner section-->
+    <div class="w-full h-16 xl:h-32 2xl:h-24"></div>
+    <div class="px-4 sm:px-8 xl:px-0  2xl:px-28 flex flex-col items-center justify-center">
+        <section class="w-full h-auto p-4 flex flex-col items-center justify-center">
+            <div
+                class="w-full grid grid-cols-4 lg:grid-cols-8 rounded-3xl bg-gradient-to-l from-blue-100 to-blue-100 via-white shadow-lg h-[100%] grid-flow-row gap-4">
+                <div class="col-span-4 lg:col-span-5 p-4 sm:p-16 space-y-6 ">
+                    <p class="text-[12px] sm:text-sm xl:text-lg text-gray-600 uppercase">Secure tomorrow's success with
+                        fleet digitalization</p>
+                    <p class="text-2xl sm:text-[28px] xl:text-[44px] leading-[1.2em]  font-extrabold text-blue-900">
+                        <span class="text-blue-400">wialon </span>— fleet management <br class="hidden lg:flex">
+                        solution empowering businesses
+                        worldwide
+                    </p>
+                    <p class="text-sm leading-6 xl:text-lg text-gray-500">Wialon is Gurtam's flagship solution for fleet
+                        management.
+                        It boasts over 20+ years of market expertise, with several million vehicles connected to it
+                        globally
+                        — cars,
+                        trucks, and beyond. Wialon puts fleet owners in control, empowering them to oversee every aspect
+                        of
+                        their fleet.</p>
+
+                    <button
+                        class="w-full md:w-44 h-16 text-[18px] xl:text-lg mt-4 outline-none border-none rounded-2xl duration-300 shadow flex items-center justify-center  text-white bg-blue-600 hover:bg-blue-800">Get
+                        Started <img class="w-6 h-6 mx-2" src="icons/right-arrow.png" alt="arrow"></button>
+                </div>
+                <div class="col-span-4 hidden lg:flex overflow-hidden lg:col-span-3 rounded-3xl">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/R2Yk6UmXxMM"
+                        title="Singapore 🇸🇬 | 4K Drone Footage" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="w-full grid grid-cols-8 lg:grid-cols-12 grid-flow-row gap-4 xl:gap-8 py-4">
+                <div class="col-span-4 lg:col-span-3 rounded-3xl bg-gray-100 p-4 lg:p-8 space-y-4">
+                    <p class="text-2xl lg:text-3xl font-extrabold text-gray-900">4,078,324</p>
+                    <h4 class="text-gray-800 text-base lg:text-lg">Connected vehicles</h4>
+                </div>
+                <div class="col-span-4 lg:col-span-3 rounded-3xl bg-gray-100 p-4 lg:p-8 space-y-4">
+                    <p class="text-2xl lg:text-3xl font-extrabold text-gray-900">2,700+</p>
+                    <h4 class="text-gray-800 text-base lg:text-lg">Partner companies</h4>
+                </div>
+                <div class="col-span-4 lg:col-span-3 rounded-3xl bg-gray-100 p-4 lg:p-8 space-y-4">
+                    <p class="text-2xl lg:text-3xl font-extrabold text-gray-900">160+</p>
+                    <h4 class="text-gray-800 text-base lg:text-lg">Countries reached</h4>
+                </div>
+                <div class="col-span-4 lg:col-span-3 rounded-3xl bg-gray-100 p-4 lg:p-8 space-y-4">
+                    <p class="text-2xl lg:text-3xl font-extrabold text-gray-900">3,600+</p>
+                    <h4 class="text-gray-800 text-base lg:text-lg">Compatible device models</h4>
+                </div>
+            </div>
+            <div class="w-full py-8 ">
+                <h2 class="text-2xl sm:text-3xl xl:text-4xl font-extrabold text-blue-900 text-center">Wialon product
+                    highlights and benefits</h2>
+            </div>
+            <div class="grid grid-col-4 sm:grid-cols-8 lg:grid-cols-12 grid-flow-row gap-8 lg:gap-x-8 py-4">
+                <div class="col-span-4 border border-blue-800/40 p-8 rounded-3xl space-y-4">
+                    <img src="icons/universality.svg" alt="universality">
+                    <h3 class="text-2xl text-blue-800 font-semibold">Perfect fit for any industry</h3>
+                    <p class="text-[16px] text-gray-600">The Wialon fleet management software fits diverse projects,
+                        from real-time fleet tracking to full digitalization and business intelligence,
+                        delivering valuable insights for strategic growth. Beyond core features,
+                        the platform offers customization for various industries,
+                        such as local delivery, agriculture, and vehicle leasing.</p>
+                </div>
+                <div class="col-span-4 border border-blue-800/40 p-8 rounded-3xl space-y-4">
+                    <img src="icons/hardware.svg" alt="hardware">
+                    <h3 class="text-2xl text-blue-800 font-semibold">Hardware-agnostic solution</h3>
+                    <p class="text-[16px] text-gray-600">Wialon integrates with most GPS device models — from small
+                        scooter
+                        trackers
+                        to complex devices with multiple inputs, CAN bus, and OBD support.
+                        The list of compatible devices is constantly growing.</p>
+                </div>
+                <div class="col-span-4 border border-blue-800/40 p-8 rounded-3xl space-y-4">
+                    <img src="icons/developer.svg" alt="developer">
+                    <h3 class="text-2xl text-blue-800 font-semibold">Seamless integrations</h3>
+                    <p class="text-[16px] text-gray-600">Wialon's SDK and open API make it possible
+                        to build a tailored solution and seamlessly integrate it with other systems, such as ERP, BI,
+                        accounting, etc.
+                        Wialon also offers a wide range of ready-made integrations for various businesses and scenarios.
+                    </p>
+                </div>
+                <div class="col-span-4 border border-blue-800/40 p-8 rounded-3xl space-y-4">
+                    <img src="icons/consulting.svg" alt="consulting">
+                    <h3 class="text-2xl text-blue-800 font-semibold">Technical consulting</h3>
+                    <p class="text-[16px] text-gray-600">Partners benefit from technical support in five languages,
+                        as well as project implementation assistance for delivering fleet digitalization solutions to
+                        their
+                        clients.
+                        They can also access expert-led training
+                        sessions and leverage certification and education opportunities to master the platform.</p>
+                </div>
+                <div class="col-span-4 border border-blue-800/40 p-8 rounded-3xl space-y-4">
+                    <img src="icons/community.svg" alt="community">
+                    <h3 class="text-2xl text-blue-800 font-semibold">Wialon community</h3>
+                    <p class="text-[16px] text-gray-600">The Wialon community is the largest network of telematics and
+                        IoT
+                        experts.
+                        It’s a platform for knowledge exchange, technology sharing, and collaborative problem-solving.
+                        We regularly reunite at partner events across the globe, nurturing connections and fostering
+                        innovation.</p>
+                </div>
+                <div class="col-span-4 border border-blue-800/40 p-8 rounded-3xl space-y-4">
+                    <img src="icons/label.svg" alt="label">
+                    <h3 class="text-2xl text-blue-800 font-semibold">White-labeling</h3>
+                    <p class="text-[16px] text-gray-600">Partners can use the fleet management
+                        platform under the Wialon brand or opt for a customized,
+                        white-labeled solution with its own brand identity.</p>
+                </div>
+            </div>
+        </section>
+        <section class="w-full p-4 space-y-4">
+            <h3 class="text-3xl text-gray-800 font-bold text-center">Wialon key functionality</h3>
+            <div class="flex flex-wrap items-center justify-center space-x-4 lg:space-x-12 py-6">
+                <div class="group  space-y-1">
+                    <a href="#" class="block text-lg text-gray-500">Real-time fleet tracking</a>
+                    <div class="w-auto h-[2px] group-hover:bg-blue-600"></div>
+                </div>
+                <div class="group space-y-1">
+                    <a href="#" class="block text-lg text-gray-500">Advanced reports</a>
+                    <div class="w-auto h-[2px] group-hover:bg-blue-600"></div>
+                </div>
+                <div class="group space-y-1">
+                    <a href="#" class="block text-lg text-gray-500">Comprehensive dashboard</a>
+                    <div class="w-auto h-[2px] group-hover:bg-blue-600"></div>
+                </div>
+                <div class="group space-y-1">
+                    <a href="#" class="block text-lg text-gray-500">Fuel control</a>
+                    <div class="w-auto h-[2px] group-hover:bg-blue-600"></div>
+                </div>
+                <div class="group space-y-1">
+                    <a href="#" class="block text-lg text-gray-500">Route optimization</a>
+                    <div class="w-auto h-[2px] group-hover:bg-blue-600"></div>
+                </div>
+                <div class="group space-y-1">
+                    <a href="#" class="block text-lg text-gray-500">Sensor data reading</a>
+                    <div class="w-auto h-[2px] group-hover:bg-blue-600"></div>
+                </div>
+                <div class="group space-y-1">
+                    <a href="#" class="block text-lg text-gray-500">Geofence control</a>
+                    <div class="w-auto h-[2px] group-hover:bg-blue-600"></div>
+                </div>
+                <div class="group space-y-1">
+                    <a href="#" class="block text-lg text-gray-500">Driver behavior monitoring</a>
+                    <div class="w-auto h-[2px] group-hover:bg-blue-600"></div>
+                </div>
+                <div class="group space-y-1">
+                    <a href="#" class="block text-lg text-gray-500">Video telematics</a>
+                    <div class="w-auto h-[2px] group-hover:bg-blue-600"></div>
+                </div>
+            </div>
+            <div
+                class="w-full lg:w-3/4 h-[300px] sm:h-[440px] lg:h-[600px] border-[8px] border-blue-900 rounded-3xl overflow-hidden mx-auto">
+                <img src="icons/comprehensive-dashboard.png" alt="comprehensive-dashboard"
+                    class="w-full h-full object-cover object-center">
+            </div>
+            <div class="lg:flex justify-center items-center space-y-2 lg:space-x-4 lg:space-y-0 lg:w-3/4 mx-auto">
+                <div class="py-4 px-8 lg:w-1/2 bg-gray-100 rounded-2xl text-lg text-blue-950">Access all fleet-related
+                    data
+                    in one place</div>
+                <div class="py-4 px-8 lg:w-1/2 bg-gray-100 rounded-2xl text-lg text-blue-950">Customized dashboard with
+                    various widgets</div>
+            </div>
+            <div class="w-full flex justify-center items-center py-4">
+                <button
+                    class="w-full md:w-44 h-16 text-[18px] group xl:text-lg mt-4 outline-none border-none rounded-2xl duration-300 shadow flex items-center justify-center  text-white bg-blue-600 hover:bg-blue-800">Get
+                    Started <img class="w-6 h-6 mx-2 group-hover:translate-x-2 group-hover:duration-300"
+                        src="icons/right-arrow.png" alt="arrow"></button>
+            </div>
+        </section>
+        <section class="w-full h-auto p-4 flex flex-col items-center justify-center">
+
+            <div class="w-full lg:w-5/6 mx-auto py-4 space-y-4">
+                <h2 class="text-2xl sm:text-3xl text-blue-900 text-center">Wialon's assurance: security and stability
+                </h2>
+                <p class="text-center text-base text-gray-400">Our modern data centers, regular updates, and a dedicated
+                    maintenance team,
+                    coupled with adherence to world-renowned IT security standards,
+                    guarantee Wialon safety and high performance even during peak usage.</p>
+            </div>
+            <div
+                class="w-full grid grid-col-4 sm:grid-cols-8 lg:grid-cols-12 grid-flow-row gap-4 lg:gap-y-0 lg:gap-x-8 py-4">
+                <div class="col-span-4 border border-blue-800/40 p-8 rounded-3xl space-y-4">
+                    <img src="icons/security.svg" width="60" height="60" alt="universality">
+                    <h3 class="text-2xl font-bold text-blue-900">ISO 27001:2017 certification</h3>
+
+                </div>
+                <div class="col-span-4 border border-blue-800/40 p-8 rounded-3xl space-y-4">
+                    <img src="icons/uptime.svg" width="60" height="60" alt="universality">
+                    <h3 class="text-2xl font-bold text-blue-900">99.5% SLA-guaranteed uptime</h3>
+
+                </div>
+                <div class="col-span-4 border border-blue-800/40 p-8 rounded-3xl space-y-4">
+                    <img src="icons/pin.svg" width="60" height="60" alt="universality">
+                    <h3 class="text-2xl font-bold text-blue-900">99.5% SLA-guaranteed uptime</h3>
+
+                </div>
+            </div>
+            <div class="w-full h-14"></div>
+            <div
+                class="w-full grid grid-cols-4 lg:grid-cols-8 rounded-3xl bg-gradient-to-r from-white border border-gray-200 to-gray-200 via-gray-100 h-[100%] grid-flow-row gap-4">
+                <div class="col-span-4 lg:col-span-5 p-8 lg:p-16 space-y-8 ">
+                    <p class="text-[26px] sm:text-[32px] xl:text-[38px] font-bold text-blue-900 "><span
+                            class="text-blue-400">3,600+ </span> compatible GPS device models</p>
+                    <p class="leading-8 text-lg text-gray-500 py-4">The Wialon fleet management solution
+                        supports virtually every GPS hardware on the market — the list includes devices from 700+
+                        manufacturers.
+                        Can't find the one you need? Request integration, and we’ll explore the options.</p>
+                    <div
+                        class="relative overflow-hidden flex items-center w-full bg-white rounded-2xl border border-gray-200">
+                        <img class="absolute w-6 h-6 top-8 right-8 -mt-2 -mr-2" src="icons/search-interface-symbol.png"
+                            alt="search">
+                        <input type="text" placeholder="Search hardware"
+                            class="w-full placeholder:text-gray-600 placeholder:text-lg  outline-none p-6">
+
+                    </div>
+                </div>
+                <div class="col-span-4 hidden lg:flex overflow-hidden lg:col-span-3 rounded-3xl">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/R2Yk6UmXxMM"
+                        title="Singapore 🇸🇬 | 4K Drone Footage" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <div class="w-full my-8  swiper">
+            <div class="flex w-full justify-between items-center p-8">
+                <h2 class="text-2xl sm:text-3xl  font-bold text-[#05055D]">Wialon: the single solution for diverse needs
+                </h2>
+                <div class="flex space-x-2 ">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+            </div>
+            <div class="w-full swiper-wrapper">
+                <div class="flex justify-normal w-full swiper-wrapper">
+                    <div class="border  border-gray-200 shadow p-5 lg:p-6 rounded-3xl swiper-slide">
+                        <div class="w-full overflow-hidden rounded-3xl">
+                            <img src="icons/vehicle-leasing-software.jfif"
+                                class="w-full object-cover object-center h-64 hover:scale-110 duration-500"
+                                alt="Slide 1">
+                        </div>
+                        <div class="w-full space-y-4 py-6">
+                            <h3 class="text-2xl text-[#05055D] ">Vehicle leasing software</h3>
+                            <p class="text-lg text-[#414179]">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Iste corrupti, amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border  border-gray-200 shadow p-5 lg:p-6 rounded-3xl swiper-slide">
+                        <div class="w-full overflow-hidden rounded-3xl">
+                            <img src="icons/smart-farming.jpeg"
+                                class="w-full object-cover object-center hover:scale-110 h-64 duration-500"
+                                alt="Slide 1">
+                        </div>
+                        <div class="w-full space-y-4 py-6">
+                            <h3 class="text-2xl text-[#05055D] ">smart farming</h3>
+                            <p class="text-lg text-[#414179]">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Iste corrupti,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border  border-gray-200 shadow p-5 lg:p-6 rounded-3xl swiper-slide">
+                        <div class="w-full overflow-hidden rounded-3xl">
+                            <img src="icons/delivery-fleet-management.jpg"
+                                class="w-full object-cover object-center hover:scale-110 h-64 duration-500"
+                                alt="Slide 1">
+                        </div>
+                        <div class="w-full space-y-4 py-6">
+                            <h3 class="text-2xl text-[#05055D] ">Delivery fleet management</h3>
+                            <p class="text-lg text-[#414179]">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Iste corrupti,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border  border-gray-200 shadow p-5 lg:p-6 rounded-3xl swiper-slide">
+                        <div class="w-full overflow-hidden rounded-3xl">
+                            <img src="icons/driver-behavior-monitoring.jpg"
+                                class="w-full object-cover object-center hover:scale-110 h-64 duration-500"
+                                alt="Slide 1">
+                        </div>
+                        <div class="w-full space-y-4 py-6">
+                            <h3 class="text-2xl text-[#05055D] ">Driver behavior monitoring</h3>
+                            <p class="text-lg text-[#414179]">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Iste corrupti,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border  border-gray-200 shadow p-5 lg:p-6 rounded-3xl swiper-slide">
+                        <div class="w-full overflow-hidden rounded-3xl">
+                            <img src="icons/fleet-maintenance-management.jpg"
+                                class="w-full object-cover object-center hover:scale-110 h-64 duration-500"
+                                alt="Slide 1">
+                        </div>
+                        <div class="w-full space-y-4 py-6">
+                            <h3 class="text-2xl text-[#05055D] ">Fleet maintenance management</h3>
+                            <p class="text-lg text-[#414179]">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Iste corrupti,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border  border-gray-200 shadow p-5 lg:p-6 rounded-3xl swiper-slide">
+                        <div class="w-full overflow-hidden rounded-3xl">
+                            <img src="icons/field-employee-tracking.jpg"
+                                class="w-full object-cover object-center hover:scale-110 h-64 duration-500"
+                                alt="Slide 1">
+                        </div>
+                        <div class="w-full space-y-4 py-6">
+                            <h3 class="text-2xl text-[#05055D] ">Field employee tracking</h3>
+                            <p class="text-lg text-[#414179]">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Iste corrupti,
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border  border-gray-200 shadow p-5 lg:p-6 rounded-3xl swiper-slide">
+                        <div class="w-full overflow-hidden rounded-3xl">
+                            <img src="icons/public-transportation-management.jpg"
+                                class="w-full object-cover object-center hover:scale-110 h-64 duration-500"
+                                alt="Slide 1">
+                        </div>
+                        <div class="w-full space-y-4 py-6">
+                            <h3 class="text-2xl text-[#05055D] ">Public transportation management</h3>
+                            <p class="text-lg text-[#414179]">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Iste corrupti,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border  border-gray-200 shadow p-5 lg:p-6 rounded-3xl swiper-slide">
+                        <div class="w-full overflow-hidden rounded-3xl">
+                            <img src="icons/fuel-monitoring-system.jpg"
+                                class="w-full object-cover object-center hover:scale-110 h-64 duration-500"
+                                alt="Slide 1">
+                        </div>
+                        <div class="w-full space-y-4 py-6">
+                            <h3 class="text-2xl text-[#05055D] ">Fuel monitoring system</h3>
+                            <p class="text-lg text-[#414179]">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Iste corrupti,
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" swiper-pagination"></div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appvila</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="output.css">
+    <style>
+        #switch.active {
+            background-color: #FF6B81;
+        }
+
+        #p.active {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        #btn.active {
+            transform: rotate(180deg);
+            transition: all 300ms ease-in-out;
+        }
+
+        #title.active {
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!------start navbar-->
+    <header class="w-full ">
+        <div class="w-full py-8 bg-[#2A0A55] fixed z-20 flex items-center justify-center" id="topnav">
+
+            <nav class="w-full px-4 lg:px-8 flex justify-between items-center">
+                <!---contain logo-->
+                <div>
+                    <img src="appvila_icons/white-logo.svg" width="160" height="160" alt="" id="logo">
+                </div>
+                <div class=" hidden xl:flex lg:space-x-8">
+                    <a href="index.html" class="text-[17px] font-semibold text-white" id="link">Home</a>
+                    <a href="#" class="text-[17px] font-semibold text-white" id="link">Solutions</a>
+                    <a href="#" class="text-[17px] font-semibold text-white" id="link">Support</a>
+                    <a href="#" class="text-[17px] font-semibold text-white" id="link">Ressources</a>
+                    <a href="#" class="text-[17px] font-semibold text-white" id="link">Community</a>
+                    <a href="#" class="text-[17px] font-semibold text-white" id="link">Contact</a>
+                    <a href="#" class="text-[17px] font-semibold text-white" id="link">Personal account</a>
+                </div>
+                <div class="space-y-2 lg:hidden">
+                    <div class="w-12 h-[2px] bg-white"></div>
+                    <div class="w-12 h-[2px] bg-white"></div>
+                    <div class="w-12 h-[2px] bg-white"></div>
+                </div>
+                <div class="hidden md:flex">
+                    <button id="contain"
+                        class="px-6 outline-none border-2 text-white text-base duration-200 font-semibold border-white  hover:bg-white hover:text-[#FF6B81] rounded py-3">
+                        Contactez-Nous
+                    </button>
+                </div>
+
+            </nav>
+        </div>
+
+        <!-----banner section-->
+        <div class="w-full h-24"></div>
+        <section class="w-full p-10 lg:p-8 lg:h-screen flex items-center justify-center bg-[#2A0A55]">
+            <div class="w-full md:w-auto  xl:w-5/6 mx-auto space-y-8 lg:space-y-0 lg:flex items-center justify-between">
+                <div class="w-full md:w-auto xl:w-2/5 space-y-8 ">
+                    <h2
+                        class="text-white text-3xl leading-[50px] lg:text-[42px] text-center lg:text-justify lg:justify-normal font-extrabold ">
+                        A powerful App For Your Business.</h2>
+                    <p class="text-white text-lg lg:text-[16px] text-center lg:text-justify">From open source to pro
+                        services, Piqes helps you to build,deploy, test, and monitor apps.</p>
+                    <div
+                        class="w-full pt-4 space-y-12 md:space-y-0 md:space-x-4 flex flex-col md:flex-row justify-center items-center xl:justify-normal">
+                        <p><a href="#"
+                                class="px-6 py-4  bg-white font-semibold hover:bg-[#081828] hover:text-white duration-300 text-[#FF6B81] rounded">Commencez
+                                Maintenant</a></p>
+                        <p><a href="#"
+                                class="px-16 md:px-8  py-4 font-semibold border hover:bg-[#FFFF] hover:text-[#FF6B81]  border-white text-[#FFFF] rounded">En
+                                Savoir Plus</a></p>
+                    </div>
+                </div>
+                <div class="w-full xl:w-3/5">
+                    <img src="appvila_icons/phone.png" class="" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-------section featured-->
+    <section class="w-full px-8 xl:px-0 bg-[#F9F9F9] flex py-14 items-center justify-center">
+        <div class="w-full xl:w-5/6 space-y-8 py-8">
+            <div class="space-y-4 w-full lg:w-3/6 mx-auto">
+                <p class="text-lg text-[#FF6B81] font-bold text-center uppercase">features</p>
+                <h3 class="text-center text-4xl font-bold text-[#081828]">Your Experience Gets <br>Better And Better
+                    Over <br> Time.</h3>
+                <p class="text-base text-gray-500 text-center ">There are many variations of passages of Lorem Ipsum
+                    available,
+                    but the majority have suffered alteration in some form.</p>
+            </div>
+            <div class="w-full grid grid-col-4 sm:grid-cols-8 lg:grid-cols-12 grid-flow-row gap-8 py-8">
+                <div
+                    class="col-span-4 bg-white border border-gray-200 hover:-translate-y-4 duration-150 hover:shadow-xl p-8 rounded-lg space-y-4">
+                    <div class="w-16 h-16 rounded-xl shadow-xl bg-[#d64f71]"></div>
+                    <p class="text-xl py-4">
+                        Push to Deploy</p>
+                    <p class="text-sm text-gray-500 py-2">It is a long established fact that a reader will be distracted
+                        by the readable content of a page at its layout.</p>
+
+                </div>
+                <div
+                    class="col-span-4 bg-white border border-gray-200 hover:-translate-y-4 duration-150 hover:shadow-xl p-8 rounded-lg space-y-4">
+                    <div class="w-16 h-16 rounded-xl shadow-xl bg-[#d64f71]"></div>
+                    <p class="text-xl py-4">
+                        SSL Certificates</p>
+                    <p class="text-sm text-gray-500 py-2">IIt is a long established fact that a reader will be
+                        distracted by the readable content of a page at its layout.</p>
+
+                </div>
+                <div
+                    class="col-span-4 bg-white border border-gray-200 hover:-translate-y-4 duration-150 hover:shadow-xl p-8 rounded-lg space-y-4">
+                    <div class="w-16 h-16 rounded-xl shadow-xl bg-[#d64f71]"></div>
+                    <p class="text-xl py-4">
+                        Simple Queues</p>
+                    <p class="text-sm text-gray-500 py-2">It is a long established fact that a reader will be distracted
+                        by the readable content of a page at its layout.</p>
+
+                </div>
+                <div
+                    class="col-span-4 bg-white border border-gray-200 hover:-translate-y-4 duration-150 hover:shadow-xl p-8 rounded-lg space-y-4">
+                    <div class="w-16 h-16 rounded-xl shadow-xl bg-[#d64f71]"></div>
+                    <p class="text-xl py-4">
+                        Advanced Security</p>
+                    <p class="text-sm text-gray-500 py-2">It is a long established fact that a reader will be distracted
+                        by the readable content of a page at its layout.</p>
+
+                </div>
+                <div
+                    class="col-span-4 bg-white border border-gray-200 hover:-translate-y-4 duration-150 hover:shadow-xl p-8 rounded-lg space-y-4">
+                    <div class="w-16 h-16 rounded-xl shadow-xl bg-[#d64f71]"></div>
+                    <p class="text-xl py-4">
+                        Powerful API</p>
+                    <p class="text-sm text-gray-500 py-2">It is a long established fact that a reader will be distracted
+                        by the readable content of a page at its layout.</p>
+
+                </div>
+                <div
+                    class="col-span-4 bg-white border border-gray-200 hover:-translate-y-4 duration-150 hover:shadow-xl p-8 rounded-lg space-y-4">
+                    <div class="w-16 h-16 rounded-xl shadow-xl bg-[#d64f71]"></div>
+                    <p class="text-xl py-4">
+                        Database Backups</p>
+                    <p class="text-sm text-gray-500 py-2">It is a long established fact that a reader will be distracted
+                        by the readable content of a page at its layout.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----other section -->
+    <div class="w-full lg:w-5/6 mx-auto bg-white px-8 lg:px-0 py-8 lg:py-24 ">
+        <div class="w-full grid grid-cols-4 lg:grid-cols-8 grid-flow-row gap-8 xl:gap-16 items-center ">
+            <div class="col-span-4 space-y-8">
+                <div class="w-14 h-14 rounded-lg bg-[#FF6B81] shadow"></div>
+                <div class="space-y-8 w-full">
+                    <h3 class="text-2xl lg:text-3xl font-bold text-[#081828]">1,25,000 Customers Using The Application!
+                    </h3>
+                    <p class="text-[15px] text-gray-400">Collaborate over projects with your team and clients optimised
+                        for mobile and tablet don't let slow page speeds
+                        drive our innovative platform empowers anyone to convert clicks ou'll publish your first landing
+                        page in minutes.</p>
+                    <div class="py-4">
+                        <a href="#"
+                            class="px-6 py-3 rounded bg-[#FF6B81] hover:bg-[#081828] text-white font-semibold">Get
+                            Started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4 sm:px-8 lg:px-0 flex justify-center">
+                <img src="appvila_icons/app-ss1.png" alt="app-ss1">
+            </div>
+        </div>
+        <div class="w-full hidden lg:flex h-24"></div>
+        <div class="w-full grid grid-cols-4 lg:grid-cols-8 grid-flow-row gap-8 xl:gap-16 items-center ">
+            <div class="col-span-4 sm:px-8 lg:px-0 flex justify-center py-24">
+                <img src="appvila_icons/app-ss2.png" alt="app-ss1">
+            </div>
+            <div class="col-span-4 space-y-8">
+                <div class="w-14 h-14 rounded-lg bg-[#FF6B81] shadow"></div>
+                <div class="space-y-8 w-full">
+                    <h3 class="text-2xl lg:text-3xl font-bold text-[#081828]">Seamless Loyalt</h3>
+                    <p class="text-[15px] text-gray-400">Collaborate over projects with your team and clients optimised
+                        for mobile and tablet don't let slow page speeds
+                        drive our innovative platform empowers anyone to convert clicks ou'll publish your first landing
+                        page in minutes.</p>
+                    <div class="py-4">
+                        <a href="#"
+                            class="px-6 py-3 rounded bg-[#FF6B81] hover:bg-[#081828] text-white font-semibold">Get
+                            Started</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="w-full p-8 lg:py-24 flex items-center justify-center bg-[#FF6B81]">
+        <div class="w-full xl:w-4/6  space-y-4 text-center">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">Trusted by developers from over 80 planets
+            </h2>
+            <p class="text-base text-white">There are many variations of passages of Lorem Ipsum available, but the
+                majority.</p>
+
+            <div
+                class="w-full flex flex-col md:flex-row justify-center md:justify-around items-center space-y-4 md:space-y-0 md:space-x-4 py-4 md:py-8">
+                <div class="space-y-2">
+                    <h2 class="font-extrabold text-3xl text-white">100%</h2>
+                    <p class="text-white text-lg">satisfaction</p>
+
+                </div>
+                <div class="space-y-2">
+                    <h2 class="font-extrabold text-3xl text-white">120k</h2>
+                    <p class="text-white text-lg">Happy Users</p>
+
+                </div>
+
+                <div class="space-y-2">
+                    <h2 class="font-extrabold text-3xl text-white">125k+</h2>
+                    <p class="text-white text-lg">Downloads</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----pricing plan-->
+    <section class="w-full px-8 xl:px-0 bg-[#F9F9F9] flex py-14 items-center justify-center">
+        <div class="w-full xl:w-5/6 space-y-8 py-8">
+            <div class="space-y-4 w-full lg:w-3/6 mx-auto">
+                <p class="text-lg text-[#FF6B81] font-bold text-center uppercase">pricing</p>
+                <h3 class="text-center text-4xl font-bold text-[#081828]">Pricing Plan</h3>
+                <p class="text-base text-gray-500 text-center ">There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in some form.</p>
+            </div>
+            <div class="w-full grid grid-col-4 md:grid-cols-8 lg:grid-cols-12 grid-flow-row gap-8 py-8">
+
+                <div
+                    class="col-span-4 lg:col-span-3 bg-white border border-gray-200 hover:-translate-y-4 duration-150 hover:shadow-xl rounded-lg space-y-4">
+                    <div class="p-6 w-full space-y-4">
+                        <h4 class="text-[#081828] font-semibold">Hobby</h4>
+                        <p class="text-[14px] text-gray-500">All the basics for starting a new business</p>
+                        <p class="text-4xl font-bold text-[#081828]">$12<span
+                                class="text-[15px] text-gray-500 font-normal">/mo</span></p>
+                        <div class="w-full">
+                            <a href="#"
+                                class="block rounded-lg py-3 text-center bg-[#081828] text-white hover:bg-[#FF6B81] duration-200">Buy
+                                Hobby</a>
+                        </div>
+                    </div>
+                    <div class="w-full h-[1px] bg-gray-200"></div>
+                    <div class="p-6 w-full space-y-4">
+                        <h4 class="text-lg text-[#081828]">What's Included</h4>
+                        <div class="px-6 space-y-4">
+                            <p class="text-sm text-gray-500">Cras justo odio.</p>
+                            <p class="text-sm text-gray-500">Dapibus ac facilisis in.</p>
+                            <p class="text-sm text-gray-500">Morbi leo risus.</p>
+                            <p class="text-sm text-gray-500">Potenti felis, in cras ligula.</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-span-4 lg:col-span-3 bg-white border border-gray-200 hover:-translate-y-4 duration-150 hover:shadow-xl rounded-lg space-y-4">
+                    <div class="p-6 w-full space-y-4">
+                        <h4 class="text-[#081828] font-semibold">Freelancer
+                        </h4>
+                        <p class="text-[14px] text-gray-500">All the basics for starting a new business</p>
+                        <p class="text-4xl font-bold text-[#081828]">$24<span
+                                class="text-[15px] text-gray-500 font-normal">/mo</span></p>
+                        <div class="w-full">
+                            <a href="#"
+                                class="block rounded-lg py-3 text-center bg-[#081828] text-white hover:bg-[#FF6B81] duration-200">Buy
+                                Hobby</a>
+                        </div>
+                    </div>
+                    <div class="w-full h-[1px] bg-gray-200"></div>
+                    <div class="p-6 w-full space-y-4">
+                        <h4 class="text-lg text-[#081828]">What's Included</h4>
+                        <div class="px-6 space-y-4">
+                            <p class="text-sm text-gray-500">Cras justo odio.</p>
+                            <p class="text-sm text-gray-500">Dapibus ac facilisis in.</p>
+                            <p class="text-sm text-gray-500">Morbi leo risus.</p>
+                            <p class="text-sm text-gray-500">Potenti felis, in cras ligula.</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-span-4 lg:col-span-3 bg-white border border-gray-200 hover:-translate-y-4 duration-150 hover:shadow-xl rounded-lg space-y-4">
+                    <div class="p-6 w-full space-y-4">
+                        <h4 class="text-[#081828] font-semibold">Startup</h4>
+                        <p class="text-[14px] text-gray-500">All the basics for starting a new business</p>
+                        <p class="text-4xl font-bold text-[#081828]">$32<span
+                                class="text-[15px] text-gray-500 font-normal">/mo</span></p>
+                        <div class="w-full">
+                            <a href="#"
+                                class="block rounded-lg py-3 text-center bg-[#081828] text-white hover:bg-[#FF6B81] duration-200">Buy
+                                Hobby</a>
+                        </div>
+                    </div>
+                    <div class="w-full h-[1px] bg-gray-200"></div>
+                    <div class="p-6 w-full space-y-4">
+                        <h4 class="text-lg text-[#081828]">What's Included</h4>
+                        <div class="px-6 space-y-4">
+                            <p class="text-sm text-gray-500">Cras justo odio.</p>
+                            <p class="text-sm text-gray-500">Dapibus ac facilisis in.</p>
+                            <p class="text-sm text-gray-500">Morbi leo risus.</p>
+                            <p class="text-sm text-gray-500">Potenti felis, in cras ligula.</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-span-4 lg:col-span-3 bg-white border border-gray-200 hover:-translate-y-4 duration-150 hover:shadow-xl rounded-lg space-y-4">
+                    <div class="p-6 w-full space-y-4">
+                        <h4 class="text-[#081828] font-semibold">Enterprise</h4>
+                        <p class="text-[14px] text-gray-500">All the basics for starting a new business</p>
+                        <p class="text-4xl font-bold text-[#081828]">$48<span
+                                class="text-[15px] text-gray-500 font-normal">/mo</span></p>
+                        <div class="w-full">
+                            <a href="#"
+                                class="block rounded-lg py-3 text-center bg-[#081828] text-white hover:bg-[#FF6B81] duration-200">Buy
+                                Hobby</a>
+                        </div>
+                    </div>
+                    <div class="w-full h-[1px] bg-gray-200"></div>
+                    <div class="p-6 w-full space-y-4">
+                        <h4 class="text-lg text-[#081828]">What's Included</h4>
+                        <div class="px-6 space-y-4">
+                            <p class="text-sm text-gray-500">Cras justo odio.</p>
+                            <p class="text-sm text-gray-500">Dapibus ac facilisis in.</p>
+                            <p class="text-sm text-gray-500">Morbi leo risus.</p>
+                            <p class="text-sm text-gray-500">Potenti felis, in cras ligula.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------our Team section-->
+    <section class="w-full p-8 bg-white flex  justify-center">
+        <div class="w-full xl:w-5/6 space-y-8 py-8">
+            <div class="space-y-4 w-full lg:w-3/6 mx-auto">
+                <p class="text-lg text-[#FF6B81] font-bold text-center uppercase">Team</p>
+                <h3 class="text-center text-4xl font-bold text-[#081828]">Meat our team</h3>
+                <p class="text-base text-gray-500 text-center ">There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in some form.</p>
+            </div>
+            <div class="w-full grid grid-col-4 md:grid-cols-8 lg:grid-cols-12 grid-flow-row gap-8 py-8">
+                <div
+                    class="col-span-4 overflow-hidden lg:col-span-4 bg-white border border-gray-200 hover:-translate-y-4 duration-150 hover:shadow-xl rounded-lg">
+                    <div class=" w-full ">
+                        <img src="appvila_icons/team1.jpg" class="w-full object-cover object-center" alt="team1">
+                    </div>
+                    <div class="p-6 w-full">
+                        <h4 class="text-lg text-[#081828]">Leonard Krasner</h4>
+                        <p class="text-base text-[#FF6B81]">Senior Designer</p>
+                    </div>
+                </div>
+                <div
+                    class="col-span-4 overflow-hidden lg:col-span-4 bg-white border border-gray-200 hover:-translate-y-4 duration-150 hover:shadow-xl rounded-lg">
+                    <div class=" w-full ">
+                        <img src="appvila_icons/team2.jpg" class="w-full object-cover object-center" alt="team2">
+                    </div>
+                    <div class="p-6 w-full">
+                        <h4 class="text-lg text-[#081828]">Leonard Krasner</h4>
+                        <p class="text-base text-[#FF6B81]">Senior Designer</p>
+                    </div>
+                </div>
+                <div
+                    class="col-span-4 overflow-hidden lg:col-span-4 bg-white border border-gray-200 hover:-translate-y-4 duration-150 hover:shadow-xl rounded-lg">
+                    <div class=" w-full ">
+                        <img src="appvila_icons/team3.jpg" class="w-full object-cover object-center" alt="team3">
+                    </div>
+                    <div class="p-6 w-full">
+                        <h4 class="text-lg text-[#081828]">Leonard Krasner</h4>
+                        <p class="text-base text-[#FF6B81]">Senior Designer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------Testimonials section-->
+
+    <section class="w-full px-8 md:px-0 py-4 md:py-8 bg-[#F9F9F9] flex items-center justify-center ">
+
+        <div class="w-full lg:w-5/6 xl:w-3/6 swiper">
+            <div class="flex space-x-2 ">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+            <div class="w-full overflow-hidden swiper-wrapper">
+                <div class="w-full flex items-center overflow-hidden swiper-wrapper">
+
+                    <div class="w-full flex flex-col swiper-slide items-center justify-center space-y-8">
+                        <img src="appvila_icons/brand2.svg" width="150" height="150" alt="brand2">
+                        <p class="text-lg font-semibold text-center">"It is a long established fact that a reader will
+                            be
+                            distracted by the readable content of a page when looking at its layout.
+                            The point of using Lorem Ipsum is that it has"
+
+                        </p>
+                        <div class="w-12 h-12 rounded-full bg-black"></div>
+                        <div class="space-y-2 text-center">
+                            <h4 class="">Musharof Chowdhury</h4>
+                            <p class="text-gray-500">CEO - Ayro UI</p>
+                        </div>
+                    </div>
+                    <div class="w-ful flex flex-col swiper-slide items-center justify-center space-y-8">
+                        <img src="appvila_icons/brand1.svg" width="150" height="150" alt="brand2">
+                        <p class="text-lg font-semibold text-center">"It is a long established fact that a reader will
+                            be
+                            distracted by the readable content of a page when looking at its layout.
+                            The point of using Lorem Ipsum is that it has"
+
+                        </p>
+                        <div class="w-12 h-12 rounded-full overflow-hidden">
+                            <img src="appvila_icons/testi2.jpg" class="w-full h-full object-cover object-center"
+                                alt="testi2">
+                        </div>
+                        <div class="space-y-2 text-center">
+                            <h4 class="">Musharof Chowdhury</h4>
+                            <p class="text-gray-500">CEO - GrayGrids</p>
+                        </div>
+                    </div>
+                    <div class="w-full flex flex-col swiper-slide items-center justify-center space-y-8">
+                        <img src="appvila_icons/brand3.svg" width="150" height="150" alt="brand3">
+                        <p class="text-lg font-semibold text-center">"It is a long established fact that a reader will
+                            be
+                            distracted by the readable content of a page when looking at its layout.
+                            The point of using Lorem Ipsum is that it has"
+
+                        </p>
+                        <div class="w-12 h-12 rounded-full overflow-hidden">
+                            <img src="appvila_icons/testi3.jpg" class="w-full h-full object-cover object-center"
+                                alt="testi2">
+                        </div>
+                        <div class="space-y-2 text-center">
+                            <h4 class="">Naimur Rahman</h4>
+                            <p class="text-gray-500">CEO - WpthemesGrid</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <div class="w-full p-8 lg:py-24 flex items-center justify-center bg-[#FF6B81]">
+        <div class="w-full lg:w-5/6 xl:w-3/6  space-y-4 text-center">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">Install Appvilla and Start Using
+            </h2>
+            <div class="text-center w-full lg:w-5/6 mx-auto py-4">
+                <p class="text-base text-white">There are many variations of passages of Lorem Ipsum available,
+                    but the majority have suffered
+                    alteration in some form, by injected humour, or randomised words which don't look even slightly
+                    believable.</p>
+            </div>
+
+            <div class="w-full flex justify-center  items-center space-x-4 py-4">
+                <button
+                    class="px-6 py-3 rounded bg-white text-[#FF6B81] hover:bg-[#081828] hover:text-white font-semibold">App
+                    Store</button>
+                <button
+                    class="px-6 py-3  rounded border border-white text-[#fff] hover:bg-[#fff] hover:text-[#FF6B81] font-semibold">Google
+                    Play</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="w-full p-8 lg:py-12 bg-white  flex flex-col items-center justify-center">
+        <div class="w-full xl:w-5/6 space-y-8  py-8">
+            <div class="space-y-4 w-full lg:w-3/6 mx-auto">
+                <p class="text-lg text-[#FF6B81] font-bold text-center uppercase">FAQ</p>
+                <h3 class="text-center text-4xl font-bold text-[#081828]">Frequently Asked Questions</h3>
+                <p class="text-base text-gray-500 text-center ">There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in some form.</p>
+            </div>
+
+        </div>
+
+
+        <div class=" w-full flex flex-col  items-center xl:p-8 space-y-6">
+            <div id="container"
+                class="mx-auto border border-[#dfdddd] w-full flex overflow-hidden flex-col relative  rounded-xl">
+                <div class="flex justify-between items-center w-full p-4 cursor-pointer" id="switch">
+                    <div class="flex items-center space-x-4">
+                        <div
+                            class="w-8 h-8 flex items-center justify-center font-semibold bg-white rounded-full border">
+                            01</div>
+                        <h3 class="text-[#081828] font-semibold text-[16px]" id="title">
+                            How Do I Contact Customer Services?
+                        </h3>
+                    </div>
+                    <svg id="btn" class=" cursor-pointer" xmlns="http://www.w3.org/2000/svg" heigth="22px"
+                        viewBox="0 -960 960 960" width="22px" fill="#5f6368">
+                        <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z" />
+                    </svg>
+
+                </div>
+                <div id="p" class="p-8 lg:p-12 text-base text-gray-600 w-full hidden bg-[#f0f0ef] text-left space-y-8">
+                    <p>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3 wolf moon officia aute. non cupidatat skateboard dolor brunch. Foosd truck quinoa nesciunt
+                        laborum eiusmod.
+                        Brunch 3 wolf moon tempor, sunt alqua put a bird on it squid single-origin coffee nulla
+                        assumenda shoreditch et.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident iure ab nisi, magnam vitae.
+                        Laboriosam laborum suscipit recusandae officia laudantium,
+                        consectetur adipisci voluptates doloremque quisquam. Id rerum iusto reprehenderit assumenda!</p>
+                </div>
+            </div>
+            <div id="container"
+                class="mx-auto border border-[#dfdddd] w-full flex overflow-hidden flex-col relative  rounded-xl">
+                <div class="flex justify-between items-center w-full p-4 cursor-pointer" id="switch">
+                    <div class="flex items-center space-x-4">
+                        <div
+                            class="w-8 h-8 flex items-center justify-center font-semibold bg-white rounded-full border">
+                            02</div>
+                        <h3 class="text-[#081828] font-semibold text-[16px]" id="title">
+                            Material types can you work with?
+                        </h3>
+                    </div>
+                    <svg id="btn" class=" cursor-pointer" xmlns="http://www.w3.org/2000/svg" heigth="22px"
+                        viewBox="0 -960 960 960" width="22px" fill="#5f6368">
+                        <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z" />
+                    </svg>
+
+                </div>
+                <div id="p" class="hidden text-base text-gray-600 w-full p-12 bg-[#f0f0ef] text-left space-y-8">
+                    <p>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3 wolf moon officia aute. non cupidatat skateboard dolor brunch. Foosd truck quinoa nesciunt
+                        laborum eiusmod.
+                        Brunch 3 wolf moon tempor, sunt alqua put a bird on it squid single-origin coffee nulla
+                        assumenda shoreditch et.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident iure ab nisi, magnam vitae.
+                        Laboriosam laborum suscipit recusandae officia laudantium,
+                        consectetur adipisci voluptates doloremque quisquam. Id rerum iusto reprehenderit assumenda!</p>
+                </div>
+            </div>
+            <div id="container"
+                class="mx-auto border border-[#dfdddd] w-full flex overflow-hidden flex-col relative  rounded-xl">
+                <div class="flex justify-between items-center w-full p-4 cursor-pointer" id="switch">
+                    <div class="flex items-center space-x-4">
+                        <div
+                            class="w-8 h-8 flex items-center justify-center font-semibold bg-white rounded-full border">
+                            03</div>
+                        <h3 class="text-[#081828] font-semibold text-[16px]" id="title">
+                            Can I have multiple activities in a single feature?
+                        </h3>
+                    </div>
+                    <svg id="btn" class=" cursor-pointer" xmlns="http://www.w3.org/2000/svg" heigth="22px"
+                        viewBox="0 -960 960 960" width="22px" fill="#5f6368">
+                        <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z" />
+                    </svg>
+
+                </div>
+                <div id="p" class="hidden text-base text-gray-600 w-full p-12 bg-[#f0f0ef] text-left space-y-8">
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident iure ab nisi, magnam vitae.
+                        Laboriosam laborum suscipit recusandae officia laudantium,
+                        consectetur adipisci voluptates doloremque quisquam. Id rerum iusto reprehenderit assumenda!</p>
+                </div>
+            </div>
+            <div id="container"
+                class="mx-auto border border-[#dfdddd] w-full flex overflow-hidden flex-col relative  rounded-xl">
+                <div class="flex justify-between items-center w-full cursor-pointer p-4" id="switch">
+                    <div class="flex items-center space-x-4">
+                        <div
+                            class="w-8 h-8 flex items-center justify-center font-semibold bg-white rounded-full border">
+                            04</div>
+                        <h3 class="text-[#081828] font-semibold text-[16px]" id="title">
+                            How Clients Can Consult With online?
+                        </h3>
+                    </div>
+                    <svg id="btn" xmlns="http://www.w3.org/2000/svg" heigth="22px" viewBox="0 -960 960 960" width="22px"
+                        fill="#5f6368">
+                        <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z" />
+                    </svg>
+
+                </div>
+                <div id="p" class="hidden text-base text-gray-600 w-full p-12 bg-[#f0f0ef] text-left space-y-8">
+                    <p>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3 wolf moon officia aute. non cupidatat skateboard dolor brunch. Foosd truck quinoa nesciunt
+                        laborum eiusmod.
+                        Brunch 3 wolf moon tempor, sunt alqua put a bird on it squid single-origin coffee nulla
+                        assumenda shoreditch et.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, beatae placeat assumenda velit
+                        fugit illo ut hic at veritatis nam.</p>
+                </div>
+            </div>
+            <div id="container"
+                class="mx-auto border border-[#dfdddd] w-full flex overflow-hidden flex-col relative  rounded-xl">
+                <div class="flex justify-between items-center w-full cursor-pointer p-4" id="switch">
+                    <div class="flex items-center space-x-4">
+                        <div
+                            class="w-8 h-8 flex items-center justify-center font-semibold bg-white rounded-full border">
+                            05</div>
+                        <h3 class="text-[#081828] font-semibold text-[16px]" id="title">
+                            Can I share resources between features?
+                        </h3>
+                    </div>
+                    <svg id="btn" xmlns="http://www.w3.org/2000/svg" heigth="22px" viewBox="0 -960 960 960" width="22px"
+                        fill="#5f6368">
+                        <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z" />
+                    </svg>
+
+                </div>
+                <div id="p" class="hidden text-base text-gray-600 w-full p-12 bg-[#f0f0ef] text-left space-y-8">
+                    <p>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3 wolf moon officia aute. non cupidatat skateboard dolor brunch. Foosd truck quinoa nesciunt
+                        laborum eiusmod.
+                        Brunch 3 wolf moon tempor, sunt alqua put a bird on it squid single-origin coffee nulla
+                        assumenda shoreditch et.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!------our Team section-->
+    <section class="w-full p-8 bg-[#F9F9F9] flex  justify-center">
+        <div class="w-full xl:w-5/6 space-y-8 py-8">
+            <div class="space-y-4 w-full lg:w-3/6 mx-auto">
+                <p class="text-lg text-[#FF6B81] font-bold text-center uppercase">blog</p>
+                <h3 class="text-center text-4xl font-bold text-[#081828]">Our Latest News</h3>
+                <p class="text-base text-gray-500 text-center ">There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in some form.</p>
+            </div>
+            <div class="w-full grid grid-col-4 md:grid-cols-8 lg:grid-cols-12 grid-flow-row gap-8 py-8">
+                <div
+                    class="col-span-4 overflow-hidden lg:col-span-4 bg-white border border-gray-200 hover:-translate-y-4 duration-150 hover:shadow-xl rounded-lg">
+                    <div class=" w-full ">
+                        <img src="appvila_icons/blog-1.jpg"
+                            class="w-full object-cover object-center hover:scale-110 duration-500" alt="blog-1">
+                    </div>
+                    <div class="p-6 w-full space-y-4">
+
+                        <p class="text-base text-[#FF6B81]">Blog</p>
+                        <h4 class="text-xl font-bold text-[#081828] hover:text-[#FF6B81]">Boost your conversion rate
+                        </h4>
+                        <p class="text-[15px] text-gray-500">Lorem ipsum dolor sit amet, adipscing elitr, sed diam
+                            nonumy eirmod tempor ividunt dolore magna.</p>
+                    </div>
+                    <div class="w-full flex items-center space-x-4 p-6">
+                        <div class="w-14 h-14 rounded-full bg-gray-100 overflow-hidden">
+                            <img src="appvila_icons/comment1.jpg" class="w-full h-full object-cover object-center"
+                                alt="comment1">
+                        </div>
+                        <div class="space-y-1">
+                            <p class="text-[#081828] hover:text-[#FF6B81] text-base cursor-pointer">Roel Aufderhar</p>
+                            <div class="flex items-center text-gray-500 hover:text-[#FF6B81] text-sm">
+                                Mar 15,2023 <div class="w-1 h-1 mx-3 rounded-full bg-gray-200"></div>5 min read
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-span-4 overflow-hidden lg:col-span-4 bg-white border border-gray-200 hover:-translate-y-4 duration-150 hover:shadow-xl rounded-lg">
+                    <div class=" w-full ">
+                        <img src="appvila_icons/blog-2.jpg"
+                            class="w-full object-cover object-center hover:scale-110 duration-500" alt="blog-1">
+                    </div>
+                    <div class="p-6 w-full space-y-4">
+
+                        <p class="text-base text-[#FF6B81]">Video</p>
+                        <h4 class="text-xl font-bold text-[#081828] hover:text-[#FF6B81]">How to use search engine</h4>
+                        <p class="text-[15px] text-gray-500">Lorem ipsum dolor sit amet, adipscing elitr, sed diam
+                            nonumy eirmod tempor ividunt dolore magna.</p>
+                    </div>
+                    <div class="w-full flex items-center space-x-4 p-6">
+                        <div class="w-14 h-14 rounded-full bg-gray-100 overflow-hidden">
+                            <img src="appvila_icons/comment2.jpg" class="w-full h-full object-cover object-center"
+                                alt="comment1">
+                        </div>
+                        <div class="space-y-1">
+                            <p class="text-[#081828] hover:text-[#FF6B81] text-base cursor-pointer">Jenifer Zuliya</p>
+                            <div class="flex items-center text-gray-500 hover:text-[#FF6B81] text-sm">
+                                Feb 10,2023 <div class="w-1 h-1 mx-3 rounded-full bg-gray-200"></div>7 min read
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-span-4 overflow-hidden lg:col-span-4 bg-white border border-gray-200 hover:-translate-y-4 duration-150 hover:shadow-xl rounded-lg">
+                    <div class=" w-full ">
+                        <img src="appvila_icons/blog-3.jpg"
+                            class="w-full object-cover object-center hover:scale-110 duration-500" alt="blog-1">
+                    </div>
+                    <div class="p-6 w-full space-y-4">
+
+                        <p class="text-base text-[#FF6B81]">Marketing</p>
+                        <h4 class="text-xl font-bold text-[#081828] hover:text-[#FF6B81]">Awesome ways to boost sales
+                        </h4>
+                        <p class="text-[15px] text-gray-500">Lorem ipsum dolor sit amet, adipscing elitr, sed diam
+                            nonumy eirmod tempor ividunt dolore magna.</p>
+                    </div>
+                    <div class="w-full flex items-center space-x-4 p-6">
+                        <div class="w-14 h-14 rounded-full bg-gray-100 overflow-hidden">
+                            <img src="appvila_icons/comment3.jpg" class="w-full h-full object-cover object-center"
+                                alt="comment1">
+                        </div>
+                        <div class="space-y-1">
+                            <p class="text-[#081828] hover:text-[#FF6B81] text-base cursor-pointer"> Roel Aufderhar</p>
+                            <div class="flex items-center text-gray-500 hover:text-[#FF6B81] text-sm">
+                                Jan 20,2023 <div class="w-1 h-1 mx-3 rounded-full bg-gray-200"></div>6 min read
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="w-full px-8 lg:px-0 flex items-center justify-center">
+           <div class="w-full lg:w-5/6 flex items-center justify-between">
+             <img src="" alt="">
+           </div>
+    </section>
+    <script>
+
+        //Get the button
+        let topnav = document.querySelector("#topnav");
+        let button = document.querySelector("#contain");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+
+                button.style.backgroundColor = "#FF6B81"
+                topnav.style.backgroundColor = "#FF6B81";
+            } else {
+                link.style.color = "#FFFFFF";
+                button.style.backgroundColor = "transparent";
+                topnav.style.backgroundColor = "#2A0A55";
+
+            }
+        }
+
+        let containers = document.querySelectorAll('#container');
+
+        containers.forEach(container => {
+            let button = container.querySelector('#btn');
+            let ctn = container.querySelector('#switch');
+            let text = container.querySelector('#p');
+            let title = container.querySelector('#title');
+            ctn.addEventListener('click', () => {
+                text.classList.toggle('active');
+                ctn.classList.toggle('active');
+                button.classList.toggle('active');
+                title.classList.toggle('active');
+
+            });
+        });
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
