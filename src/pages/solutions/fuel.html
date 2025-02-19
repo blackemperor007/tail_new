@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion du Carburant - Abo-Tracking</title>
+    <link rel="stylesheet" href="../../output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-full flex flex-col">
+    <!-- Header section identique aux autres pages -->
+    <header class="w-full fixed z-20 bg-white">
+        <!-- ... Copier le header existant ... -->
+    </header>
+
+    <!-- Spacer for fixed header -->
+    <div class="w-full" style="height: calc(3.5rem + 5rem)"></div>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative py-20 bg-cover bg-center bg-no-repeat" 
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../images/solutions/fuel-hero.jpg');">
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Text Content -->
+                    <div class="text-left">
+                        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Contrôle Intelligent du Carburant</h1>
+                        <p class="text-xl text-gray-300 mb-8">
+                            Optimisez votre consommation de carburant et prévenez les fraudes grâce à notre solution de surveillance avancée
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-[#2A0A55] text-white rounded-lg hover:bg-[#3B1B66] transition-colors">
+                                Demander une démo
+                            </a>
+                            <a href="#features" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#2A0A55] transition-colors">
+                                En savoir plus
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Image/Animation -->
+                    <div class="relative">
+                        <div class="relative overflow-hidden rounded-2xl shadow-2xl">
+                            <img src="../../images/solutions/fuel-dashboard.png" 
+                                 alt="Dashboard Gestion Carburant" 
+                                 class="w-full transform transition-transform duration-700 hover:scale-105">
+                            <!-- Floating Elements -->
+                            <div class="absolute -top-4 -right-4 w-20 h-20 bg-orange-500 rounded-full opacity-20 animate-pulse"></div>
+                            <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-orange-500 rounded-full opacity-20 animate-pulse delay-300"></div>
+                        </div>
+                        <!-- Stats Overlay -->
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg">
+                            <div class="text-sm font-semibold text-gray-800">Économies carburant</div>
+                            <div class="text-2xl font-bold text-[#2A0A55]">-20%</div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg">
+                            <div class="text-sm font-semibold text-gray-800">Fraudes détectées</div>
+                            <div class="text-2xl font-bold text-[#2A0A55]">-95%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Les défis de la gestion du carburant</h2>
+                    <p class="text-gray-600">
+                        Maîtrisez vos coûts et optimisez votre consommation de carburant
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-drop text-2xl text-orange-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Contrôle en Temps Réel</h3>
+                        <p class="text-gray-600">Surveillez la consommation en temps réel</p>
+                    </div>
+                    <!-- ... autres défis ... -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-16">
+            <!-- ... contenu des fonctionnalités ... -->
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="py-16 bg-gray-50">
+            <!-- ... contenu des avantages ... -->
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 bg-[#2A0A55]">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold text-white mb-6">Optimisez votre gestion carburant</h2>
+                    <p class="text-gray-300 mb-8">
+                        Découvrez comment notre solution peut réduire vos coûts de carburant
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
+                        <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-white text-[#2A0A55] rounded-lg hover:bg-gray-100 transition-colors">
+                            Demander une démo
+                        </a>
+                        <a href="tel:+237698761410" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#2A0A55] transition-colors">
+                            <i class="lni lni-phone mr-2"></i>
+                            Nous appeler
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <!-- ... Copier le footer existant ... -->
+    </footer>
+</body>
+</html> 
