@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="h-full">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +11,10 @@
     <link rel="stylesheet" href="../output.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
 
-     <!------start navbar-->
-     <header class="w-full fixed z-20 bg-white">
+<body class="min-h-full flex flex-col">
+    <!-- Header - Fixed at top -->
+    <header class="w-full fixed z-20 bg-white">
         <div class="w-full items-center flex justify-between h-14 px-4 shadow xl:shadow-none">
             <div class="flex space-x-8 items-center">
                 <div class="w-24">
@@ -56,19 +57,20 @@
             </div>
 
         </div>
-        
+
         <div class="w-full py-8 bg-[#2A0A55] flex items-center justify-center">
 
             <nav class="w-full px-4 lg:px-8 flex justify-between items-center">
                 <!---contain logo-->
-                <div>
-                    <img src="../appvila_icons/white-logo.svg" width="160" height="160" alt="" id="logo">
+                <div class="flex items-center space-x-2">
+                    <img src="./images/logo-white.jpg" alt="Abo-Tracking" class="h-8 w-8">
+                    <span class="text-white text-2xl font-bold">Abo-Tracking</span>
                 </div>
                 <div class=" hidden xl:flex lg:space-x-8">
-                    <a href="index.html" class="text-[17px] font-semibold text-white" id="link">Home</a>
+                    <a href="../index.html" class="text-[17px] font-semibold text-white" id="link">Home</a>
                     <a href="#" class="text-[17px] font-semibold text-white" id="link">Solutions</a>
-                    <a href="#" class="text-[17px] font-semibold text-white" id="link">Support</a>
-                    <a href="pages/contact.html" class="text-[17px] font-semibold text-white" id="link">Contact</a>
+                    <a href="support.html" class="text-[17px] font-semibold text-white" id="link">Support</a>
+                    <a href="contact.html" class="text-[17px] font-semibold text-white" id="link">Contact</a>
                 </div>
                 <div class="space-y-2 lg:hidden">
                     <div class="w-12 h-[2px] bg-white"></div>
@@ -86,141 +88,150 @@
         </div>
     </header>
 
-    <!-- Contact Header Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center max-w-2xl mx-auto">
-                <p class="text-blue-600 font-semibold mb-2">CONTACT</p>
-                <h1 class="text-4xl font-bold text-gray-900 mb-4">We'd Love To Help You</h1>
-                <p class="text-gray-600">
-                    Contactez-nous pour toute question concernant nos services de tracking et de gestion de flotte.
-                </p>
-            </div>
-        </div>
-    </section>
+    <!-- Spacer for fixed header -->
+    <div class="w-full" style="height: calc(3.5rem + 5rem)"></div>
 
-    <!-- Contact Info Cards -->
-    <section class="pb-16">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <!-- Address Card -->
-                <div class="bg-white rounded-lg shadow-lg p-8 text-center">
-                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                        <i class="lni lni-map-marker text-2xl text-blue-600"></i>
-                    </div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Address</h3>
-                    <p class="text-gray-600">3333 Raleigh St, Houston, TX 77021</p>
-                </div>
-
-                <!-- Phone Card -->
-                <div class="bg-white rounded-lg shadow-lg p-8 text-center">
-                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                        <i class="lni lni-phone text-2xl text-blue-600"></i>
-                    </div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Call us on</h3>
-                    <p class="text-gray-600">+1 800 555 44 00 (Toll free)</p>
-                </div>
-
-                <!-- Mail Card -->
-                <div class="bg-white rounded-lg shadow-lg p-8 text-center">
-                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                        <i class="lni lni-envelope text-2xl text-blue-600"></i>
-                    </div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Mail at</h3>
-                    <p class="text-gray-600">support@abotracking.tech</p>
+    <!-- Main content - Fills available space -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative py-16 bg-cover bg-center bg-no-repeat min-h-[100px]" 
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/app-ss/banner_x3.jpg');">
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h1 class="text-4xl font-bold text-white mb-6">Contactez-Nous</h1>
+                    <p class="text-gray-300 mb-8">
+                        Trouvez rapidement des réponses à vos questions et accédez à notre documentation complète.
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="container mx-auto px-4 py-8">
+            
+            
 
-    <!-- Contact Form Section -->
-    <section class="py-16 bg-blue-600">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-                <!-- Left Side - Contact Info -->
-                <div class="text-white space-y-8">
-                    <div>
-                        <h2 class="text-3xl font-bold mb-4">New Case?<br>Send Message Us</h2>
-                        <p class="text-blue-100">
-                            Just send us your questions or concerns to starting a new project.
+        </section>
+    </main>
+
+    <!-- Footer - Stays at bottom -->
+    <footer class="w-full bg-[#081828]">
+        <!-- Newsletter Section -->
+        <div class="container mx-auto px-4 mb-16">
+            <div class="max-w-6xl mx-auto p-8 rounded-xl border border-gray-700/50 bg-[#0a1f35]">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="space-y-3">
+                        <h2 class="text-2xl md:text-3xl font-bold text-white">
+                            Abonnez-vous à notre Newsletter
+                        </h2>
+                        <p class="text-gray-300 text-sm md:text-base">
+                            Recevez nos dernières actualités et offres directement dans votre boîte mail.
                         </p>
                     </div>
+                    <div class="w-full md:w-auto flex flex-col sm:flex-row gap-3">
+                        <input type="email" placeholder="Votre adresse email"
+                            class="w-full sm:w-80 px-4 py-3 rounded-lg bg-gray-700/50 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#2A0A55]">
+                        <button
+                            class="w-full sm:w-auto px-6 py-3 bg-[#2A0A55] hover:bg-[#3B1B66] text-white font-semibold rounded-lg transition duration-300">
+                            S'abonner
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                    <div class="space-y-4">
-                        <div class="flex items-center space-x-4">
-                            <img src="../images/support-agent.jpg" alt="Support Agent" class="w-12 h-12 rounded-full">
-                            <div>
-                                <p class="font-semibold">HAVE A QUESTION?</p>
-                                <p class="text-xl">+888 445 55 678</p>
-                            </div>
-                        </div>
-
-                        <div class="space-y-2">
-                            <p class="font-semibold">Monday - Friday:</p>
-                            <p>9.00 - 6.00</p>
-                            <p class="text-blue-200">Sunday & Public Holidays (Closed)</p>
-                        </div>
-
-                        <a href="#" class="inline-block border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-blue-600 transition-colors">
-                            Request A Call Back →
+        <!-- Main Footer Content -->
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-2">
+                        <img src="./images/logo-white.jpg" alt="Abo-Tracking" class="h-8 w-8">
+                        <span class="text-white text-2xl font-bold">Abo-Tracking</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        Votre bouclier GPS-4G à votre portée. Solutions de tracking professionnel pour votre sécurité.
+                    </p>
+                    <!-- Social Media Icons -->
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-[#2A0A55] hover:text-white transition-all">
+                            <i class="lni lni-facebook"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-[#2A0A55] hover:text-white transition-all">
+                            <i class="lni lni-twitter-old"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-[#2A0A55] hover:text-white transition-all">
+                            <i class="lni lni-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-[#2A0A55] hover:text-white transition-all">
+                            <i class="lni lni-linkedin"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-[#2A0A55] hover:text-white transition-all">
+                            <i class="lni lni-whatsapp"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- Right Side - Contact Form -->
-                <div class="bg-white rounded-xl p-8">
-                    <form class="space-y-6">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <input 
-                                type="text" 
-                                placeholder="Your Name" 
-                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition"
-                            >
-                            <input 
-                                type="text" 
-                                placeholder="Your Subject" 
-                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition"
-                            >
-                        </div>
+                <!-- Quick Links -->
+                <div class="space-y-4">
+                    <h3 class="text-white text-xl font-semibold">Navigation</h3>
+                    <ul class="space-y-3">
+                        <li><a href="../index.html" class="text-gray-400 hover:text-white transition-colors">Accueil</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Solutions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Support</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Ressources</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Community</a></li>
+                    </ul>
+                </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <input 
-                                type="email" 
-                                placeholder="Your Email" 
-                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition"
-                            >
-                            <input 
-                                type="tel" 
-                                placeholder="Your Phone" 
-                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition"
-                            >
-                        </div>
+                <!-- Services -->
+                <div class="space-y-4">
+                    <h3 class="text-white text-xl font-semibold">Nos Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Suivi GPS</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Gestion de Flotte</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Sécurité Véhicules</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Analyse de Données</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Support Technique</a>
+                        </li>
+                    </ul>
+                </div>
 
-                        <textarea 
-                            placeholder="Your Message" 
-                            rows="6" 
-                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition"
-                        ></textarea>
-
-                        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors">
-                            Submit Message
-                        </button>
-                    </form>
+                <!-- Contact Info -->
+                <div class="space-y-4">
+                    <h3 class="text-white text-xl font-semibold">Contact</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center space-x-3 text-gray-400">
+                            <i class="lni lni-phone"></i>
+                            <span>+33 1 23 45 67 89</span>
+                        </li>
+                        <li class="flex items-center space-x-3 text-gray-400">
+                            <i class="lni lni-envelope-1"></i>
+                            <span>contact@abo-tracking.com</span>
+                        </li>
+                        <li class="flex items-center space-x-3 text-gray-400">
+                            <i class="lni lni-map-marker-5"></i>
+                            <span>Paris, France</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Map Section -->
-    <section class="h-[400px] w-full">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3462.7168771751584!2d-95.3398592!3d29.7040552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640be59dd5f3363%3A0x6f79c0a3aa6f7015!2s3333%20Raleigh%20St%2C%20Houston%2C%20TX%2077021%2C%20USA!5e0!3m2!1sen!2sfr!4v1647436435286!5m2!1sen!2sfr"
-            width="100%" 
-            height="100%" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy"
-        ></iframe>
-    </section>
+            <!-- Copyright -->
+            <div class="py-8 border-t border-gray-800 text-center">
+                <p class="text-gray-400 text-sm">
+                    © 2025 Abo-Tracking. Tous droits réservés.
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
