@@ -6,87 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Abo-Tracking</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
     <link href="https://cdn.tailwindcss.com" rel="stylesheet">
     <link rel="stylesheet" href="../output.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="min-h-full flex flex-col">
-    <!-- Header - Fixed at top -->
-    <header class="w-full fixed z-20 bg-white">
-        <div class="w-full items-center flex justify-between h-14 px-4 shadow xl:shadow-none">
-            <div class="flex space-x-8 items-center">
-                <div class="w-24">
-                    <img src="../images/logo-2.png" alt="brand_logo">
-
-                </div>
-                <div class="lg:flex items-center space-x-3 hidden">
-                    <div class="w-3 h-3 rounded-full bg-red-500 animate-pulse"></div>
-                    <p class="text-base">Votre bouclier gps-4G à votre portée</p>
-                </div>
-            </div>
-            <div class="flex items-center h-full space-x-2">
-                <div class="h-full hidden md:flex items-center"> <a href="#"
-                        class="px-4 py-1 rounded-full bg-blue-100 hover:bg-blue-200 font-semibold text-blue-600">Find a
-                        partner</a></div>
-                <div class="px-4 h-full border border-t-0 border-b-0 border-gray-200 flex items-center">
-                    <img src="icons/search-interface-symbol.png" width="20" height="20" alt="">
-                </div>
-                <div class="p-4 h-full flex items-center space-x-4">
-                    <select name="languages" class="outline-none text-base text-gray-600" id="">
-                        <option value="en">EN</option>
-                        <option value="fr">FR</option>
-                        <option value="de">Deutsch</option>
-                        <option value="es">Español</option>
-                        <option value="it">Italiano</option>
-                        <option value="ru">Русский</option>
-                        <option value="zh">中文</option>
-                        <option value="ja">日本語</option>
-                        <option value="ko">한국어</option>
-                        <option value="pt">Português</option>
-                        <option value="vi">Tiếng Việt</option>
-                        <option value="tr">Türkçe</option>
-                        <option value="ar">العربية</option>
-                        <option value="ur">اردو</option>
-                    </select>
-                    <div class=" flex xl:hidden">
-                        <img src="icons/menu.png" width="20" height="20" alt="menu_bar">
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="w-full py-8 bg-[#2A0A55] flex items-center justify-center">
-
-            <nav class="w-full px-4 lg:px-8 flex justify-between items-center">
-                <!---contain logo-->
-                <div class="flex items-center space-x-2">
-                    <img src="./images/logo-white.jpg" alt="Abo-Tracking" class="h-8 w-8">
-                    <span class="text-white text-2xl font-bold">Abo-Tracking</span>
-                </div>
-                <div class=" hidden xl:flex lg:space-x-8">
-                    <a href="../index.html" class="text-[17px] font-semibold text-white" id="link">Home</a>
-                    <a href="#" class="text-[17px] font-semibold text-white" id="link">Solutions</a>
-                    <a href="support.html" class="text-[17px] font-semibold text-white" id="link">Support</a>
-                    <a href="contact.html" class="text-[17px] font-semibold text-white" id="link">Contact</a>
-                </div>
-                <div class="space-y-2 lg:hidden">
-                    <div class="w-12 h-[2px] bg-white"></div>
-                    <div class="w-12 h-[2px] bg-white"></div>
-                    <div class="w-12 h-[2px] bg-white"></div>
-                </div>
-                <div class="hidden md:flex">
-                    <button
-                        class="px-6 outline-none border-2 text-white text-base duration-200 font-semibold border-white  hover:bg-white hover:text-[#2A0A55] rounded py-3">
-                        Contactez-Nous
-                    </button>
-                </div>
-
-            </nav>
-        </div>
-    </header>
+   
 
     <!-- Spacer for fixed header -->
     <div class="w-full" style="height: calc(3.5rem + 5rem)"></div>
@@ -105,6 +32,31 @@
                 </div>
             </div>
         </section>
+
+        <!-- Contact Support Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold mb-4">Besoin d'aide supplémentaire ?</h2>
+                    <p class="text-gray-600 mb-8">
+                        Notre équipe de support est disponible 24/7 pour répondre à vos questions.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
+                        <a href="mailto:emperorb007@gmail.com" class="inline-flex items-center justify-center px-6 py-3 bg-[#2A0A55] text-white rounded-lg hover:bg-[#3B1B66] transition-colors">
+                            <i class="lni lni-ticket-alt mr-2"></i>
+                            Envoyer un email
+                        </a>
+                        <a href="https://wa.me/237698761410" class="inline-flex items-center justify-center px-6 py-3 border border-[#2A0A55] text-[#2A0A55] rounded-lg hover:bg-[#2A0A55] hover:text-white transition-colors">
+                            <i class="lni lni-whatsapp mr-2"></i>
+                            Chat en direct
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="w-full" style="height: calc(2.5rem)"></div>
         
         <section class="relative" id="contact">
             <!-- Background Image Section -->
@@ -158,7 +110,7 @@
                                         </div>
                                         <div>
                                             <h3 class="text-gray-900 font-medium">Technical support</h3>
-                                            <p class="text-gray-600 text-sm">support@example.com</p>
+                                            <p class="text-gray-600 text-sm">support@abotracking.tech</p>
                                             <p class="text-gray-600 text-sm">+1 234-567-89</p>
                                         </div>
                                     </div>
@@ -170,7 +122,7 @@
                                         </div>
                                         <div>
                                             <h3 class="text-gray-900 font-medium">Sales questions</h3>
-                                            <p class="text-gray-600 text-sm">sales@example.com</p>
+                                            <p class="text-gray-600 text-sm">cindybethel@abotracking.tech</p>
                                             <p class="text-gray-600 text-sm">+1 234-567-89</p>
                                         </div>
                                     </div>
@@ -178,11 +130,11 @@
                                     <!-- Press -->
                                     <div class="space-y-3">
                                         <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                                            <i class="lni lni-newspaper text-2xl text-blue-600"></i>
+                                            <i class="lni lni-facebook text-2xl text-blue-600"></i>
                                         </div>
                                         <div>
                                             <h3 class="text-gray-900 font-medium">Press</h3>
-                                            <p class="text-gray-600 text-sm">press@example.com</p>
+                                            <p class="text-gray-600 text-sm">info@abotracking.tech</p>
                                             <p class="text-gray-600 text-sm">+1 234-567-89</p>
                                         </div>
                                     </div>
@@ -194,7 +146,7 @@
                                         </div>
                                         <div>
                                             <h3 class="text-gray-900 font-medium">Bug report</h3>
-                                            <p class="text-gray-600 text-sm">bugs@example.com</p>
+                                            <p class="text-gray-600 text-sm">serviceclient@abotracking.tech</p>
                                             <p class="text-gray-600 text-sm">+1 234-567-89</p>
                                         </div>
                                     </div>
@@ -205,9 +157,9 @@
                 </div>
             </div>
         </section>
-
+        <div class="w-full" style="height: calc(2.5rem)"></div>
         <!-- Map Section -->
-        <section class="relative z-10 mt-[-100px] pb-20">
+        <section class="relative z-10 mt-[-100px] pb-0">
             <!-- Full Width Map Container -->
             <div class="w-full h-[400px]">
                 <iframe 
@@ -219,26 +171,6 @@
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
-            </div>
-
-            <!-- Address Info in Container -->
-            <div class="container mx-auto px-4 mt-8">
-                <div class="max-w-5xl mx-auto">
-                    <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
-                        <div class="flex items-center space-x-2">
-                            <i class="lni lni-map-marker text-blue-600"></i>
-                            <span class="text-gray-600">123 Avenue de la République, 75011 Paris</span>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <i class="lni lni-phone text-blue-600"></i>
-                            <span class="text-gray-600">+33 1 23 45 67 89</span>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <i class="lni lni-envelope text-blue-600"></i>
-                            <span class="text-gray-600">contact@abo-tracking.com</span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
     </main>
@@ -275,7 +207,7 @@
                 <!-- Company Info -->
                 <div class="space-y-6">
                     <div class="flex items-center space-x-2">
-                        <img src="./images/logo-white.jpg" alt="Abo-Tracking" class="h-8 w-8">
+                        <img src="../images/logo-white.png" alt="Abo-Tracking" class="h-8 w-8">
                         <span class="text-white text-2xl font-bold">Abo-Tracking</span>
                     </div>
                     <p class="text-gray-400 text-sm">
@@ -340,15 +272,15 @@
                     <h3 class="text-white text-xl font-semibold">Contact</h3>
                     <ul class="space-y-3">
                         <li class="flex items-center space-x-3 text-gray-400">
-                            <i class="lni lni-phone"></i>
+                            <span>Phone : </span>
                             <span>+33 1 23 45 67 89</span>
                         </li>
                         <li class="flex items-center space-x-3 text-gray-400">
-                            <i class="lni lni-envelope-1"></i>
+                            <span>Email : </span>
                             <span>contact@abo-tracking.com</span>
                         </li>
                         <li class="flex items-center space-x-3 text-gray-400">
-                            <i class="lni lni-map-marker-5"></i>
+                            <span>Address : </span>
                             <span>Paris, France</span>
                         </li>
                     </ul>

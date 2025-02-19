@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouquets - Abo-Tracking</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../output.css">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-full flex flex-col">
+    <!-- Spacer for fixed header -->
+    <div class="w-full" style="height: calc(3.5rem + 5rem)"></div>
+
+    <!-- Main content -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative py-16 bg-cover bg-center bg-no-repeat" 
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/app-ss/banner_x3.jpg');">
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h1 class="text-4xl font-bold text-white mb-6">Nos Bouquets</h1>
+                    <p class="text-gray-300 mb-8">
+                        Découvrez nos différentes offres adaptées à vos besoins
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Regular Bouquets Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Bouquets Standards</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+                    <!-- Standard -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+                        <div class="p-8 text-center">
+                            <div class="w-16 h-16 bg-yellow-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                <i class="lni lni-star text-2xl text-yellow-600"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Standard</h3>
+                            <div class="text-3xl font-bold text-[#2A0A55] mb-4">15.000 FCFA</div>
+                            <p class="text-gray-500 mb-6">Par mois</p>
+                            <a href="#" class="block w-full py-3 px-6 bg-[#2A0A55] text-white rounded-lg hover:bg-[#3B1B66] transition-colors">
+                                Acheter
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Premium -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+                        <div class="p-8 text-center">
+                            <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                <i class="lni lni-diamond text-2xl text-purple-600"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Premium</h3>
+                            <div class="text-3xl font-bold text-[#2A0A55] mb-4">25.000 FCFA</div>
+                            <p class="text-gray-500 mb-6">Par mois</p>
+                            <a href="#" class="block w-full py-3 px-6 bg-[#2A0A55] text-white rounded-lg hover:bg-[#3B1B66] transition-colors">
+                                Acheter
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Gold -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow transform scale-105 border-2 border-[#2A0A55]">
+                        <div class="bg-[#2A0A55] text-white text-center py-2 text-sm font-semibold">POPULAIRE</div>
+                        <div class="p-8 text-center">
+                            <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                <i class="lni lni-crown text-2xl text-orange-600"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Gold</h3>
+                            <div class="text-3xl font-bold text-[#2A0A55] mb-4">35.000 FCFA</div>
+                            <p class="text-gray-500 mb-6">Par mois</p>
+                            <a href="#" class="block w-full py-3 px-6 bg-[#2A0A55] text-white rounded-lg hover:bg-[#3B1B66] transition-colors">
+                                Acheter
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Platinium -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+                        <div class="p-8 text-center">
+                            <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                <i class="lni lni-medal text-2xl text-gray-600"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Platinium</h3>
+                            <div class="text-3xl font-bold text-[#2A0A55] mb-4">45.000 FCFA</div>
+                            <p class="text-gray-500 mb-6">Par mois</p>
+                            <a href="#" class="block w-full py-3 px-6 bg-[#2A0A55] text-white rounded-lg hover:bg-[#3B1B66] transition-colors">
+                                Acheter
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Entreprise -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+                        <div class="p-8 text-center">
+                            <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                <i class="lni lni-briefcase text-2xl text-blue-600"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Entreprise</h3>
+                            <div class="text-3xl font-bold text-[#2A0A55] mb-4">Sur mesure</div>
+                            <p class="text-gray-500 mb-6">Contactez-nous</p>
+                            <a href="#" class="block w-full py-3 px-6 bg-[#2A0A55] text-white rounded-lg hover:bg-[#3B1B66] transition-colors">
+                                Contacter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Premium Track Details Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Left Column - Animated Image -->
+                    <div class="relative overflow-hidden">
+                        <img src="../images/app-ss/app-1.jpg" alt="Premium Track" 
+                            class="rounded-2xl shadow-xl w-full transform transition-transform duration-700 hover:scale-105">
+                        <!-- Floating Elements -->
+                        <div class="absolute -top-4 -right-4 w-20 h-20 bg-blue-500 rounded-full opacity-20 animate-pulse"></div>
+                        <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-purple-500 rounded-full opacity-20 animate-pulse delay-300"></div>
+                    </div>
+
+                    <!-- Right Column - Content -->
+                    <div class="space-y-6">
+                        <div class="space-y-4">
+                            <h2 class="text-3xl font-bold text-[#2A0A55]">BOUQUET PREMIUMTRACK</h2>
+                            <div class="w-20 h-1 bg-[#2A0A55]"></div>
+                        </div>
+
+                        <ul class="space-y-3">
+                            <li class="flex items-start space-x-3">
+                                <i class="lni lni-checkmark-circle text-[#2A0A55] text-xl mt-1"></i>
+                                <span class="text-gray-700">Température moteur en temps réel</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="lni lni-checkmark-circle text-[#2A0A55] text-xl mt-1"></i>
+                                <span class="text-gray-700">Gestion carburant; entrée/sortie (CAN control)</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="lni lni-checkmark-circle text-[#2A0A55] text-xl mt-1"></i>
+                                <span class="text-gray-700">Localisation avec haute précision</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="lni lni-checkmark-circle text-[#2A0A55] text-xl mt-1"></i>
+                                <span class="text-gray-700">Coupure moteur</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="lni lni-checkmark-circle text-[#2A0A55] text-xl mt-1"></i>
+                                <span class="text-gray-700">Géocloture</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="lni lni-checkmark-circle text-[#2A0A55] text-xl mt-1"></i>
+                                <span class="text-gray-700">Vitesse en temps réel</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="lni lni-checkmark-circle text-[#2A0A55] text-xl mt-1"></i>
+                                <span class="text-gray-700">Excès de vitesse</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="lni lni-checkmark-circle text-[#2A0A55] text-xl mt-1"></i>
+                                <span class="text-gray-700">Tour moteur (RPM)</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="lni lni-checkmark-circle text-[#2A0A55] text-xl mt-1"></i>
+                                <span class="text-gray-700">Détecteur d'allumage</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="lni lni-checkmark-circle text-[#2A0A55] text-xl mt-1"></i>
+                                <span class="text-gray-700">Détection de remorquage</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="lni lni-checkmark-circle text-[#2A0A55] text-xl mt-1"></i>
+                                <span class="text-gray-700">Détecteur de choc</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="lni lni-checkmark-circle text-[#2A0A55] text-xl mt-1"></i>
+                                <span class="text-gray-700">Distance parcourue</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="lni lni-checkmark-circle text-[#2A0A55] text-xl mt-1"></i>
+                                <span class="text-gray-700">Rapport Imprimable des activités par déplacement/jour/semaine/mois…</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="lni lni-checkmark-circle text-[#2A0A55] text-xl mt-1"></i>
+                                <span class="text-gray-700">Historique des déplacements (70jrs)</span>
+                            </li>
+                        </ul>
+
+                        <!-- CTA Button -->
+                        <div class="pt-6">
+                            <a href="#" class="inline-flex items-center px-6 py-3 bg-[#2A0A55] text-white font-semibold rounded-lg hover:bg-[#3B1B66] transition-colors">
+                                <span>Souscrire maintenant</span>
+                                <i class="lni lni-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Bouquets Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Bouquets Spéciaux</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Personnel -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow p-8">
+                        <div class="flex items-center space-x-4 mb-6">
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                                <i class="lni lni-user text-xl text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">Personnel</h3>
+                                <p class="text-gray-500">Pour particuliers</p>
+                            </div>
+                        </div>
+                        <div class="text-2xl font-bold text-[#2A0A55] mb-6">20.000 FCFA/mois</div>
+                        <a href="#" class="block w-full py-3 px-6 bg-[#2A0A55] text-white rounded-lg hover:bg-[#3B1B66] transition-colors text-center">
+                            Acheter
+                        </a>
+                    </div>
+
+                    <!-- Entreprise -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow p-8">
+                        <div class="flex items-center space-x-4 mb-6">
+                            <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
+                                <i class="lni lni-apartment text-xl text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">Entreprise</h3>
+                                <p class="text-gray-500">Solutions personnalisées</p>
+                            </div>
+                        </div>
+                        <div class="text-2xl font-bold text-[#2A0A55] mb-6">Sur devis</div>
+                        <a href="#" class="block w-full py-3 px-6 bg-[#2A0A55] text-white rounded-lg hover:bg-[#3B1B66] transition-colors text-center">
+                            Contacter
+                        </a>
+                    </div>
+
+                    <!-- Dealer -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow p-8">
+                        <div class="flex items-center space-x-4 mb-6">
+                            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
+                                <i class="lni lni-network text-xl text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">Dealer</h3>
+                                <p class="text-gray-500">Pour revendeurs</p>
+                            </div>
+                        </div>
+                        <div class="text-2xl font-bold text-[#2A0A55] mb-6">Tarifs spéciaux</div>
+                        <a href="#" class="block w-full py-3 px-6 bg-[#2A0A55] text-white rounded-lg hover:bg-[#3B1B66] transition-colors text-center">
+                            Devenir dealer
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <!-- Copier le footer existant ici -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        let header = document.querySelector("header");
+        let topnav = document.querySelector("#topnav");
+        let button = document.querySelector("#contain");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.backgroundColor = "#2A0A55";
+                topnav.style.backgroundColor = "#2A0A55";
+            } else {
+                button.style.backgroundColor = "transparent";
+                topnav.style.backgroundColor = "#2A0A55";
+            }
+        }
+
+        let containers = document.querySelectorAll('#container');
+
+        containers.forEach(container => {
+            let button = container.querySelector('#btn');
+            let ctn = container.querySelector('#switch');
+            let text = container.querySelector('#p');
+            let title = container.querySelector('#title');
+            ctn.addEventListener('click', () => {
+                text.classList.toggle('active');
+                ctn.classList.toggle('active');
+                button.classList.toggle('active');
+                title.classList.toggle('active');
+
+            });
+        });
+
+
+    </script>
+</body>
+</html> 
