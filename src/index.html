@@ -597,7 +597,9 @@
                         <img src="appvila_icons/app-ss1.png" alt="app-ss1">
                     </div>
                 </div>
+
                 <div class="w-full hidden lg:flex h-24"></div>
+
                 <div class="w-full grid grid-cols-4 lg:grid-cols-8 grid-flow-row gap-8 xl:gap-16 items-center ">
                     <div class="col-span-4 sm:px-8 lg:px-0 flex justify-center py-24">
                         <img src="appvila_icons/app-ss2.png" alt="app-ss1">
@@ -619,7 +621,60 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
+                <div class="w-full hidden lg:flex h-24"></div>
+
+                <div class="w-full grid grid-cols-4 lg:grid-cols-8 grid-flow-row gap-8 xl:gap-16 items-center ">
+                    <div class="col-span-4 space-y-8">
+                        <!-- <div class="w-14 h-14 rounded-lg bg-[#2A0A55] shadow">
+                    <i class="lni lni-download-1"></i>
+                </div> -->
+                        <div class="space-y-8 w-full">
+                            <h3 class="text-2xl lg:text-3xl font-bold text-[#081828]">1,25,000 Customers Using The
+                                Application!
+                            </h3>
+                            <p class="text-[15px] text-gray-400">Collaborate over projects with your team and clients
+                                optimised
+                                for mobile and tablet don't let slow page speeds
+                                drive our innovative platform empowers anyone to convert clicks ou'll publish your first
+                                landing
+                                page in minutes.</p>
+                            <div class="py-4">
+                                <a href="#"
+                                    class="px-6 py-3 rounded bg-[#2A0A55] hover:bg-[#081828] text-white font-semibold">Get
+                                    Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-4 sm:px-8 lg:px-0 flex justify-center">
+                        <img src="appvila_icons/app-ss1.png" alt="app-ss1">
+                    </div>
+                </div>
+
+                <div class="w-full hidden lg:flex h-24"></div>
+
+                <div class="w-full grid grid-cols-4 lg:grid-cols-8 grid-flow-row gap-8 xl:gap-16 items-center ">
+                    <div class="col-span-4 sm:px-8 lg:px-0 flex justify-center py-24">
+                        <img src="appvila_icons/app-ss2.png" alt="app-ss1">
+                    </div>
+                    <div class="col-span-4 space-y-8">
+                        <!-- <div class="w-14 h-14 rounded-lg bg-[#2A0A55] shadow"></div> -->
+                        <div class="space-y-8 w-full">
+                            <h3 class="text-2xl lg:text-3xl font-bold text-[#081828]">Seamless Loyalt</h3>
+                            <p class="text-[15px] text-gray-400">Collaborate over projects with your team and clients
+                                optimised
+                                for mobile and tablet don't let slow page speeds
+                                drive our innovative platform empowers anyone to convert clicks ou'll publish your first
+                                landing
+                                page in minutes.</p>
+                            <div class="py-4">
+                                <a href="#"
+                                    class="px-6 py-3 rounded bg-[#2A0A55] hover:bg-[#081828] text-white font-semibold">Get
+                                    Started</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -1393,6 +1448,58 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        // Initialize Swiper
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            autoplay: {
+                delay: 5000,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // Pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.querySelector('[data-mobile-menu-button]');
+        const mobileMenu = document.querySelector('[data-mobile-menu]');
+
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Dropdown Menus
+        const dropdownButtons = document.querySelectorAll('[data-dropdown-button]');
+        
+        dropdownButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const dropdown = button.nextElementSibling;
+                dropdown.classList.toggle('hidden');
+            });
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('[data-dropdown]')) {
+                document.querySelectorAll('[data-dropdown-menu]').forEach(menu => {
+                    menu.classList.add('hidden');
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
