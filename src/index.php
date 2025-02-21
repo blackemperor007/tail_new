@@ -458,7 +458,6 @@
 
     <!-- Main content - Fills available space -->
     <main class="flex-grow">
-        <!-- Votre contenu principal ici -->
         <!-- Par exemple: -->
         <section class="container mx-auto px-4 py-8">
 
@@ -573,9 +572,6 @@
             <div class="w-full lg:w-5/6 mx-auto bg-white px-8 lg:px-0 py-8 lg:py-24 ">
                 <div class="w-full grid grid-cols-4 lg:grid-cols-8 grid-flow-row gap-8 xl:gap-16 items-center ">
                     <div class="col-span-4 space-y-8">
-                        <!-- <div class="w-14 h-14 rounded-lg bg-[#2A0A55] shadow">
-                    <i class="lni lni-download-1"></i>
-                </div> -->
                         <div class="space-y-8 w-full">
                             <h3 class="text-2xl lg:text-3xl font-bold text-[#081828]">1,25,000 Customers Using The
                                 Application!
