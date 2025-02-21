@@ -399,51 +399,282 @@
             </div>
         </section>
 
-        <!-- Problem Section -->
-        <section class="py-16 bg-gray-50">
+         <!-- Bento Grid Section -->
+         <section class="py-16">
             <div class="container mx-auto px-4">
-                <div class="max-w-3xl mx-auto text-center mb-12">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Les défis de la gestion du carburant</h2>
-                    <p class="text-gray-600">
-                        Maîtrisez vos coûts et optimisez votre consommation de carburant
-                    </p>
+                <div class="text-center mb-12">
+                    <h3 class="text-blue-600 font-medium mb-2">Gestion de carburant</h3>
+                    <h2 class="text-4xl font-bold text-gray-900">Fonctionnalités du système de gestion</h2>
+                    <h2 class="text-4xl font-bold text-gray-900">du carburant dans une entreprise</h2>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-white p-6 rounded-xl shadow-lg">
-                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-                            <i class="lni lni-drop text-2xl text-orange-600"></i>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Détection Card -->
+                    <div class="col-span-1 md:col-span-2 bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+                        <h3 class="text-xl font-bold mb-4">Détection des remplissages et des drains de carburant</h3>
+                        <p class="text-gray-600 mb-6">Surveillance automatique des opérations de carburant avec détection des anomalies.</p>
+                        <div class="bg-blue-50 rounded-2xl p-6">
+                            <div class="flex items-center space-x-8">
+                                <div class="flex-1">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <span class="text-sm font-semibold text-gray-700">État du réservoir</span>
+                                        <span class="text-sm text-green-600">94% rempli</span>
+                                    </div>
+                                    <div class="h-4 bg-gray-200 rounded-full overflow-hidden">
+                                        <div class="h-full bg-green-500 rounded-full" style="width: 94%"></div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <i class="lni lni-drop text-4xl text-blue-600 mb-2"></i>
+                                    <span class="text-sm text-gray-600">Niveau</span>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Contrôle en Temps Réel</h3>
-                        <p class="text-gray-600">Surveillez la consommation en temps réel</p>
                     </div>
-                    <!-- ... autres défis ... -->
+
+                    <!-- Temps Réel Card -->
+                    <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+                        <h3 class="text-xl font-bold mb-4">Gestion du carburant en temps réel</h3>
+                        <p class="text-gray-600 mb-6">Suivi instantané de la consommation de carburant de votre flotte.</p>
+                        <div class="bg-green-50 rounded-2xl p-6">
+                            <div class="flex flex-col">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm font-semibold">Consommation</span>
+                                    <span class="text-sm text-green-600">En direct</span>
+                                </div>
+                                <div class="relative h-32">
+                                    <!-- Graph stylisé -->
+                                    <div class="absolute inset-0 flex items-end">
+                                        <div class="flex-1 flex items-end space-x-1">
+                                            <div class="w-1/6 bg-green-200 rounded-t" style="height: 40%"></div>
+                                            <div class="w-1/6 bg-green-300 rounded-t" style="height: 60%"></div>
+                                            <div class="w-1/6 bg-green-400 rounded-t" style="height: 80%"></div>
+                                            <div class="w-1/6 bg-green-500 rounded-t" style="height: 100%"></div>
+                                            <div class="w-1/6 bg-green-400 rounded-t" style="height: 70%"></div>
+                                            <div class="w-1/6 bg-green-300 rounded-t" style="height: 50%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Précision Card -->
+                    <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+                        <h3 class="text-xl font-bold mb-4">Précision accrue pour chaque projet</h3>
+                        <p class="text-gray-600 mb-6">Analyse détaillée de la consommation par projet et par véhicule.</p>
+                        <div class="bg-purple-50 rounded-2xl p-6">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="flex flex-col items-center p-4 bg-white rounded-xl">
+                                    <div class="text-2xl font-bold text-purple-600 mb-1">99.9%</div>
+                                    <span class="text-sm text-gray-600">Précision</span>
+                                </div>
+                                <div class="flex flex-col items-center p-4 bg-white rounded-xl">
+                                    <i class="lni lni-target text-2xl text-purple-600 mb-1"></i>
+                                    <span class="text-sm text-gray-600">Par projet</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rapports Card -->
+                    <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+                        <h3 class="text-xl font-bold mb-4">Rapports de carburant</h3>
+                        <p class="text-gray-600 mb-6">Génération automatique de rapports détaillés sur la consommation.</p>
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="bg-orange-50 rounded-xl p-4 flex items-center justify-center">
+                                <i class="lni lni-graph text-orange-600 text-2xl"></i>
+                            </div>
+                            <div class="bg-orange-50 rounded-xl p-4 flex items-center justify-center">
+                                <i class="lni lni-files text-orange-600 text-2xl"></i>
+                            </div>
+                            <div class="bg-orange-50 rounded-xl p-4 flex items-center justify-center">
+                                <i class="lni lni-download text-orange-600 text-2xl"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paramètres Card -->
+                    <div class="col-span-1 md:col-span-2 bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+                        <h3 class="text-xl font-bold mb-4">Paramètres avancés</h3>
+                        <p class="text-gray-600 mb-6">Configuration personnalisée des seuils et des alertes de consommation.</p>
+                        <div class="grid grid-cols-3 gap-6">
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-2">
+                                    <i class="lni lni-cog text-indigo-600 text-2xl"></i>
+                                </div>
+                                <span class="text-sm text-gray-600">Configuration</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-2">
+                                    <i class="lni lni-alarm text-red-600 text-2xl"></i>
+                                </div>
+                                <span class="text-sm text-gray-600">Alertes</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-2">
+                                    <i class="lni lni-control-panel text-green-600 text-2xl"></i>
+                                </div>
+                                <span class="text-sm text-gray-600">Seuils</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Features Section -->
-        <section id="features" class="py-16">
-            <!-- ... contenu des fonctionnalités ... -->
-        </section>
-
-        <!-- Benefits Section -->
         <section class="py-16 bg-gray-50">
-            <!-- ... contenu des avantages ... -->
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-900">Fonctionnalités du système de gestion</h2>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">du carburant dans une entreprise</h2>
+                </div>
+
+                <div class="flex flex-col lg:flex-row gap-8">
+                    <!-- Liste des fonctionnalités -->
+                    <div class="lg:w-1/2 space-y-4">
+                        <!-- Détection -->
+                        <div class="feature-item group cursor-pointer" data-target="detection-image">
+                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-blue-500">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                                        <i class="lni lni-drop text-2xl text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-blue-600">Détection des remplissages et des drains</h3>
+                                        <p class="text-gray-600 mt-2">Surveillance automatique des opérations de carburant avec détection des anomalies</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Temps réel -->
+                        <div class="feature-item group cursor-pointer" data-target="realtime-image">
+                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-green-500">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                                        <i class="lni lni-timer text-2xl text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-green-600">Gestion du carburant en temps réel</h3>
+                                        <p class="text-gray-600 mt-2">Suivi instantané de la consommation de carburant de votre flotte</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Précision -->
+                        <div class="feature-item group cursor-pointer" data-target="precision-image">
+                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-purple-500">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                                        <i class="lni lni-target text-2xl text-purple-600"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-purple-600">Précision accrue pour chaque projet</h3>
+                                        <p class="text-gray-600 mt-2">Analyse détaillée de la consommation par projet et par véhicule</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Rapports -->
+                        <div class="feature-item group cursor-pointer" data-target="reports-image">
+                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-orange-500">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                                        <i class="lni lni-files text-2xl text-orange-600"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-orange-600">Rapports de carburant</h3>
+                                        <p class="text-gray-600 mt-2">Génération automatique de rapports détaillés sur la consommation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paramètres -->
+                        <div class="feature-item group cursor-pointer" data-target="settings-image">
+                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-indigo-500">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center">
+                                        <i class="lni lni-cog text-2xl text-indigo-600"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-indigo-600">Paramètres avancés</h3>
+                                        <p class="text-gray-600 mt-2">Configuration personnalisée des seuils et des alertes de consommation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Zone d'affichage des images -->
+                    <div class="lg:w-1/2 bg-white rounded-2xl p-6 shadow-lg">
+                        <div class="relative h-[500px] overflow-hidden rounded-xl">
+                            <!-- Images des fonctionnalités -->
+                            <img src="../../images/solutions/detection.png" alt="Détection" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="detection-image">
+                            <img src="../../images/solutions/realtime.png" alt="Temps réel" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="realtime-image">
+                            <img src="../../images/solutions/precision.png" alt="Précision" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="precision-image">
+                            <img src="../../images/solutions/reports.png" alt="Rapports" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="reports-image">
+                            <img src="../../images/solutions/settings.png" alt="Paramètres" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="settings-image">
+                            
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Script pour l'interactivité -->
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const featureItems = document.querySelectorAll('.feature-item');
+                    const featureImages = document.querySelectorAll('.feature-image');
+                    const defaultState = document.getElementById('default-state');
+
+                    // Fonction pour masquer toutes les images
+                    function hideAllImages() {
+                        featureImages.forEach(image => {
+                            image.style.opacity = '0';
+                        });
+                        defaultState.style.opacity = '1';
+                    }
+
+                    // Ajouter les écouteurs d'événements pour chaque élément
+                    featureItems.forEach(item => {
+                        item.addEventListener('click', function() {
+                            const targetId = this.dataset.target;
+                            hideAllImages();
+                            const targetImage = document.getElementById(targetId);
+                            if (targetImage) {
+                                defaultState.style.opacity = '0';
+                                targetImage.style.opacity = '1';
+                            }
+                        });
+                    });
+
+                    // Afficher l'état par défaut au chargement
+                    hideAllImages();
+                });
+            </script>
         </section>
 
         <!-- CTA Section -->
         <section class="py-16 bg-[#2A0A55]">
             <div class="container mx-auto px-4">
                 <div class="max-w-4xl mx-auto text-center">
-                    <h2 class="text-3xl font-bold text-white mb-6">Optimisez votre gestion carburant</h2>
+                    <h2 class="text-3xl font-bold text-white mb-6">Prêt à optimiser votre flotte de location ?</h2>
                     <p class="text-gray-300 mb-8">
-                        Découvrez comment notre solution peut réduire vos coûts de carburant
+                        Contactez-nous dès aujourd'hui pour une démonstration personnalisée
                     </p>
                     <div class="flex flex-col sm:flex-row justify-center gap-4">
-                        <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-white text-[#2A0A55] rounded-lg hover:bg-gray-100 transition-colors">
+                        <a href="#contact"
+                            class="inline-flex items-center justify-center px-8 py-4 bg-white text-[#2A0A55] rounded-lg hover:bg-gray-100 transition-colors">
                             Demander une démo
                         </a>
-                        <a href="tel:+237698761410" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#2A0A55] transition-colors">
+                        <a href="tel:+237698761410"
+                            class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#2A0A55] transition-colors">
                             <i class="lni lni-phone mr-2"></i>
                             Nous appeler
                         </a>
