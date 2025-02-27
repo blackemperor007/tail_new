@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WI - Gestion des Équipes Terrain</title>
+    <title>Suivi des Équipes Terrain - Abo-Tracking</title>
     <link rel="stylesheet" href="../../output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
     <link href="https://cdn.tailwindcss.com" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="min-h-full flex flex-col">
+<body class="min-h-full flex flex-col bg-[#f8f9fa]">
     <!------start navbar-->
    <header class="w-full fixed z-20 bg-white">
     <div class="w-full items-center flex justify-between h-14 px-4 shadow xl:shadow-none">
@@ -355,75 +355,125 @@
 
     <main class="flex-grow">
         <!-- Hero Section -->
-        <section class="relative py-20 bg-cover bg-center bg-no-repeat" 
-            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../images/solutions/wiatag-hero.jpg');">
-            <div class="container mx-auto px-4 relative z-10">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <!-- Text Content -->
-                    <div class="text-left">
-                        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">WI : Optimisez vos Équipes Terrain</h1>
-                        <p class="text-xl text-gray-300 mb-8">
-                            Transformez n'importe quel smartphone en outil professionnel de suivi et de gestion des équipes mobiles
+        <section class="pt-32 pb-16 bg-gradient-to-b from-[#2A0A55] to-[#4B1B8E]">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-1/2 text-white">
+                        <h1 class="text-4xl lg:text-5xl font-bold mb-6">
+                            Suivi et gestion des équipes terrain
+                        </h1>
+                        <p class="text-xl text-gray-200 mb-8">
+                            Optimisez les performances de vos équipes mobiles avec notre solution de suivi en temps réel.
                         </p>
                         <div class="flex flex-col sm:flex-row gap-4">
-                            <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-[#2A0A55] text-white rounded-lg hover:bg-[#3B1B66] transition-colors">
+                            <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-white text-[#2A0A55] rounded-lg hover:bg-gray-100 transition-colors">
                                 Demander une démo
                             </a>
                             <a href="#features" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#2A0A55] transition-colors">
-                                En savoir plus
+                                Découvrir les fonctionnalités
                             </a>
                         </div>
                     </div>
 
-                    <!-- Image/Animation -->
-                    <div class="relative">
-                        <div class="relative overflow-hidden rounded-2xl shadow-2xl">
-                            <img src="../../images/solutions/wiatag-dashboard.png" 
-                                 alt="Dashboard WiaTag" 
-                                 class="w-full transform transition-transform duration-700 hover:scale-105">
-                            <!-- Floating Elements -->
-                            <div class="absolute -top-4 -right-4 w-20 h-20 bg-indigo-500 rounded-full opacity-20 animate-pulse"></div>
-                            <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-indigo-500 rounded-full opacity-20 animate-pulse delay-300"></div>
-                        </div>
-                        <!-- Stats Overlay -->
+                    <div class="lg:w-1/2 relative">
+                        <img src="../../images/solutions/wiatag-hero.png" alt="WiaTag Dashboard" class="w-full rounded-xl shadow-2xl">
                         <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg">
-                            <div class="text-sm font-semibold text-gray-800">Productivité terrain</div>
+                            <div class="text-sm font-semibold text-gray-800">Productivité améliorée</div>
                             <div class="text-2xl font-bold text-[#2A0A55]">+40%</div>
                         </div>
-                        <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg">
-                            <div class="text-sm font-semibold text-gray-800">Temps de réponse</div>
-                            <div class="text-2xl font-bold text-[#2A0A55]">-60%</div>
-                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Problem Section -->
-        <section class="py-16 bg-gray-50">
-            <div class="container mx-auto px-4">
-                <div class="max-w-3xl mx-auto text-center mb-12">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Les défis de la gestion d'équipes terrain</h2>
-                    <p class="text-gray-600">
-                        Optimisez la coordination et l'efficacité de vos équipes mobiles
-                    </p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-white p-6 rounded-xl shadow-lg">
-                        <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
-                            <i class="lni lni-users text-2xl text-indigo-600"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">Suivi en Temps Réel</h3>
-                        <p class="text-gray-600">Localisez et coordonnez vos équipes instantanément</p>
-                    </div>
-                    <!-- ... autres défis ... -->
                 </div>
             </div>
         </section>
 
         <!-- Features Section -->
-        <section id="features" class="py-16">
-            <!-- ... contenu des fonctionnalités ... -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h3 class="text-blue-600 font-medium mb-2">Fonctionnalités</h3>
+                    <h2 class="text-4xl font-bold text-gray-900">Gestion avancée des équipes</h2>
+                </div>
+
+                <div class="flex flex-col lg:flex-row gap-8">
+                    <div class="lg:w-1/2 space-y-4">
+                        <!-- Localisation en temps réel -->
+                        <div class="feature-item group cursor-pointer" data-target="tracking-image">
+                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-indigo-500">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center">
+                                        <i class="lni lni-map-marker text-2xl text-indigo-600"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-indigo-600">Localisation en temps réel</h3>
+                                        <p class="text-gray-600 mt-2">Suivi précis de la position de vos équipes</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Gestion des tâches -->
+                        <div class="feature-item group cursor-pointer" data-target="tasks-image">
+                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-blue-500">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                                        <i class="lni lni-clipboard text-2xl text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-blue-600">Gestion des tâches</h3>
+                                        <p class="text-gray-600 mt-2">Attribution et suivi des missions quotidiennes</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Communication -->
+                        <div class="feature-item group cursor-pointer" data-target="communication-image">
+                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-green-500">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                                        <i class="lni lni-comments text-2xl text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-green-600">Communication</h3>
+                                        <p class="text-gray-600 mt-2">Messagerie instantanée et partage d'informations</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Rapports et analyses -->
+                        <div class="feature-item group cursor-pointer" data-target="reports-image">
+                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-purple-500">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                                        <i class="lni lni-graph text-2xl text-purple-600"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-purple-600">Rapports et analyses</h3>
+                                        <p class="text-gray-600 mt-2">Statistiques détaillées sur les performances</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Zone d'affichage des images -->
+                    <div class="lg:w-1/2 bg-white rounded-2xl p-6 shadow-lg">
+                        <div class="relative h-[500px] overflow-hidden rounded-xl">
+                            <!-- Images des fonctionnalités -->
+                            <img src="../../images/solutions/wiatag-tracking.png" alt="Localisation" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="tracking-image">
+                            <img src="../../images/solutions/wiatag-tasks.png" alt="Tâches" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="tasks-image">
+                            <img src="../../images/solutions/wiatag-communication.png" alt="Communication" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="communication-image">
+                            <img src="../../images/solutions/wiatag-reports.png" alt="Rapports" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="reports-image">
+                            
+                            <!-- État par défaut -->
+                            <div class="absolute inset-0 flex items-center justify-center bg-gray-100" id="default-state">
+                                <p class="text-gray-500 text-lg">Sélectionnez une fonctionnalité pour voir les détails</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Benefits Section -->

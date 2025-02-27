@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agriculture Intelligente - Hecterra</title>
+    <title>Agriculture Intelligente - Abo-Tracking</title>
     <link rel="stylesheet" href="../../output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
     <link href="https://cdn.tailwindcss.com" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="min-h-full flex flex-col">
+<body class="min-h-full flex flex-col bg-[#f8f9fa]">
     <!------start navbar-->
    <header class="w-full fixed z-20 bg-white">
     <div class="w-full items-center flex justify-between h-14 px-4 shadow xl:shadow-none">
@@ -355,52 +355,126 @@
 
     <main class="flex-grow">
         <!-- Hero Section -->
-        <section class="relative py-20 bg-cover bg-center bg-no-repeat" 
-            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../images/solutions/hecterra-hero.jpg');">
-            <div class="container mx-auto px-4 relative z-10">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <!-- Text Content -->
-                    <div class="text-left">
-                        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Agriculture Intelligente avec Hecterra</h1>
-                        <p class="text-xl text-gray-300 mb-8">
-                            Optimisez vos cultures et maximisez vos rendements grâce à notre solution de gestion agricole intelligente
+        <section class="pt-32 pb-16 bg-gradient-to-b from-[#2A0A55] to-[#4B1B8E]">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-1/2 text-white">
+                        <h1 class="text-4xl lg:text-5xl font-bold mb-6">
+                            Agriculture de précision avec Hecterra
+                        </h1>
+                        <p class="text-xl text-gray-200 mb-8">
+                            Optimisez vos opérations agricoles grâce à notre solution de gestion intelligente des cultures.
                         </p>
                         <div class="flex flex-col sm:flex-row gap-4">
-                            <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-[#2A0A55] text-white rounded-lg hover:bg-[#3B1B66] transition-colors">
+                            <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-white text-[#2A0A55] rounded-lg hover:bg-gray-100 transition-colors">
                                 Demander une démo
                             </a>
                             <a href="#features" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#2A0A55] transition-colors">
-                                En savoir plus
+                                Découvrir les fonctionnalités
                             </a>
                         </div>
                     </div>
 
-                    <!-- Image/Animation -->
-                    <div class="relative">
-                        <div class="relative overflow-hidden rounded-2xl shadow-2xl">
-                            <img src="../../images/solutions/hecterra-dashboard.png" 
-                                 alt="Dashboard Hecterra" 
-                                 class="w-full transform transition-transform duration-700 hover:scale-105">
-                            <!-- Floating Elements -->
-                            <div class="absolute -top-4 -right-4 w-20 h-20 bg-green-500 rounded-full opacity-20 animate-pulse"></div>
-                            <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-green-500 rounded-full opacity-20 animate-pulse delay-300"></div>
-                        </div>
-                        <!-- Stats Overlay -->
+                    <div class="lg:w-1/2 relative">
+                        <img src="../../images/solutions/hecterra-hero.png" alt="Hecterra Dashboard" class="w-full rounded-xl shadow-2xl">
                         <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg">
-                            <div class="text-sm font-semibold text-gray-800">Hectares surveillés</div>
-                            <div class="text-2xl font-bold text-[#2A0A55]">15,000+</div>
-                        </div>
-                        <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg">
                             <div class="text-sm font-semibold text-gray-800">Rendement amélioré</div>
-                            <div class="text-2xl font-bold text-[#2A0A55]">+35%</div>
+                            <div class="text-2xl font-bold text-[#2A0A55]">+25%</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Reste du contenu similaire mais adapté à l'agriculture -->
-        <!-- ... -->
+        <!-- Features Section -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h3 class="text-blue-600 font-medium mb-2">Fonctionnalités</h3>
+                    <h2 class="text-4xl font-bold text-gray-900">Gestion intelligente des cultures</h2>
+                </div>
+
+                <div class="flex flex-col lg:flex-row gap-8">
+                    <div class="lg:w-1/2 space-y-4">
+                        <!-- Cartographie -->
+                        <div class="feature-item group cursor-pointer" data-target="mapping-image">
+                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-green-500">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                                        <i class="lni lni-map text-2xl text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-green-600">Cartographie des champs</h3>
+                                        <p class="text-gray-600 mt-2">Visualisation détaillée de vos parcelles avec données satellite</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Suivi des cultures -->
+                        <div class="feature-item group cursor-pointer" data-target="monitoring-image">
+                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-blue-500">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                                        <i class="lni lni-leaf text-2xl text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-blue-600">Suivi des cultures</h3>
+                                        <p class="text-gray-600 mt-2">Surveillance en temps réel de la croissance des cultures</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Planification -->
+                        <div class="feature-item group cursor-pointer" data-target="planning-image">
+                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-purple-500">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                                        <i class="lni lni-calendar text-2xl text-purple-600"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-purple-600">Planification agricole</h3>
+                                        <p class="text-gray-600 mt-2">Gestion des rotations et planification des travaux</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Analyses -->
+                        <div class="feature-item group cursor-pointer" data-target="analytics-image">
+                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-orange-500">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                                        <i class="lni lni-graph text-2xl text-orange-600"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-orange-600">Analyses et rapports</h3>
+                                        <p class="text-gray-600 mt-2">Données détaillées sur les rendements et la productivité</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Zone d'affichage des images -->
+                    <div class="lg:w-1/2 bg-white rounded-2xl p-6 shadow-lg">
+                        <div class="relative h-[500px] overflow-hidden rounded-xl">
+                            <!-- Images des fonctionnalités -->
+                            <img src="../../images/solutions/hecterra-mapping.png" alt="Cartographie" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="mapping-image">
+                            <img src="../../images/solutions/hecterra-monitoring.png" alt="Suivi" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="monitoring-image">
+                            <img src="../../images/solutions/hecterra-planning.png" alt="Planification" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="planning-image">
+                            <img src="../../images/solutions/hecterra-analytics.png" alt="Analyses" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="analytics-image">
+                            
+                            <!-- État par défaut -->
+                            <div class="absolute inset-0 flex items-center justify-center bg-gray-100" id="default-state">
+                                <p class="text-gray-500 text-lg">Sélectionnez une fonctionnalité pour voir les détails</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
      <!-- Footer -->

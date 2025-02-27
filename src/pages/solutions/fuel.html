@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion du Carburant - Abo-Tracking</title>
+    <title>Gestion de Carburant - Abo-Tracking</title>
     <link rel="stylesheet" href="../../output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
     <link href="https://cdn.tailwindcss.com" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="min-h-full flex flex-col">
+<body class="min-h-full flex flex-col bg-[#f8f9fa]">
     <!------start navbar-->
    <header class="w-full fixed z-20 bg-white">
     <div class="w-full items-center flex justify-between h-14 px-4 shadow xl:shadow-none">
@@ -355,169 +355,88 @@
 
     <main class="flex-grow">
         <!-- Hero Section -->
-        <section class="relative py-20 bg-cover bg-center bg-no-repeat" 
-            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../images/solutions/fuel-hero.jpg');">
-            <div class="container mx-auto px-4 relative z-10">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <!-- Text Content -->
-                    <div class="text-left">
-                        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Contrôle Intelligent du Carburant</h1>
-                        <p class="text-xl text-gray-300 mb-8">
-                            Optimisez votre consommation de carburant et prévenez les fraudes grâce à notre solution de surveillance avancée
+        <section class="pt-32 pb-16 bg-gradient-to-b from-[#2A0A55] to-[#4B1B8E]">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <!-- Texte -->
+                    <div class="lg:w-1/2 text-white">
+                        <h1 class="text-4xl lg:text-5xl font-bold mb-6">
+                            Solution de gestion de carburant
+                        </h1>
+                        <p class="text-xl text-gray-200 mb-8">
+                            Optimisez votre consommation de carburant et réduisez vos coûts grâce à notre solution de suivi en temps réel.
                         </p>
                         <div class="flex flex-col sm:flex-row gap-4">
-                            <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-[#2A0A55] text-white rounded-lg hover:bg-[#3B1B66] transition-colors">
+                            <a href="#contact"
+                                class="inline-flex items-center justify-center px-8 py-4 bg-white text-[#2A0A55] rounded-lg hover:bg-gray-100 transition-colors">
                                 Demander une démo
                             </a>
-                            <a href="#features" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#2A0A55] transition-colors">
-                                En savoir plus
+                            <a href="#features"
+                                class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#2A0A55] transition-colors">
+                                Découvrir les fonctionnalités
                             </a>
                         </div>
                     </div>
 
-                    <!-- Image/Animation -->
-                    <div class="relative">
-                        <div class="relative overflow-hidden rounded-2xl shadow-2xl">
-                            <img src="../../images/solutions/fuel-dashboard.png" 
-                                 alt="Dashboard Gestion Carburant" 
-                                 class="w-full transform transition-transform duration-700 hover:scale-105">
-                            <!-- Floating Elements -->
-                            <div class="absolute -top-4 -right-4 w-20 h-20 bg-orange-500 rounded-full opacity-20 animate-pulse"></div>
-                            <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-orange-500 rounded-full opacity-20 animate-pulse delay-300"></div>
-                        </div>
-                        <!-- Stats Overlay -->
+                    <!-- Image/Stats -->
+                    <div class="lg:w-1/2 relative">
+                        <img src="../../images/solutions/fuel-management.png" alt="Gestion de carburant"
+                            class="w-full rounded-xl shadow-2xl">
                         <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg">
-                            <div class="text-sm font-semibold text-gray-800">Économies carburant</div>
-                            <div class="text-2xl font-bold text-[#2A0A55]">-20%</div>
+                            <div class="text-sm font-semibold text-gray-800">Économies moyennes</div>
+                            <div class="text-2xl font-bold text-[#2A0A55]">15%</div>
                         </div>
                         <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg">
-                            <div class="text-sm font-semibold text-gray-800">Fraudes détectées</div>
-                            <div class="text-2xl font-bold text-[#2A0A55]">-95%</div>
+                            <div class="text-sm font-semibold text-gray-800">Clients satisfaits</div>
+                            <div class="text-2xl font-bold text-[#2A0A55]">98%</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-         <!-- Bento Grid Section -->
-         <section class="py-16">
+        <!-- Pour qui est ce produit Section -->
+        <section class="py-20 bg-white">
             <div class="container mx-auto px-4">
-                <div class="text-center mb-12">
-                    <h3 class="text-blue-600 font-medium mb-2">Gestion de carburant</h3>
-                    <h2 class="text-4xl font-bold text-gray-900">Fonctionnalités du système de gestion</h2>
-                    <h2 class="text-4xl font-bold text-gray-900">du carburant dans une entreprise</h2>
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900">Pour qui est ce produit ?</h2>
+                    <p class="mt-4 text-lg text-gray-600">
+                        Notre solution de gestion de carburant s'adresse aux entreprises qui souhaitent optimiser leur consommation et réduire leurs coûts.
+                    </p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Détection Card -->
-                    <div class="col-span-1 md:col-span-2 bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-                        <h3 class="text-xl font-bold mb-4">Détection des remplissages et des drains de carburant</h3>
-                        <p class="text-gray-600 mb-6">Surveillance automatique des opérations de carburant avec détection des anomalies.</p>
-                        <div class="bg-blue-50 rounded-2xl p-6">
-                            <div class="flex items-center space-x-8">
-                                <div class="flex-1">
-                                    <div class="flex items-center justify-between mb-4">
-                                        <span class="text-sm font-semibold text-gray-700">État du réservoir</span>
-                                        <span class="text-sm text-green-600">94% rempli</span>
-                                    </div>
-                                    <div class="h-4 bg-gray-200 rounded-full overflow-hidden">
-                                        <div class="h-full bg-green-500 rounded-full" style="width: 94%"></div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-col items-center">
-                                    <i class="lni lni-drop text-4xl text-blue-600 mb-2"></i>
-                                    <span class="text-sm text-gray-600">Niveau</span>
-                                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Entreprises de transport -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="mb-6">
+                            <div class="w-20 h-20 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+                                <i class="lni lni-delivery text-3xl text-blue-600"></i>
                             </div>
+                            <h3 class="text-xl font-bold text-gray-900">Entreprises de transport</h3>
                         </div>
+                        <p class="text-gray-600">Optimisez la consommation de votre flotte de véhicules et réduisez vos coûts opérationnels.</p>
                     </div>
 
-                    <!-- Temps Réel Card -->
-                    <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-                        <h3 class="text-xl font-bold mb-4">Gestion du carburant en temps réel</h3>
-                        <p class="text-gray-600 mb-6">Suivi instantané de la consommation de carburant de votre flotte.</p>
-                        <div class="bg-green-50 rounded-2xl p-6">
-                            <div class="flex flex-col">
-                                <div class="flex items-center justify-between mb-2">
-                                    <span class="text-sm font-semibold">Consommation</span>
-                                    <span class="text-sm text-green-600">En direct</span>
-                                </div>
-                                <div class="relative h-32">
-                                    <!-- Graph stylisé -->
-                                    <div class="absolute inset-0 flex items-end">
-                                        <div class="flex-1 flex items-end space-x-1">
-                                            <div class="w-1/6 bg-green-200 rounded-t" style="height: 40%"></div>
-                                            <div class="w-1/6 bg-green-300 rounded-t" style="height: 60%"></div>
-                                            <div class="w-1/6 bg-green-400 rounded-t" style="height: 80%"></div>
-                                            <div class="w-1/6 bg-green-500 rounded-t" style="height: 100%"></div>
-                                            <div class="w-1/6 bg-green-400 rounded-t" style="height: 70%"></div>
-                                            <div class="w-1/6 bg-green-300 rounded-t" style="height: 50%"></div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <!-- Flottes d'entreprise -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="mb-6">
+                            <div class="w-20 h-20 rounded-full bg-green-100 flex items-center justify-center mb-4">
+                                <i class="lni lni-car text-3xl text-green-600"></i>
                             </div>
+                            <h3 class="text-xl font-bold text-gray-900">Flottes d'entreprise</h3>
                         </div>
+                        <p class="text-gray-600">Suivez et gérez la consommation de carburant de tous vos véhicules d'entreprise.</p>
                     </div>
 
-                    <!-- Précision Card -->
-                    <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-                        <h3 class="text-xl font-bold mb-4">Précision accrue pour chaque projet</h3>
-                        <p class="text-gray-600 mb-6">Analyse détaillée de la consommation par projet et par véhicule.</p>
-                        <div class="bg-purple-50 rounded-2xl p-6">
-                            <div class="grid grid-cols-2 gap-4">
-                                <div class="flex flex-col items-center p-4 bg-white rounded-xl">
-                                    <div class="text-2xl font-bold text-purple-600 mb-1">99.9%</div>
-                                    <span class="text-sm text-gray-600">Précision</span>
-                                </div>
-                                <div class="flex flex-col items-center p-4 bg-white rounded-xl">
-                                    <i class="lni lni-target text-2xl text-purple-600 mb-1"></i>
-                                    <span class="text-sm text-gray-600">Par projet</span>
-                                </div>
+                    <!-- Sociétés de construction -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="mb-6">
+                            <div class="w-20 h-20 rounded-full bg-yellow-100 flex items-center justify-center mb-4">
+                                <i class="lni lni-construction text-3xl text-yellow-600"></i>
                             </div>
+                            <h3 class="text-xl font-bold text-gray-900">Sociétés de construction</h3>
                         </div>
-                    </div>
-
-                    <!-- Rapports Card -->
-                    <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-                        <h3 class="text-xl font-bold mb-4">Rapports de carburant</h3>
-                        <p class="text-gray-600 mb-6">Génération automatique de rapports détaillés sur la consommation.</p>
-                        <div class="grid grid-cols-3 gap-4">
-                            <div class="bg-orange-50 rounded-xl p-4 flex items-center justify-center">
-                                <i class="lni lni-graph text-orange-600 text-2xl"></i>
-                            </div>
-                            <div class="bg-orange-50 rounded-xl p-4 flex items-center justify-center">
-                                <i class="lni lni-files text-orange-600 text-2xl"></i>
-                            </div>
-                            <div class="bg-orange-50 rounded-xl p-4 flex items-center justify-center">
-                                <i class="lni lni-download text-orange-600 text-2xl"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Paramètres Card -->
-                    <div class="col-span-1 md:col-span-2 bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-                        <h3 class="text-xl font-bold mb-4">Paramètres avancés</h3>
-                        <p class="text-gray-600 mb-6">Configuration personnalisée des seuils et des alertes de consommation.</p>
-                        <div class="grid grid-cols-3 gap-6">
-                            <div class="flex flex-col items-center">
-                                <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-2">
-                                    <i class="lni lni-cog text-indigo-600 text-2xl"></i>
-                                </div>
-                                <span class="text-sm text-gray-600">Configuration</span>
-                            </div>
-                            <div class="flex flex-col items-center">
-                                <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-2">
-                                    <i class="lni lni-alarm text-red-600 text-2xl"></i>
-                                </div>
-                                <span class="text-sm text-gray-600">Alertes</span>
-                            </div>
-                            <div class="flex flex-col items-center">
-                                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-2">
-                                    <i class="lni lni-control-panel text-green-600 text-2xl"></i>
-                                </div>
-                                <span class="text-sm text-gray-600">Seuils</span>
-                            </div>
-                        </div>
+                        <p class="text-gray-600">Contrôlez la consommation de vos engins de chantier et équipements.</p>
                     </div>
                 </div>
             </div>
@@ -658,6 +577,65 @@
                     hideAllImages();
                 });
             </script>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900">Foire aux questions</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Question 1 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="mb-6">
+                            <h3 class="text-xl font-bold text-gray-900">Comment fonctionne la détection des remplissages et des drains ?</h3>
+                        </div>
+                        <p class="text-gray-600">La détection des remplissages et des drains est basée sur la surveillance automatique des opérations de carburant avec détection des anomalies.</p>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="mb-6">
+                            <h3 class="text-xl font-bold text-gray-900">Quel est le taux d'économies carburant ?</h3>
+                        </div>
+                        <p class="text-gray-600">Le taux d'économies carburant peut varier en fonction de nombreux facteurs, mais nous vous garantissons une réduction moyenne de 15% de votre consommation de carburant.</p>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="mb-6">
+                            <h3 class="text-xl font-bold text-gray-900">Comment est-ce que la précision est-elle garantie ?</h3>
+                        </div>
+                        <p class="text-gray-600">La précision est garantie à 99.9% pour chaque projet et par véhicule. Nous utilisons des technologies avancées pour garantir une analyse détaillée et précise de la consommation.</p>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="mb-6">
+                            <h3 class="text-xl font-bold text-gray-900">Quels sont les avantages de la gestion du carburant en temps réel ?</h3>
+                        </div>
+                        <p class="text-gray-600">La gestion du carburant en temps réel permet de suivre instantanément la consommation de carburant de votre flotte, ce qui permet de prendre des décisions plus rapides et plus efficaces.</p>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="mb-6">
+                            <h3 class="text-xl font-bold text-gray-900">Comment gérez-vous les fraudes ?</h3>
+                        </div>
+                        <p class="text-gray-600">Nous utilisons des algorithmes avancés pour détecter les fraudes et nous prenons des mesures appropriées pour les empêcher.</p>
+                    </div>
+
+                    <!-- Question 6 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="mb-6">
+                            <h3 class="text-xl font-bold text-gray-900">Quels sont les coûts d'implémentation de la solution ?</h3>
+                        </div>
+                        <p class="text-gray-600">Les coûts d'implémentation de la solution varient en fonction de votre flotte et de vos besoins spécifiques. Nous vous fournissons une estimation personnalisée lors de la mise en place.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- CTA Section -->
