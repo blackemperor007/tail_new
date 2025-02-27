@@ -347,30 +347,30 @@
                         <div class="grid grid-cols-1 lg:grid-cols-2">
                             <!-- Left Side - Contact Form -->
                             <div class="p-8 space-y-6">
-                                <input 
-                                    type="text" 
-                                    placeholder="Name" 
-                                    class="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition"
-                                >
-                                <input 
-                                    type="email" 
-                                    placeholder="Email address" 
-                                    class="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition"
-                                >
-                                <textarea 
-                                    placeholder="Message" 
-                                    rows="6" 
-                                    class="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition"
-                                ></textarea>
-
-                                <div class="flex items-center space-x-2">
-                                    <input type="checkbox" id="copy" class="w-4 h-4 border-gray-300 rounded text-blue-500 focus:ring-blue-500">
-                                    <label for="copy" class="text-gray-600">Send me a copy of this message</label>
-                                </div>
-
-                                <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
-                                    SEND
-                                </button>
+                                <form id="contactForm" class="space-y-6" method="POST">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <div>
+                                            <label for="name" class="block text-sm font-medium text-gray-700">Nom complet</label>
+                                            <input type="text" id="name" name="name" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-[#2A0A55] focus:border-[#2A0A55]">
+                                        </div>
+                                        <div>
+                                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                                            <input type="email" id="email" name="email" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-[#2A0A55] focus:border-[#2A0A55]">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label for="subject" class="block text-sm font-medium text-gray-700">Sujet</label>
+                                        <input type="text" id="subject" name="subject" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-[#2A0A55] focus:border-[#2A0A55]">
+                                    </div>
+                                    <div>
+                                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                                        <textarea id="message" name="message" rows="6" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-[#2A0A55] focus:border-[#2A0A55]"></textarea>
+                                    </div>
+                                    <button type="submit" id="submitBtn" class="w-full px-6 py-4 bg-[#2A0A55] text-white font-semibold rounded-lg hover:bg-[#3B1B66] transition-colors">
+                                        Envoyer le message
+                                    </button>
+                                    <div id="formMessage" class="hidden mt-4 p-4 rounded-lg"></div>
+                                </form>
                             </div>
 
                             <!-- Right Side - Contact Info -->
@@ -568,6 +568,46 @@
             </div>
         </div>
     </footer>
+
+    <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(this);
+        const submitBtn = document.getElementById('submitBtn');
+        const formMessage = document.getElementById('formMessage');
+        
+        // Désactiver le bouton pendant l'envoi
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = 'Envoi en cours...';
+        
+        fetch('../php/send_email.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            formMessage.classList.remove('hidden');
+            if (data.success) {
+                formMessage.className = 'mt-4 p-4 rounded-lg bg-green-100 text-green-700';
+                formMessage.textContent = data.message;
+                document.getElementById('contactForm').reset();
+            } else {
+                formMessage.className = 'mt-4 p-4 rounded-lg bg-red-100 text-red-700';
+                formMessage.textContent = data.message;
+            }
+        })
+        .catch(error => {
+            formMessage.classList.remove('hidden');
+            formMessage.className = 'mt-4 p-4 rounded-lg bg-red-100 text-red-700';
+            formMessage.textContent = 'Une erreur est survenue. Veuillez réessayer plus tard.';
+        })
+        .finally(() => {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = 'Envoyer le message';
+        });
+    });
+    </script>
 </body>
 
 </html>

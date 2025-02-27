@@ -355,165 +355,176 @@
 
     <main class="flex-grow">
         <!-- Hero Section -->
-        <section class="pt-32 pb-16 bg-gradient-to-b from-[#2A0A55] to-[#4B1B8E]">
-            <div class="container mx-auto px-4">
-                <div class="flex flex-col lg:flex-row items-center gap-12">
-                    <div class="lg:w-1/2 text-white">
-                        <h1 class="text-4xl lg:text-5xl font-bold mb-6">
-                            Optimisez la conduite de votre flotte
-                        </h1>
-                        <p class="text-xl text-gray-200 mb-8">
-                            Réduisez votre consommation de carburant et améliorez la sécurité grâce à notre solution d'éco-conduite.
-                        </p>
-                        <div class="flex flex-col sm:flex-row gap-4">
-                            <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-white text-[#2A0A55] rounded-lg hover:bg-gray-100 transition-colors">
-                                Demander une démo
-                            </a>
-                            <a href="#features" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#2A0A55] transition-colors">
-                                Découvrir les fonctionnalités
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="lg:w-1/2 relative">
-                        <img src="../../images/solutions/ecodriving-hero.png" alt="Eco Driving Dashboard" class="w-full rounded-xl shadow-2xl">
-                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg">
-                            <div class="text-sm font-semibold text-gray-800">Économies carburant</div>
-                            <div class="text-2xl font-bold text-[#2A0A55]">-15%</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Features Section -->
-        <section class="py-16">
-            <div class="container mx-auto px-4">
-                <div class="text-center mb-12">
-                    <h3 class="text-blue-600 font-medium mb-2">Fonctionnalités</h3>
-                    <h2 class="text-4xl font-bold text-gray-900">Analyse de la conduite</h2>
-                </div>
-
-                <div class="flex flex-col lg:flex-row gap-8">
-                    <div class="lg:w-1/2 space-y-4">
-                        <!-- Score de conduite -->
-                        <div class="feature-item group cursor-pointer" data-target="score-image">
-                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-green-500">
-                                <div class="flex items-center space-x-4">
-                                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                                        <i class="lni lni-star text-2xl text-green-600"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-green-600">Score de conduite</h3>
-                                        <p class="text-gray-600 mt-2">Évaluation détaillée du comportement de conduite</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Analyse des événements -->
-                        <div class="feature-item group cursor-pointer" data-target="events-image">
-                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-blue-500">
-                                <div class="flex items-center space-x-4">
-                                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                                        <i class="lni lni-warning text-2xl text-blue-600"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-blue-600">Analyse des événements</h3>
-                                        <p class="text-gray-600 mt-2">Détection des freinages brusques et accélérations</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Rapports personnalisés -->
-                        <div class="feature-item group cursor-pointer" data-target="reports-image">
-                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-purple-500">
-                                <div class="flex items-center space-x-4">
-                                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                                        <i class="lni lni-files text-2xl text-purple-600"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-purple-600">Rapports personnalisés</h3>
-                                        <p class="text-gray-600 mt-2">Génération de rapports détaillés sur la conduite</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Formation des conducteurs -->
-                        <div class="feature-item group cursor-pointer" data-target="training-image">
-                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-orange-500">
-                                <div class="flex items-center space-x-4">
-                                    <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
-                                        <i class="lni lni-graduation text-2xl text-orange-600"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-orange-600">Formation des conducteurs</h3>
-                                        <p class="text-gray-600 mt-2">Recommandations personnalisées pour l'amélioration</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Zone d'affichage des images -->
-                    <div class="lg:w-1/2 bg-white rounded-2xl p-6 shadow-lg">
-                        <div class="relative h-[500px] overflow-hidden rounded-xl">
-                            <!-- Images des fonctionnalités -->
-                            <img src="../../images/solutions/ecodriving-score.png" alt="Score" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="score-image">
-                            <img src="../../images/solutions/ecodriving-events.png" alt="Événements" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="events-image">
-                            <img src="../../images/solutions/ecodriving-reports.png" alt="Rapports" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="reports-image">
-                            <img src="../../images/solutions/ecodriving-training.png" alt="Formation" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="training-image">
-                            
-                            <!-- État par défaut -->
-                            <div class="absolute inset-0 flex items-center justify-center bg-gray-100" id="default-state">
-                                <p class="text-gray-500 text-lg">Sélectionnez une fonctionnalité pour voir les détails</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Problem Section -->
-        <section class="py-16 bg-gray-50">
-            <div class="container mx-auto px-4">
-                <div class="max-w-3xl mx-auto text-center mb-12">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Les défis de la gestion de conduite</h2>
-                    <p class="text-gray-600">
-                        Optimisez le comportement de vos conducteurs et réduisez les risques
-                    </p>
-                </div>
-                <!-- ... reste du contenu ... -->
-            </div>
-        </section>
-
-        <!-- Features Section -->
-        <section id="features" class="py-16">
-            <!-- ... contenu des fonctionnalités ... -->
-        </section>
-
-        <!-- Benefits Section -->
-        <section class="py-16 bg-gray-50">
-            <!-- ... contenu des avantages ... -->
-        </section>
-
-        <!-- CTA Section -->
-        <section class="py-16 bg-[#2A0A55]">
+        <section class="bg-[#2A0A55] text-white py-20">
             <div class="container mx-auto px-4">
                 <div class="max-w-4xl mx-auto text-center">
-                    <h2 class="text-3xl font-bold text-white mb-6">Prêt à améliorer la sécurité de votre flotte ?</h2>
-                    <p class="text-gray-300 mb-8">
-                        Contactez-nous dès aujourd'hui pour une démonstration personnalisée
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Eco Driving - Conduite Intelligente</h1>
+                    <p class="text-xl text-gray-200 mb-8">
+                        Évaluez le professionnalisme de vos conducteurs et optimisez la sécurité et l'efficacité de votre flotte.
                     </p>
-                    <div class="flex flex-col sm:flex-row justify-center gap-4">
-                        <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-white text-[#2A0A55] rounded-lg hover:bg-gray-100 transition-colors">
+                    <a href="#contact" class="inline-block px-8 py-4 bg-white text-[#2A0A55] font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+                        Demander une démo
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Avantages clés -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Avantages clés</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-fuel text-xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Économie de carburant</h3>
+                        <p class="text-gray-600">
+                            Réduisez la consommation de carburant en optimisant les manœuvres et la vitesse de conduite.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-shield text-xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Sécurité renforcée</h3>
+                        <p class="text-gray-600">
+                            Améliorez la sécurité des passagers, du fret et des autres usagers de la route.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-cog text-xl text-purple-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Maintenance optimisée</h3>
+                        <p class="text-gray-600">
+                            Prolongez la durée de vie des véhicules et réduisez la fréquence des réparations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fonctionnalités détaillées -->
+        <section class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Fonctionnalités détaillées</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-dashboard text-xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Évaluation de la conduite</h3>
+                        <p class="text-gray-600">
+                            Détection des infractions : excès de vitesse, accélération et freinage injustifiés, accélération en virage.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-graph text-xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Analyse des trajets</h3>
+                        <p class="text-gray-600">
+                            Visualisation détaillée des trajets avec carte et tableau des infractions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comment ça marche -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Comment ça marche ?</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-[#2A0A55] text-white rounded-full flex items-center justify-center flex-shrink-0">
+                                    1
+                                </div>
+                                <p class="text-gray-600">
+                                    Collecte des données télématiques via les capteurs installés
+                                </p>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-[#2A0A55] text-white rounded-full flex items-center justify-center flex-shrink-0">
+                                    2
+                                </div>
+                                <p class="text-gray-600">
+                                    Configuration des paramètres de contrôle de la qualité de conduite
+                                </p>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-[#2A0A55] text-white rounded-full flex items-center justify-center flex-shrink-0">
+                                    3
+                                </div>
+                                <p class="text-gray-600">
+                                    Définition du système de points de pénalité
+                                </p>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-[#2A0A55] text-white rounded-full flex items-center justify-center flex-shrink-0">
+                                    4
+                                </div>
+                                <p class="text-gray-600">
+                                    Génération et analyse des rapports pour amélioration continue
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-gray-100 p-6 rounded-xl">
+                            <img src="../../images/app-ss/eco-driving-dashboard.jpg" alt="Eco Driving Dashboard" class="rounded-lg shadow-md">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bénéfices supplémentaires -->
+        <section class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Bénéfices supplémentaires</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-users text-xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Productivité du personnel</h3>
+                        <p class="text-gray-600">
+                            Identifiez et formez rapidement les conducteurs, récompensez les meilleurs performances.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-leaf text-xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Impact écologique</h3>
+                        <p class="text-gray-600">
+                            Réduisez les émissions dans l'environnement grâce à une meilleure qualité de conduite.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="bg-[#2A0A55] py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold text-white mb-6">Prêt à optimiser la conduite de votre flotte ?</h2>
+                    <p class="text-gray-200 mb-8">
+                        Découvrez comment Eco Driving peut améliorer la sécurité et l'efficacité de vos opérations.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="#contact" class="px-8 py-3 bg-white text-[#2A0A55] font-semibold rounded-lg hover:bg-gray-100 transition-colors">
                             Demander une démo
                         </a>
-                        <a href="tel:+237698761410" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#2A0A55] transition-colors">
-                            <i class="lni lni-phone mr-2"></i>
-                            Nous appeler
+                        <a href="#" class="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">
+                            En savoir plus
                         </a>
                     </div>
                 </div>
@@ -634,4 +645,5 @@
         </div>
     </footer>
 </body>
+</html> 
 </html> 
