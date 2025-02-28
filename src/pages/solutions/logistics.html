@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion des Flottes - Abo-Tracking</title>
+    <title>Logistics - Gestion des Flottes de Livraison - Abo-Tracking</title>
     <link rel="stylesheet" href="../../output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
@@ -135,10 +135,8 @@
                                                 </div>
                                                 <div>
                                                     <span
-                                                        class="block text-gray-800 font-medium group-hover/item:text-blue-600">Gestion
-                                                        des flottes</span>
-                                                    <span class="text-sm text-gray-500">Gestion des processus de
-                                                        livraison</span>
+                                                        class="block text-gray-800 font-medium group-hover/item:text-blue-600">Fleet Management</span>
+                                                    <span class="text-sm text-gray-500">Delivery Process Management</span>
                                                 </div>
                                             </a>
                                         </li>
@@ -355,160 +353,220 @@
 
     <main class="flex-grow">
         <!-- Hero Section -->
-        <section class="pt-32 pb-16 bg-gradient-to-b from-[#2A0A55] to-[#4B1B8E]">
-            <div class="container mx-auto px-4">
-                <div class="flex flex-col lg:flex-row items-center gap-12">
-                    <div class="lg:w-1/2 text-white">
-                        <h1 class="text-4xl lg:text-5xl font-bold mb-6">
-                            Gestion intelligente de votre flotte
-                        </h1>
-                        <p class="text-xl text-gray-200 mb-8">
-                            Optimisez vos opérations logistiques et améliorez l'efficacité de votre flotte avec notre solution complète.
-                        </p>
-                        <div class="flex flex-col sm:flex-row gap-4">
-                            <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-white text-[#2A0A55] rounded-lg hover:bg-gray-100 transition-colors">
-                                Demander une démo
-                            </a>
-                            <a href="#features" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#2A0A55] transition-colors">
-                                Découvrir les fonctionnalités
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="lg:w-1/2 relative">
-                        <img src="../../images/solutions/logistics-hero.png" alt="Logistics Dashboard" class="w-full rounded-xl shadow-2xl">
-                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg">
-                            <div class="text-sm font-semibold text-gray-800">Efficacité améliorée</div>
-                            <div class="text-2xl font-bold text-[#2A0A55]">+30%</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Features Section -->
-        <section class="py-16">
-            <div class="container mx-auto px-4">
-                <div class="text-center mb-12">
-                    <h3 class="text-blue-600 font-medium mb-2">Fonctionnalités</h3>
-                    <h2 class="text-4xl font-bold text-gray-900">Gestion complète de flotte</h2>
-                </div>
-
-                <div class="flex flex-col lg:flex-row gap-8">
-                    <div class="lg:w-1/2 space-y-4">
-                        <!-- Suivi en temps réel -->
-                        <div class="feature-item group cursor-pointer" data-target="tracking-image">
-                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-green-500">
-                                <div class="flex items-center space-x-4">
-                                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                                        <i class="lni lni-map-marker text-2xl text-green-600"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-green-600">Suivi en temps réel</h3>
-                                        <p class="text-gray-600 mt-2">Localisation et statut de tous vos véhicules en direct</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Optimisation des itinéraires -->
-                        <div class="feature-item group cursor-pointer" data-target="routes-image">
-                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-blue-500">
-                                <div class="flex items-center space-x-4">
-                                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                                        <i class="lni lni-route text-2xl text-blue-600"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-blue-600">Optimisation des itinéraires</h3>
-                                        <p class="text-gray-600 mt-2">Planification intelligente des trajets et des livraisons</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Gestion des tâches -->
-                        <div class="feature-item group cursor-pointer" data-target="tasks-image">
-                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-purple-500">
-                                <div class="flex items-center space-x-4">
-                                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                                        <i class="lni lni-clipboard text-2xl text-purple-600"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-purple-600">Gestion des tâches</h3>
-                                        <p class="text-gray-600 mt-2">Attribution et suivi des missions en temps réel</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Analyses et rapports -->
-                        <div class="feature-item group cursor-pointer" data-target="analytics-image">
-                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-orange-500">
-                                <div class="flex items-center space-x-4">
-                                    <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
-                                        <i class="lni lni-graph text-2xl text-orange-600"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-orange-600">Analyses et rapports</h3>
-                                        <p class="text-gray-600 mt-2">Statistiques détaillées et KPIs de performance</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Zone d'affichage des images -->
-                    <div class="lg:w-1/2 bg-white rounded-2xl p-6 shadow-lg">
-                        <div class="relative h-[500px] overflow-hidden rounded-xl">
-                            <!-- Images des fonctionnalités -->
-                            <img src="../../images/solutions/logistics-tracking.png" alt="Suivi" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="tracking-image">
-                            <img src="../../images/solutions/logistics-routes.png" alt="Itinéraires" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="routes-image">
-                            <img src="../../images/solutions/logistics-tasks.png" alt="Tâches" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="tasks-image">
-                            <img src="../../images/solutions/logistics-analytics.png" alt="Analyses" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="analytics-image">
-                            
-                            <!-- État par défaut -->
-                            <div class="absolute inset-0 flex items-center justify-center bg-gray-100" id="default-state">
-                                <p class="text-gray-500 text-lg">Sélectionnez une fonctionnalité pour voir les détails</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Problem Section -->
-        <section class="py-16 bg-gray-50">
-            <div class="container mx-auto px-4">
-                <div class="max-w-3xl mx-auto text-center mb-12">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Les défis de la livraison</h2>
-                    <p class="text-gray-600">
-                        Relevez les défis quotidiens de la gestion de flotte de livraison
-                    </p>
-                </div>
-                <!-- ... reste du contenu ... -->
-            </div>
-        </section>
-
-        <!-- Benefits Section -->
-        <section class="py-16 bg-gray-50">
-            <!-- ... contenu des avantages ... -->
-        </section>
-
-        <!-- CTA Section -->
-        <section class="py-16 bg-[#2A0A55]">
+        <section class="bg-[#2A0A55] text-white py-20">
             <div class="container mx-auto px-4">
                 <div class="max-w-4xl mx-auto text-center">
-                    <h2 class="text-3xl font-bold text-white mb-6">Prêt à optimiser vos livraisons ?</h2>
-                    <p class="text-gray-300 mb-8">
-                        Contactez-nous dès aujourd'hui pour une démonstration personnalisée
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Solution de Gestion des Flottes de Livraison</h1>
+                    <p class="text-xl text-gray-200 mb-8">
+                        Automatisez et numérisez vos opérations de livraison du dernier kilomètre avec notre solution complète de gestion de flotte.
                     </p>
-                    <div class="flex flex-col sm:flex-row justify-center gap-4">
-                        <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-white text-[#2A0A55] rounded-lg hover:bg-gray-100 transition-colors">
+                    <a href="#contact" class="inline-block px-8 py-4 bg-white text-[#2A0A55] font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+                        Demander une démo
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Avantages clés -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Comment Wialon peut aider les flottes de livraison</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-cog text-xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Moins de travail manuel</h3>
+                        <p class="text-gray-600">
+                            Automatisation des itinéraires, importation des commandes et intégration avec des applications tierces.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-timer text-xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Contrôle en temps réel</h3>
+                        <p class="text-gray-600">
+                            Surveillance en direct, communication avec les chauffeurs et notifications instantanées.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-database text-xl text-purple-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Données historiques</h3>
+                        <p class="text-gray-600">
+                            Analyse des itinéraires, durées de livraison et kilométrage pour optimisation.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-camera text-xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Preuve du travail</h3>
+                        <p class="text-gray-600">
+                            Documentation photo et suivi détaillé des livraisons effectuées.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-alarm-clock text-xl text-yellow-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Gain de temps</h3>
+                        <p class="text-gray-600">
+                            Élimination des processus manuels et de la paperasserie excessive.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-investment text-xl text-teal-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Économie de ressources</h3>
+                        <p class="text-gray-600">
+                            Optimisation des itinéraires pour réduire les coûts de carburant et l'usure.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fonctionnalités pour les répartiteurs -->
+        <section class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Outil de gestion pour les répartiteurs</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-map text-xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Planification des itinéraires</h3>
+                        <p class="text-gray-600">
+                            Création automatique d'itinéraires optimisés avec estimation des temps d'arrivée et des distances.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-alarm text-xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Suivi en temps réel</h3>
+                        <p class="text-gray-600">
+                            Surveillance du processus de livraison avec notifications instantanées.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Mobile Section -->
+        <section class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Logistique et gestion des livraisons : application mobile pour les conducteurs et les livreurs</h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-center">
+                    <!-- Fonctionnalités gauche -->
+                    <div class="space-y-8">
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="lni lni-map text-xl text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2">Informations sur les itinéraires et les commandes</h3>
+                                    <p class="text-gray-600">
+                                        Toutes les informations nécessaires à la livraison sont regroupées dans une seule application et mises à jour en temps réel.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="lni lni-camera text-xl text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2">Commentaires et photos</h3>
+                                    <p class="text-gray-600">
+                                        Les livreurs et les conducteurs laissent des commentaires et des photos sur les commandes pour s'assurer que tous les détails concernant la livraison sont enregistrés.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="lni lni-map-marker text-xl text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2">Suivi de l'emplacement</h3>
+                                    <p class="text-gray-600">
+                                        Il n'est pas nécessaire d'équiper les conducteurs de traceurs GPS si votre projet ne l'implique pas. L'application de gestion des livraisons servira de traceur.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image centrale -->
+                    <div class="flex justify-center">
+                        <img src="../../images/app-ss/logistics-app.jpg" alt="Interface de l'application de livraison" class="max-w-[300px] shadow-xl rounded-3xl">
+                    </div>
+
+                    <!-- Fonctionnalités droite -->
+                    <div class="space-y-8">
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="lni lni-comments text-xl text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2">Chat avec le répartiteur</h3>
+                                    <p class="text-gray-600">
+                                        Un chat intégré à l'application est utilisé pour notifier un répartiteur de toute circonstance liée à la livraison.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="lni lni-bell text-xl text-yellow-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2">Notifications</h3>
+                                    <p class="text-gray-600">
+                                        Les conducteurs sont informés des ajustements d'itinéraires et d'autres changements significatifs qui peuvent influencer leurs actions sur l'itinéraire.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="bg-[#2A0A55] py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold text-white mb-6">Prêt à optimiser vos opérations de livraison ?</h2>
+                    <p class="text-gray-200 mb-8">
+                        Découvrez comment notre solution peut transformer votre gestion de flotte de livraison.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="#contact" class="px-8 py-3 bg-white text-[#2A0A55] font-semibold rounded-lg hover:bg-gray-100 transition-colors">
                             Demander une démo
                         </a>
-                        <a href="tel:+237698761410" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#2A0A55] transition-colors">
-                            <i class="lni lni-phone mr-2"></i>
-                            Nous appeler
+                        <a href="#" class="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">
+                            En savoir plus
                         </a>
                     </div>
                 </div>
@@ -591,7 +649,7 @@
                     <ul class="space-y-3">
                         <li><a href="leasing.html" class="text-gray-400 hover:text-white transition-colors">Leasing de véhicules</a></li>
                         <li><a href="hecterra.html" class="text-gray-400 hover:text-white transition-colors">Agriculture intelligente</a></li>
-                        <li><a href="logistics.html" class="text-gray-400 hover:text-white transition-colors">Gestion des flottes</a></li>
+                        <li><a href="logistics.html" class="text-gray-400 hover:text-white transition-colors">Fleet Management</a></li>
                         <li><a href="ecodriving.html" class="text-gray-400 hover:text-white transition-colors">Eco Driving</a></li>
                         <li><a href="fleetrun.html" class="text-gray-400 hover:text-white transition-colors">Maintenance de flotte</a></li>
                         <li><a href="wiatag.html" class="text-gray-400 hover:text-white transition-colors">Équipes terrain</a></li>

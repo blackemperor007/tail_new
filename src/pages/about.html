@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr" class="h-full">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Abo-Tracking</title>
+    <title>About - Abo-Tracking</title>
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
     <link href="https://cdn.tailwindcss.com" rel="stylesheet">
@@ -12,7 +13,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="min-h-full flex flex-col">
+<body class="bg-gray-50">
     <!------start navbar-->
     <header class="w-full fixed z-20 bg-white">
         <div class="w-full items-center flex justify-between h-14 px-4 shadow xl:shadow-none">
@@ -23,7 +24,7 @@
                 </div>
                 <div class="lg:flex items-center space-x-3 hidden">
                     <div class="w-3 h-3 rounded-full bg-red-500 animate-pulse"></div>
-                    <p class="text-base">Votre bouclier gps-4G à votre portée</p>
+                    <p class="text-base">Your GPS-4G shield at your fingertips</p>
                 </div>
             </div>
             <div class="flex items-center h-full space-x-2">
@@ -257,7 +258,7 @@
                      <!-- Bouquets Link -->
                      <a href="bouquets.html" class="flex items-center space-x-2 text-[17px] font-semibold text-white hover:text-blue-200 transition-colors">
                         
-                        <span>Bouquets</span>
+                        <span>Packages</span>
                     </a>
 
                     <!-- Support Link -->
@@ -291,183 +292,152 @@
     <!-- Spacer for fixed header -->
     <div class="w-full" style="height: calc(3.5rem + 5rem)"></div>
 
-    <!-- Main content - Fills available space -->
-    <main class="flex-grow">
-        <!-- Hero Section -->
-        <section class="relative py-16 bg-cover bg-center bg-no-repeat min-h-[100px]" 
-            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/app-ss/banner_x3.jpg');">
-            <div class="container mx-auto px-4 relative z-10">
-                <div class="text-center max-w-3xl mx-auto">
-                    <h1 class="text-4xl font-bold text-white mb-6">Contactez-Nous</h1>
-                    <p class="text-gray-300 mb-8">
-                        Trouvez rapidement des réponses à vos questions et accédez à notre documentation complète.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Support Section -->
-        <section class="py-16 bg-gray-50">
+    <main class="pt-32">
+        <!-- Section Hero -->
+        <section class="bg-[#2A0A55] text-white py-20">
             <div class="container mx-auto px-4">
                 <div class="max-w-4xl mx-auto text-center">
-                    <h2 class="text-3xl font-bold mb-4">Besoin d'aide supplémentaire ?</h2>
-                    <p class="text-gray-600 mb-8">
-                        Notre équipe de support est disponible 24/7 pour répondre à vos questions.
-                    </p>
-                    <div class="flex flex-col sm:flex-row justify-center gap-4">
-                        <a href="mailto:@gmail.com" class="inline-flex items-center justify-center px-6 py-3 bg-[#2A0A55] text-white rounded-lg hover:bg-[#3B1B66] transition-colors">
-                            <i class="lni lni-ticket-alt mr-2"></i>
-                            Envoyer un email
-                        </a>
-                        <a href="https://wa.me/237698761410" class="inline-flex items-center justify-center px-6 py-3 border border-[#2A0A55] text-[#2A0A55] rounded-lg hover:bg-[#2A0A55] hover:text-white transition-colors">
-                            <i class="lni lni-whatsapp mr-2"></i>
-                            Chat en direct
-                        </a>
-                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">About Abo-Tracking</h1>
+                    <p class="text-xl text-gray-200">Your trusted partner for fleet management and tracking</p>
                 </div>
             </div>
         </section>
 
-
-        <div class="w-full" style="height: calc(2.5rem)"></div>
-        
-        <section class="relative" id="contact">
-            <!-- Background Image Section -->
-            <div class="h-[400px] w-full bg-cover bg-center" 
-                style="background-image: url('../images/app-ss/app-1.jpg');">
-            </div>
-            
-            <!-- White Background Bottom Section -->
-            <div class="h-[300px] w-full bg-white"></div>
-
-            <!-- Floating Contact Card -->
-            <div class="absolute inset-x-0 top-[100px]">
-                <div class="container mx-auto px-4">
-                    <div class="max-w-5xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden">
-                        <div class="grid grid-cols-1 lg:grid-cols-2">
-                            <!-- Left Side - Contact Form -->
-                            <div class="p-8 space-y-6">
-                                <form id="contactForm" class="space-y-6" method="POST">
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                        <div>
-                                            <label for="name" class="block text-sm font-medium text-gray-700">Nom complet</label>
-                                            <input type="text" id="name" name="name" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-[#2A0A55] focus:border-[#2A0A55]">
-                                        </div>
-                                        <div>
-                                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                                            <input type="email" id="email" name="email" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-[#2A0A55] focus:border-[#2A0A55]">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <label for="subject" class="block text-sm font-medium text-gray-700">Sujet</label>
-                                        <input type="text" id="subject" name="subject" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-[#2A0A55] focus:border-[#2A0A55]">
-                                    </div>
-                                    <div>
-                                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                                        <textarea id="message" name="message" rows="6" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-[#2A0A55] focus:border-[#2A0A55]"></textarea>
-                                    </div>
-                                    <button type="submit" id="submitBtn" class="w-full px-6 py-4 bg-[#2A0A55] text-white font-semibold rounded-lg hover:bg-[#3B1B66] transition-colors">
-                                        Envoyer le message
-                                    </button>
-                                    <div id="formMessage" class="hidden mt-4 p-4 rounded-lg"></div>
-                                </form>
+        <!-- Section Notre Mission -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-3xl font-bold text-[#081828] mb-8 text-center">Our Mission</h2>
+                    <p class="text-gray-600 text-lg mb-8">
+                        At Abo-Tracking, our mission is to provide innovative GPS tracking and fleet management solutions that enable businesses to optimize their operations, reduce costs and improve operational efficiency.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <div class="w-12 h-12 bg-[#2A0A55] rounded-lg flex items-center justify-center mb-4">
+                                <i class="lni lni-target text-2xl text-white"></i>
                             </div>
-
-                            <!-- Right Side - Contact Info -->
-                            <div class="bg-gray-50 p-8">
-                                <div class="grid grid-cols-2 gap-8">
-                                    <!-- Technical Support -->
-                                    <div class="space-y-3">
-                                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                                            <i class="lni lni-headphone text-2xl text-blue-600"></i>
-                                        </div>
-                                        <div>
-                                            <h3 class="text-gray-900 font-medium">Technical support</h3>
-                                            <p class="text-gray-600 text-sm">support@abotracking.tech</p>
-                                            <p class="text-gray-600 text-sm">+1 234-567-89</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- Sales Questions -->
-                                    <div class="space-y-3">
-                                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                                            <i class="lni lni-dollar text-2xl text-blue-600"></i>
-                                        </div>
-                                        <div>
-                                            <h3 class="text-gray-900 font-medium">Sales questions</h3>
-                                            <p class="text-gray-600 text-sm">cindybethel@abotracking.tech</p>
-                                            <p class="text-gray-600 text-sm">+1 234-567-89</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- Press -->
-                                    <div class="space-y-3">
-                                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                                            <i class="lni lni-facebook text-2xl text-blue-600"></i>
-                                        </div>
-                                        <div>
-                                            <h3 class="text-gray-900 font-medium">Press</h3>
-                                            <p class="text-gray-600 text-sm">info@abotracking.tech</p>
-                                            <p class="text-gray-600 text-sm">+1 234-567-89</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- Bug Report -->
-                                    <div class="space-y-3">
-                                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                                            <i class="lni lni-bug text-2xl text-blue-600"></i>
-                                        </div>
-                                        <div>
-                                            <h3 class="text-gray-900 font-medium">Bug report</h3>
-                                            <p class="text-gray-600 text-sm">serviceclient@abotracking.tech</p>
-                                            <p class="text-gray-600 text-sm">+1 234-567-89</p>
-                                        </div>
-                                    </div>
-                                </div>
+                            <h3 class="text-xl font-semibold mb-3">Vision</h3>
+                            <p class="text-gray-600">
+                                To become the leader in professional tracking solutions by offering innovative and reliable technologies for fleet security and optimization.
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <div class="w-12 h-12 bg-[#2A0A55] rounded-lg flex items-center justify-center mb-4">
+                                <i class="lni lni-diamond text-2xl text-white"></i>
                             </div>
+                            <h3 class="text-xl font-semibold mb-3">Values</h3>
+                            <p class="text-gray-600">
+                                Innovation, reliability, customer service excellence and commitment to customer satisfaction are at the core of our values.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="w-full" style="height: calc(2.5rem)"></div>
-        <!-- Map Section -->
-        <section class="relative z-10 mt-[-100px] pb-0">
-            <!-- Full Width Map Container -->
-            <div class="w-full h-[400px]">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.3721619999999997!3d48.8583736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sfr!2sfr!4v1647436435286!5m2!1sfr!2sfr"
-                    width="100%" 
-                    height="100%" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+
+        <!-- Section Nos Solutions -->
+        <section class="bg-gray-100 py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-[#081828] mb-12 text-center">Our Complete Solutions</h2>
+                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-car-alt text-xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Fleet Tracking</h3>
+                        <p class="text-gray-600">
+                            Real-time monitoring of your vehicles with detailed reports and in-depth analytics.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-leaf text-xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Smart Agriculture</h3>
+                        <p class="text-gray-600">
+                            Specialized solutions for tracking and optimizing agricultural operations.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-delivery text-xl text-purple-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Logistics</h3>
+                        <p class="text-gray-600">
+                            Route optimization and efficient delivery management for better performance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Statistiques -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-[#2A0A55] mb-2">125k+</div>
+                        <p class="text-gray-600">Active Users</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-[#2A0A55] mb-2">98.5%</div>
+                        <p class="text-gray-600">Satisfaction Rate</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-[#2A0A55] mb-2">80+</div>
+                        <p class="text-gray-600">Countries Served</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-[#2A0A55] mb-2">24/7</div>
+                        <p class="text-gray-600">Customer Support</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section CTA -->
+        <section class="bg-[#2A0A55] py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold text-white mb-6">Ready to optimize your fleet?</h2>
+                    <p class="text-gray-200 mb-8">
+                        Join thousands of businesses who trust Abo-Tracking for their fleet management.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="#" class="px-8 py-3 bg-white text-[#2A0A55] font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+                            Get Started Now
+                        </a>
+                        <a href="#" class="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-     <!-- Footer Section -->
-     <footer class="w-full bg-[#081828] pt-20">
+    <!-- Footer Section -->
+    <footer class="w-full bg-[#081828] pt-20">
         <!-- Newsletter Section -->
         <div class="container mx-auto px-4 mb-16">
             <div class="max-w-6xl mx-auto p-8 rounded-xl border border-gray-700/50 bg-[#0a1f35]">
                 <div class="flex flex-col md:flex-row items-center justify-between gap-6">
                     <div class="space-y-3">
                         <h2 class="text-2xl md:text-3xl font-bold text-white">
-                            Abonnez-vous à notre Newsletter
+                            Subscribe to our Newsletter
                         </h2>
                         <p class="text-gray-300 text-sm md:text-base">
-                            Recevez nos dernières actualités et offres directement dans votre boîte mail.
+                            Receive our latest news and offers directly in your inbox.
                         </p>
                     </div>
                     <div class="w-full md:w-auto flex flex-col sm:flex-row gap-3">
-                        <input type="email" placeholder="Votre adresse email"
+                        <input type="email" placeholder="Your email address"
                             class="w-full sm:w-80 px-4 py-3 rounded-lg bg-gray-700/50 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#2A0A55]">
                         <button
                             class="w-full sm:w-auto px-6 py-3 bg-[#2A0A55] hover:bg-[#3B1B66] text-white font-semibold rounded-lg transition duration-300">
-                            S'abonner
+                            Subscribe
                         </button>
                     </div>
                 </div>
@@ -484,7 +454,7 @@
                         <span class="text-white text-2xl font-bold">Abo-Tracking</span>
                     </div>
                     <p class="text-gray-400 text-sm">
-                        Votre bouclier GPS-4G à votre portée. Solutions de tracking professionnel pour votre sécurité.
+                        Your GPS-4G shield at your fingertips. Professional tracking solutions for your security.
                     </p>
                     <!-- Social Media Icons -->
                     <div class="flex space-x-4">
@@ -515,8 +485,7 @@
                 <div class="space-y-4">
                     <h3 class="text-white text-xl font-semibold">Navigation</h3>
                     <ul class="space-y-3">
-                        <li><a href="../index.html" class="text-gray-400 hover:text-white transition-colors">Accueil</a>
-                        </li>
+                        <li><a href="../index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Solutions</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Support</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Ressources</a></li>
@@ -526,17 +495,13 @@
 
                 <!-- Services -->
                 <div class="space-y-4">
-                    <h3 class="text-white text-xl font-semibold">Nos Services</h3>
+                    <h3 class="text-white text-xl font-semibold">Our Services</h3>
                     <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Suivi GPS</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Gestion de Flotte</a>
-                        </li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Sécurité Véhicules</a>
-                        </li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Analyse de Données</a>
-                        </li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Support Technique</a>
-                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">GPS Tracking</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Fleet Management</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Vehicle Security</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Data Analytics</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Technical Support</a></li>
                     </ul>
                 </div>
 
@@ -545,15 +510,15 @@
                     <h3 class="text-white text-xl font-semibold">Contact</h3>
                     <ul class="space-y-3">
                         <li class="flex items-center space-x-3 text-gray-400">
-                            <span>Phone : </span>
+                            <span>Phone: </span>
                             <span>+33 1 23 45 67 89</span>
                         </li>
                         <li class="flex items-center space-x-3 text-gray-400">
-                            <span>Email : </span>
+                            <span>Email: </span>
                             <span>contact@abo-tracking.com</span>
                         </li>
                         <li class="flex items-center space-x-3 text-gray-400">
-                            <span>Address : </span>
+                            <span>Address: </span>
                             <span>Paris, France</span>
                         </li>
                     </ul>
@@ -563,51 +528,14 @@
             <!-- Copyright -->
             <div class="py-8 border-t border-gray-800 text-center">
                 <p class="text-gray-400 text-sm">
-                    © 2025 Abo-Tracking. Tous droits réservés.
+                    © 2025 Abo-Tracking. All rights reserved.
                 </p>
             </div>
         </div>
     </footer>
 
-    <script>
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const formData = new FormData(this);
-        const submitBtn = document.getElementById('submitBtn');
-        const formMessage = document.getElementById('formMessage');
-        
-        // Désactiver le bouton pendant l'envoi
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = 'Envoi en cours...';
-        
-        fetch('../php/send_email.php', {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => response.json())
-        .then(data => {
-            formMessage.classList.remove('hidden');
-            if (data.success) {
-                formMessage.className = 'mt-4 p-4 rounded-lg bg-green-100 text-green-700';
-                formMessage.textContent = data.message;
-                document.getElementById('contactForm').reset();
-            } else {
-                formMessage.className = 'mt-4 p-4 rounded-lg bg-red-100 text-red-700';
-                formMessage.textContent = data.message;
-            }
-        })
-        .catch(error => {
-            formMessage.classList.remove('hidden');
-            formMessage.className = 'mt-4 p-4 rounded-lg bg-red-100 text-red-700';
-            formMessage.textContent = 'Une erreur est survenue. Veuillez réessayer plus tard.';
-        })
-        .finally(() => {
-            submitBtn.disabled = false;
-            submitBtn.innerHTML = 'Envoyer le message';
-        });
-    });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../script.js"></script>
 </body>
 
-</html>
+</html> 

@@ -355,122 +355,159 @@
 
     <main class="flex-grow">
         <!-- Hero Section -->
-        <section class="pt-32 pb-16 bg-gradient-to-b from-[#2A0A55] to-[#4B1B8E]">
+        <section class="bg-[#2A0A55] text-white py-20">
             <div class="container mx-auto px-4">
-                <div class="flex flex-col lg:flex-row items-center gap-12">
-                    <div class="lg:w-1/2 text-white">
-                        <h1 class="text-4xl lg:text-5xl font-bold mb-6">
-                            Agriculture de précision avec Hecterra
-                        </h1>
-                        <p class="text-xl text-gray-200 mb-8">
-                            Optimisez vos opérations agricoles grâce à notre solution de gestion intelligente des cultures.
-                        </p>
-                        <div class="flex flex-col sm:flex-row gap-4">
-                            <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-white text-[#2A0A55] rounded-lg hover:bg-gray-100 transition-colors">
-                                Demander une démo
-                            </a>
-                            <a href="#features" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#2A0A55] transition-colors">
-                                Découvrir les fonctionnalités
-                            </a>
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Hecterra - Solution Agriculture Intelligente</h1>
+                    <p class="text-xl text-gray-200 mb-8">
+                        Application simple et efficace pour le secteur agricole, permettant le suivi des travaux de terrain à partir des données télématiques.
+                    </p>
+                    <a href="#contact" class="inline-block px-8 py-4 bg-white text-[#2A0A55] font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+                        Obtenir une version démo
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Caractéristiques principales -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Caractéristiques principales</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-control-panel text-xl text-blue-600"></i>
                         </div>
+                        <h3 class="text-xl font-semibold mb-3">Contrôle des équipements spéciaux</h3>
+                        <p class="text-gray-600">
+                            Données claires sur la qualité et le volume des travaux de terrain, ainsi que sur les actions des machines agricoles.
+                        </p>
                     </div>
 
-                    <div class="lg:w-1/2 relative">
-                        <img src="../../images/solutions/hecterra-hero.png" alt="Hecterra Dashboard" class="w-full rounded-xl shadow-2xl">
-                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg">
-                            <div class="text-sm font-semibold text-gray-800">Rendement amélioré</div>
-                            <div class="text-2xl font-bold text-[#2A0A55]">+25%</div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-checkmark-circle text-xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Fiabilité des données</h3>
+                        <p class="text-gray-600">
+                            Calcul précis de la surface des champs complexes, incluant chevauchements et zones non cultivées.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-cog text-xl text-purple-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Automatisation comptable</h3>
+                        <p class="text-gray-600">
+                            Calcul automatique des surfaces cultivées, consommation de carburant et autres paramètres.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-network text-xl text-orange-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Intégration API</h3>
+                        <p class="text-gray-600">
+                            Transfert de données vers 1C et autres systèmes comptables via API.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fonctionnalités détaillées -->
+        <section class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Fonctionnalités détaillées</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-crop text-xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Champs et cultures</h3>
+                        <p class="text-gray-600">
+                            Gestion complète des cultures avec options d'édition et confirmation avant l'ajout à la base de données.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="lni lni-tractor text-xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Équipements et conducteurs</h3>
+                        <p class="text-gray-600">
+                            Suivi complet des équipements spéciaux et gestion des conducteurs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comment ça marche -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Comment ça marche ?</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-[#2A0A55] text-white rounded-full flex items-center justify-center flex-shrink-0">
+                                    1
+                                </div>
+                                <p class="text-gray-600">
+                                    Importez les géozones en tant que champs et configurez les remorques, conducteurs et unités dans Wialon
+                                </p>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-[#2A0A55] text-white rounded-full flex items-center justify-center flex-shrink-0">
+                                    2
+                                </div>
+                                <p class="text-gray-600">
+                                    Remplissez les manuels des cultures, des opérations et de la rotation des cultures
+                                </p>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-[#2A0A55] text-white rounded-full flex items-center justify-center flex-shrink-0">
+                                    3
+                                </div>
+                                <p class="text-gray-600">
+                                    Acceptez ou rejetez la culture des champs trouvée
+                                </p>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-[#2A0A55] text-white rounded-full flex items-center justify-center flex-shrink-0">
+                                    4
+                                </div>
+                                <p class="text-gray-600">
+                                    Générez et exportez des rapports sur les travaux de terrain
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-gray-100 p-6 rounded-xl">
+                            <img src="../../images/app-ss/hecterra-dashboard.jpg" alt="Hecterra Dashboard" class="rounded-lg shadow-md">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Features Section -->
-        <section class="py-16">
+        <!-- Call to Action -->
+        <section class="bg-[#2A0A55] py-16">
             <div class="container mx-auto px-4">
-                <div class="text-center mb-12">
-                    <h3 class="text-blue-600 font-medium mb-2">Fonctionnalités</h3>
-                    <h2 class="text-4xl font-bold text-gray-900">Gestion intelligente des cultures</h2>
-                </div>
-
-                <div class="flex flex-col lg:flex-row gap-8">
-                    <div class="lg:w-1/2 space-y-4">
-                        <!-- Cartographie -->
-                        <div class="feature-item group cursor-pointer" data-target="mapping-image">
-                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-green-500">
-                                <div class="flex items-center space-x-4">
-                                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                                        <i class="lni lni-map text-2xl text-green-600"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-green-600">Cartographie des champs</h3>
-                                        <p class="text-gray-600 mt-2">Visualisation détaillée de vos parcelles avec données satellite</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Suivi des cultures -->
-                        <div class="feature-item group cursor-pointer" data-target="monitoring-image">
-                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-blue-500">
-                                <div class="flex items-center space-x-4">
-                                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                                        <i class="lni lni-leaf text-2xl text-blue-600"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-blue-600">Suivi des cultures</h3>
-                                        <p class="text-gray-600 mt-2">Surveillance en temps réel de la croissance des cultures</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Planification -->
-                        <div class="feature-item group cursor-pointer" data-target="planning-image">
-                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-purple-500">
-                                <div class="flex items-center space-x-4">
-                                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                                        <i class="lni lni-calendar text-2xl text-purple-600"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-purple-600">Planification agricole</h3>
-                                        <p class="text-gray-600 mt-2">Gestion des rotations et planification des travaux</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Analyses -->
-                        <div class="feature-item group cursor-pointer" data-target="analytics-image">
-                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:border-orange-500">
-                                <div class="flex items-center space-x-4">
-                                    <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
-                                        <i class="lni lni-graph text-2xl text-orange-600"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-orange-600">Analyses et rapports</h3>
-                                        <p class="text-gray-600 mt-2">Données détaillées sur les rendements et la productivité</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Zone d'affichage des images -->
-                    <div class="lg:w-1/2 bg-white rounded-2xl p-6 shadow-lg">
-                        <div class="relative h-[500px] overflow-hidden rounded-xl">
-                            <!-- Images des fonctionnalités -->
-                            <img src="../../images/solutions/hecterra-mapping.png" alt="Cartographie" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="mapping-image">
-                            <img src="../../images/solutions/hecterra-monitoring.png" alt="Suivi" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="monitoring-image">
-                            <img src="../../images/solutions/hecterra-planning.png" alt="Planification" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="planning-image">
-                            <img src="../../images/solutions/hecterra-analytics.png" alt="Analyses" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="analytics-image">
-                            
-                            <!-- État par défaut -->
-                            <div class="absolute inset-0 flex items-center justify-center bg-gray-100" id="default-state">
-                                <p class="text-gray-500 text-lg">Sélectionnez une fonctionnalité pour voir les détails</p>
-                            </div>
-                        </div>
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold text-white mb-6">Prêt à optimiser vos opérations agricoles ?</h2>
+                    <p class="text-gray-200 mb-8">
+                        Découvrez comment Hecterra peut transformer votre gestion agricole.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="#contact" class="px-8 py-3 bg-white text-[#2A0A55] font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+                            Demander une démo
+                        </a>
+                        <a href="#" class="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">
+                            En savoir plus
+                        </a>
                     </div>
                 </div>
             </div>
