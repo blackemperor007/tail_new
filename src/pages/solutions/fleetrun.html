@@ -348,13 +348,13 @@
 
         </nav>
     </div>
-</header>
+   </header>
     <!-- Spacer for fixed header -->
     <div class="w-full" style="height: calc(3.5rem + 5rem)"></div>
 
     <main class="flex-grow">
         <!-- Hero Section -->
-        <section class="pt-32 pb-16 bg-gradient-to-b from-[#2A0A55] to-[#4B1B8E]">
+        <section class="pt-32 pb-16 bg-gradient-to-b from-[#2A0A55] to-[#4B1B8E] bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../images/solution/african-woman-sitting-computer-science-class-lady-with-glasses-female-student-sitting-computer.jpg');">
             <div class="container mx-auto px-4">
                 <div class="flex flex-col lg:flex-row items-center gap-12">
                     <div class="lg:w-1/2 text-white">
@@ -460,10 +460,10 @@
                     <div class="lg:w-1/2 bg-white rounded-2xl p-6 shadow-lg">
                         <div class="relative h-[500px] overflow-hidden rounded-xl">
                             <!-- Images des fonctionnalités -->
-                            <img src="../../images/solutions/fleetrun-planning.png" alt="Planification" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="planning-image">
-                            <img src="../../images/solutions/fleetrun-repairs.png" alt="Réparations" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="repairs-image">
-                            <img src="../../images/solutions/fleetrun-costs.png" alt="Coûts" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="costs-image">
-                            <img src="../../images/solutions/fleetrun-alerts.png" alt="Alertes" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="alerts-image">
+                            <img src="../../images/solution/fleetrun-planning.png" alt="Planification" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="planning-image">
+                            <img src="../../images/solution/fleetrun-repairs.png" alt="Réparations" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="repairs-image">
+                            <img src="../../images/solution/fleetrun-costs.png" alt="Coûts" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="costs-image">
+                            <img src="../../images/solution/fleetrun-alerts.png" alt="Alertes" class="feature-image absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" id="alerts-image">
                             
                             <!-- État par défaut -->
                             <div class="absolute inset-0 flex items-center justify-center bg-gray-100" id="default-state">
@@ -497,24 +497,109 @@
             </div>
         </section>
 
-        <!-- Benefits Section -->
+        
+        <!-- FAQ Section -->
         <section class="py-16 bg-gray-50">
-            <!-- ... contenu des avantages ... -->
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-bold text-gray-900 mb-4">FAQ sur LeaseControl</h2>
+                        <p class="text-gray-600">
+                            Nous avons recueilli et répondu à vos dernières questions sur le produit afin que vous puissiez mieux comprendre comment proposer la solution à vos clients de manière plus efficace.
+                        </p>
+                    </div>
+
+                    <!-- Questions/Réponses -->
+                    <div class="space-y-4">
+                        <!-- Question 1 -->
+                        <div class="faq-item border border-gray-200 rounded-xl bg-white overflow-hidden">
+                            <button class="faq-button w-full flex items-center justify-between p-6 text-left">
+                                <div class="flex items-center space-x-4">
+                                    <i class="lni lni-question-circle text-blue-600 text-2xl"></i>
+                                    <span class="text-lg font-semibold text-gray-900">Est-ce que LeaseControl est un module inclus en Wialon, ou est-ce une plateforme différente ?</span>
+                                </div>
+                                <i class="lni lni-chevron-down text-gray-400 transition-transform duration-300"></i>
+                            </button>
+                            <div class="faq-content hidden px-6 pb-6 pt-0">
+                                <p class="text-gray-600 ml-10">LeaseControl est une plateforme indépendante spécialement conçue pour la gestion des contrats de leasing automobile, tout en s'intégrant parfaitement avec Wialon pour certaines fonctionnalités.</p>
+                            </div>
+                        </div>
+
+                        <!-- Question 2 -->
+                        <div class="faq-item border border-gray-200 rounded-xl bg-white overflow-hidden">
+                            <button class="faq-button w-full flex items-center justify-between p-6 text-left">
+                                <div class="flex items-center space-x-4">
+                                    <i class="lni lni-question-circle text-blue-600 text-2xl"></i>
+                                    <span class="text-lg font-semibold text-gray-900">Y a-t-il un matériel spécifique disponible pour LeaseControl ?</span>
+                                </div>
+                                <i class="lni lni-chevron-down text-gray-400 transition-transform duration-300"></i>
+                            </button>
+                            <div class="faq-content hidden px-6 pb-6 pt-0">
+                                <p class="text-gray-600 ml-10">Oui, nous proposons des traceurs GPS spécialement configurés pour LeaseControl, optimisés pour la sécurité et la fiabilité dans le contexte du leasing.</p>
+                            </div>
+                        </div>
+
+                        <!-- Question 3 -->
+                        <div class="faq-item border border-gray-200 rounded-xl bg-white overflow-hidden">
+                            <button class="faq-button w-full flex items-center justify-between p-6 text-left">
+                                <div class="flex items-center space-x-4">
+                                    <i class="lni lni-question-circle text-blue-600 text-2xl"></i>
+                                    <span class="text-lg font-semibold text-gray-900">Puis-je utiliser Google Maps ou d'autres services cartographiques dans LeaseControl ?</span>
+                                </div>
+                                <i class="lni lni-chevron-down text-gray-400 transition-transform duration-300"></i>
+                            </button>
+                            <div class="faq-content hidden px-6 pb-6 pt-0">
+                                <p class="text-gray-600 ml-10">Oui, LeaseControl est compatible avec plusieurs services cartographiques, dont Google Maps, pour une expérience de suivi optimale.</p>
+                            </div>
+                        </div>
+
+                        <!-- Question 4 -->
+                        <div class="faq-item border border-gray-200 rounded-xl bg-white overflow-hidden">
+                            <button class="faq-button w-full flex items-center justify-between p-6 text-left">
+                                <div class="flex items-center space-x-4">
+                                    <i class="lni lni-question-circle text-blue-600 text-2xl"></i>
+                                    <span class="text-lg font-semibold text-gray-900">LeaseControl a-t-il une application mobile ?</span>
+                                </div>
+                                <i class="lni lni-chevron-down text-gray-400 transition-transform duration-300"></i>
+                            </button>
+                            <div class="faq-content hidden px-6 pb-6 pt-0">
+                                <p class="text-gray-600 ml-10">Oui, une application mobile complète est disponible pour iOS et Android, permettant un accès à toutes les fonctionnalités essentielles en déplacement.</p>
+                            </div>
+                        </div>
+
+                        <!-- Question 5 -->
+                        <div class="faq-item border border-gray-200 rounded-xl bg-white overflow-hidden">
+                            <button class="faq-button w-full flex items-center justify-between p-6 text-left">
+                                <div class="flex items-center space-x-4">
+                                    <i class="lni lni-question-circle text-blue-600 text-2xl"></i>
+                                    <span class="text-lg font-semibold text-gray-900">Pendant combien de temps les données sont-elles stockées ?</span>
+                                </div>
+                                <i class="lni lni-chevron-down text-gray-400 transition-transform duration-300"></i>
+                            </button>
+                            <div class="faq-content hidden px-6 pb-6 pt-0">
+                                <p class="text-gray-600 ml-10">Les données sont conservées pendant toute la durée du contrat de leasing plus une période additionnelle de 12 mois, avec possibilité d'extension selon les besoins.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- CTA Section -->
         <section class="py-16 bg-[#2A0A55]">
             <div class="container mx-auto px-4">
                 <div class="max-w-4xl mx-auto text-center">
-                    <h2 class="text-3xl font-bold text-white mb-6">Optimisez votre maintenance dès aujourd'hui</h2>
+                    <h2 class="text-3xl font-bold text-white mb-6">Prêt à optimiser votre flotte de location ?</h2>
                     <p class="text-gray-300 mb-8">
-                        Découvrez comment Fleetrun peut transformer votre gestion de maintenance
+                        Contactez-nous dès aujourd'hui pour une démonstration personnalisée
                     </p>
                     <div class="flex flex-col sm:flex-row justify-center gap-4">
-                        <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-white text-[#2A0A55] rounded-lg hover:bg-gray-100 transition-colors">
+                        <a href="#contact"
+                            class="inline-flex items-center justify-center px-8 py-4 bg-white text-[#2A0A55] rounded-lg hover:bg-gray-100 transition-colors">
                             Demander une démo
                         </a>
-                        <a href="tel:+237698761410" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#2A0A55] transition-colors">
+                        <a href="tel:+237698761410"
+                            class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#2A0A55] transition-colors">
                             <i class="lni lni-phone mr-2"></i>
                             Nous appeler
                         </a>
