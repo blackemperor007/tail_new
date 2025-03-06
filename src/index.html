@@ -36,7 +36,8 @@
 
 
     <!------start navbar-->
-    <header class="w-full fixed z-20 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+    <header
+        class="w-full fixed z-20 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
         <div class="w-full items-center flex justify-between h-14 px-4 shadow xl:shadow-none">
             <div class="flex space-x-8 items-center">
                 <div class="w-24">
@@ -49,16 +50,13 @@
                 </div>
             </div>
             <div class="flex items-center h-full space-x-2">
-                <div class="h-full hidden md:flex items-center"> <a href="#"
-                        class="px-4 py-1 rounded-full bg-blue-100 hover:bg-blue-200 font-semibold text-blue-600">Find a
-                        partner</a></div>
                 <div class="px-4 h-full border border-t-0 border-b-0 border-gray-200 flex items-center">
                     <img src="icons/search-interface-symbol.png" width="20" height="20" alt="">
                 </div>
                 <div class="p-4 h-full flex items-center space-x-4">
-                    <select name="languages" class="outline-none text-base text-gray-600" id="">
-                        <option value="en">EN</option>
+                    <select name="languages" class="outline-none text-base text-gray-600" id="languageSelect" onchange="changeLanguage(this.value)">
                         <option value="fr">FR</option>
+                        <option value="en">EN</option>
                         <option value="de">Deutsch</option>
                         <option value="es">Español</option>
                         <option value="it">Italiano</option>
@@ -93,18 +91,19 @@
                     <!-- Home Link -->
                     <a href="index.html"
                         class="flex items-center space-x-2 text-[17px] font-semibold text-white hover:text-blue-200 transition-colors">
-                        <span>Home</span>
+                        <span data-i18n="home">Accueil</span>
                     </a>
 
                     <!-- Solutions Dropdown -->
                     <div class="relative group">
                         <button
                             class="flex items-center space-x-2 text-[17px] font-semibold text-white hover:text-blue-200 transition-colors">
-                            <span>Solutions</span>
+                            <span data-i18n="solutions">Solutions</span>
                         </button>
 
                         <!-- Dropdown Menu -->
-                        <div class="absolute top-full left-0 w-[560px] bg-white rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 -translate-y-2 group-hover:translate-y-1">
+                        <div
+                            class="absolute top-full left-0 w-[560px] bg-white rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 -translate-y-2 group-hover:translate-y-1">
                             <div class="p-4">
                                 <div class="grid grid-cols-2 gap-4">
                                     <!-- Colonne 1 -->
@@ -274,7 +273,7 @@
                     <div class="relative group">
                         <button
                             class="flex items-center space-x-2 text-[17px] font-semibold text-white hover:text-blue-200 transition-colors">
-                            <span>Abonnement</span>
+                            <span data-i18n="subscription">Abonnement</span>
                         </button>
 
                         <!-- Dropdown Menu -->
@@ -341,7 +340,7 @@
                     <a href="pages/bouquets.html"
                         class="flex items-center space-x-2 text-[17px] font-semibold text-white hover:text-blue-200 transition-colors">
 
-                        <span>Packages</span>
+                        <span data-i18n="packages">Bouquets</span>
                     </a>
                     <a href="pages/about.html"
                         class="flex items-center space-x-2 text-[17px] font-semibold text-white hover:text-blue-200 transition-colors">
@@ -353,14 +352,14 @@
                     <a href="pages/support.html"
                         class="flex items-center space-x-2 text-[17px] font-semibold text-white hover:text-blue-200 transition-colors">
 
-                        <span>Support</span>
+                        <span data-i18n="support">Support</span>
                     </a>
 
                     <!-- Contact Link -->
                     <a href="pages/contact.html"
                         class="flex items-center space-x-2 text-[17px] font-semibold text-white hover:text-blue-200 transition-colors">
 
-                        <span>Contact</span>
+                        <span data-i18n="contact">Contact</span>
                     </a>
                 </div>
                 <div class="space-y-2 lg:hidden">
@@ -371,7 +370,7 @@
                 <div class="hidden md:flex">
                     <button
                         class="px-6 outline-none border-2 text-white text-base duration-200 font-semibold border-white  hover:bg-white hover:text-[#2A0A55] rounded py-3">
-                        <a href="pages/getstarted.html">Commencer</a>
+                        <a href="pages/getstarted.html" data-i18n="getStarted">Commencer</a>
                     </button>
                 </div>
 
@@ -1354,10 +1353,14 @@
                 <div class="space-y-4">
                     <h3 class="text-white text-xl font-semibold">Navigation</h3>
                     <ul class="space-y-3">
-                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Accueil</a></li>
-                        <li><a href="pages/bouquets.html" class="text-gray-400 hover:text-white transition-colors">Bouquets</a></li>
-                        <li><a href="pages/support.html" class="text-gray-400 hover:text-white transition-colors">Support</a></li>
-                        <li><a href="pages/contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Accueil</a>
+                        </li>
+                        <li><a href="pages/bouquets.html"
+                                class="text-gray-400 hover:text-white transition-colors">Bouquets</a></li>
+                        <li><a href="pages/support.html"
+                                class="text-gray-400 hover:text-white transition-colors">Support</a></li>
+                        <li><a href="pages/contact.html"
+                                class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
                     </ul>
                 </div>
 
@@ -1365,14 +1368,23 @@
                 <div class="space-y-4">
                     <h3 class="text-white text-xl font-semibold">Solutions</h3>
                     <ul class="space-y-3">
-                        <li><a href="pages/solutions/leasing.html" class="text-gray-400 hover:text-white transition-colors">Leasing de véhicules</a></li>
-                        <li><a href="pages/solutions/hecterra.html" class="text-gray-400 hover:text-white transition-colors">Agriculture intelligente</a></li>
-                        <li><a href="pages/solutions/logistics.html" class="text-gray-400 hover:text-white transition-colors">Gestion des flottes</a></li>
-                        <li><a href="pages/solutions/ecodriving.html" class="text-gray-400 hover:text-white transition-colors">Eco Driving</a></li>
-                        <li><a href="pages/solutions/fleetrun.html" class="text-gray-400 hover:text-white transition-colors">Maintenance de flotte</a></li>
-                        <li><a href="pages/solutions/wiatag.html" class="text-gray-400 hover:text-white transition-colors">Équipes terrain</a></li>
-                        <li><a href="pages/solutions/nimbus.html" class="text-gray-400 hover:text-white transition-colors">Transports publics</a></li>
-                        <li><a href="pages/solutions/fuel.html" class="text-gray-400 hover:text-white transition-colors">Gestion carburant</a></li>
+                        <li><a href="pages/solutions/leasing.html"
+                                class="text-gray-400 hover:text-white transition-colors">Leasing de véhicules</a></li>
+                        <li><a href="pages/solutions/hecterra.html"
+                                class="text-gray-400 hover:text-white transition-colors">Agriculture intelligente</a>
+                        </li>
+                        <li><a href="pages/solutions/logistics.html"
+                                class="text-gray-400 hover:text-white transition-colors">Gestion des flottes</a></li>
+                        <li><a href="pages/solutions/ecodriving.html"
+                                class="text-gray-400 hover:text-white transition-colors">Eco Driving</a></li>
+                        <li><a href="pages/solutions/fleetrun.html"
+                                class="text-gray-400 hover:text-white transition-colors">Maintenance de flotte</a></li>
+                        <li><a href="pages/solutions/wiatag.html"
+                                class="text-gray-400 hover:text-white transition-colors">Équipes terrain</a></li>
+                        <li><a href="pages/solutions/nimbus.html"
+                                class="text-gray-400 hover:text-white transition-colors">Transports publics</a></li>
+                        <li><a href="pages/solutions/fuel.html"
+                                class="text-gray-400 hover:text-white transition-colors">Gestion carburant</a></li>
                     </ul>
                 </div>
 
@@ -1484,7 +1496,7 @@
 
         // Dropdown Menus
         const dropdownButtons = document.querySelectorAll('[data-dropdown-button]');
-        
+
         dropdownButtons.forEach(button => {
             button.addEventListener('click', () => {
                 const dropdown = button.nextElementSibling;
@@ -1501,6 +1513,7 @@
             }
         });
     </script>
+    <script src="js/translations.js"></script>
 </body>
 
 </html>
