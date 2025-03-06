@@ -38,7 +38,12 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 // Configuration de l'email
-$to = "contact@abotracking.tech"; // Remplacez par votre adresse email
+$to = "emperorb007@gmail.com";
+ini_set("SMTP", "smtp.mailtrap.io");
+ini_set("smtp_port", "2525");
+ini_set("sendmail_from", "from@example.com");
+ini_set("smtp_user", "votre_username_mailtrap");
+ini_set("smtp_pass", "votre_password_mailtrap");
 $email_subject = "Nouveau message de contact: " . $subject;
 
 // Création du corps de l'email
