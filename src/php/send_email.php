@@ -38,7 +38,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 // Configuration de l'email
-$to = "contact@abotracking.tech"; // Remplacez par votre adresse email
+$to = "emperorb007@gmail.com"; // Remplacez par votre adresse email
 $email_subject = "Nouveau message de contact: " . $subject;
 
 // Création du corps de l'email
