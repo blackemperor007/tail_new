@@ -1,3 +1,35 @@
+<?php
+// Connexion à la base de données
+require '../config/database.php';
+
+$message = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Récupérer les données du formulaire
+    $name = trim($_POST['name']);
+    $email = trim($_POST['email']);
+    $subject = trim($_POST['subject']);
+    $message_text = trim($_POST['message']);
+
+    // Validation des données
+    if (!empty($name) && !empty($email) && !empty($subject) && !empty($message_text) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        try {
+            // Préparer et exécuter l'insertion dans la base de données
+            $query = $pdo->prepare("INSERT INTO contact_messages (name, email, subject, message) VALUES (?, ?, ?, ?)");
+            $query->execute([$name, $email, $subject, $message_text]);
+
+            // Message de succès
+            $message = "✅ Votre message a été envoyé avec succès !";
+        } catch (PDOException $e) {
+            // Gestion des erreurs
+            $message = "❌ Erreur lors de l'envoi : " . $e->getMessage();
+        }
+    } else {
+        $message = "❌ Veuillez remplir tous les champs correctement.";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr" class="h-full">
 
@@ -74,7 +106,7 @@
                         <div class="grid grid-cols-1 lg:grid-cols-2">
                             <!-- Left Side - Contact Form -->
                             <div class="p-8 space-y-6">
-                                <form id="contactForm" class="space-y-6" method="POST">
+                                <form action="" method="POST" class="space-y-6">
                                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         <div>
                                             <label for="name" class="block text-sm font-medium text-gray-700" data-i18n="fullName">Nom complet</label>
@@ -93,7 +125,7 @@
                                         <label for="message" class="block text-sm font-medium text-gray-700" data-i18n="message">Message</label>
                                         <textarea id="message" name="message" rows="6" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-[#1B1E3D] focus:border-[#1B1E3D]"></textarea>
                                     </div>
-                                    <button type="submit" id="submitBtn" class="w-full px-6 py-4 bg-[#1B1E3D] text-white font-semibold rounded-lg hover:bg-[#3B1B66] transition-colors" data-i18n="sendMessage">
+                                    <button type="submit" class="w-full px-6 py-4 bg-[#1B1E3D] text-white font-semibold rounded-lg hover:bg-[#3B1B66] transition-colors" data-i18n="sendMessage">
                                         Envoyer le message
                                     </button>
                                     <div id="formMessage" class="hidden mt-4 p-4 rounded-lg"></div>
