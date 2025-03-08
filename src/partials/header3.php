@@ -306,6 +306,11 @@
 
                     <span>Bouquets</span>
                 </a>
+                <a href="../../pages/about.php"
+                    class="flex items-center space-x-2 text-[17px] font-semibold text-white hover:text-blue-200 transition-colors">
+
+                    <span>Bouquets</span>
+                </a>
 
                 <!-- Support Link -->
                 <a href="../../pages/support.php"
