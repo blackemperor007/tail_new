@@ -17,11 +17,8 @@
 <?php include '../partials/header2.php';?>
 
     <!-- Spacer for fixed header -->
-    <!-- <div class="w-full" style="height: calc(3.5rem + 5rem)"></div> -->
-
-    <main class="pt-32">
-        <!-- Section Hero -->
-        <section class="bg-[#2A0A55] text-white py-20">
+    <div class="w-full" style="height: calc(3.5rem + 5rem)"></div>
+    <section class="bg-[#2A0A55] text-white py-20">
             <div class="container mx-auto px-4">
                 <div class="max-w-4xl mx-auto text-center">
                     <h1 class="text-4xl md:text-5xl font-bold mb-6">About Abo-Tracking</h1>
@@ -29,6 +26,36 @@
                 </div>
             </div>
         </section>
+
+    <main class="pt-32">
+        <section class="container mx-auto px-4 py-8">
+         <!-- SECTION DE A PROPOS DE NOUS  -->
+         <section class="w-full p-8 bg-white dark:bg-gray-900">
+                <div class="container px-6 py-10 mx-auto">
+                    <div class="lg:-mx-6 lg:flex lg:items-center">
+                        <img class="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-96 rounded-lg lg:h-[36rem]" src="../images/bouquets/bouquet2.jpg" alt="">
+
+                        <div class="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
+                            <p class="text-5xl font-semibold text-blue-500 ">A propos de nous</p>
+
+                            <h1 class="text-2xl font-semibold text-gray-800 dark:text-white lg:text-3xl lg:w-96">
+                                Help us improve our productivity
+                            </h1>
+
+                            <p class="max-w-lg mt-6 text-gray-500 dark:text-gray-400 ">
+                                “ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad
+                                tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum, culpa
+                                aperiam dolorum, obcaecati corrupti aspernatur a. ”
+
+                                “ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad
+                                tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum, culpa
+                                aperiam dolorum, obcaecati corrupti aspernatur a. ”
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         <!-- Section Notre Mission -->
         <section class="py-16">
@@ -124,6 +151,33 @@
             </div>
         </section>
 
+        <section class="bg-white dark:bg-gray-900">
+                <div class="container px-6 py-10 mx-auto">
+                    <div class="lg:-mx-6 lg:flex lg:items-center">
+                        <img class="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-96 rounded-lg lg:h-[36rem]" src="../images/app-ss/banner_x3.jpg" alt="">
+            
+                        <div class="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
+                            <p class="text-5xl font-semibold text-blue-500 ">Notre Equipe</p>
+            
+                            <h1 class="text-2xl font-semibold text-gray-800 dark:text-white lg:text-3xl lg:w-96">
+                                Help us improve our productivity
+                            </h1>
+            
+                            <p class="max-w-lg mt-6 text-gray-500 dark:text-gray-400 ">
+                                    The company brings together top-tier industry experts: software developers, analysts, 
+                                    cartography and GPS hardware specialists, as well as managers offering guidance to clients on 
+                                    leveraging vehicle tracking systems across different business sectors. Working together, 
+                                    we create cutting-edge products that are utilized by millions of users worldwide.
+                                    As Gurtam continues to grow, we are actively seeking new talents to join us. 
+                                    Don’t miss out the opportunity to become part of our team!
+                            </p>
+            
+                        
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         <!-- Section CTA -->
         <section class="bg-[#2A0A55] py-16">
             <div class="container mx-auto px-4">
@@ -145,6 +199,7 @@
         </section>
 
         <?php include '../partials/demande.php' ?>
+        </section>
     </main>
     <?php include '../partials/footer2.php';?>
 
