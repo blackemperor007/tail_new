@@ -11,7 +11,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="min-h-full flex flex-col bg-[#f8f9fa]">
-        <?php include '../../partials/header3.php';?>
+        <?php require '../../partials/header3.php';?>
     
 
     <!-- Spacer for fixed header -->
