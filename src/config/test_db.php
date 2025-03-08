@@ -1,5 +1,5 @@
 <?php
-require 'config/database.php';
+require 'database.php';
 
 try {
     $query = $pdo->query("SELECT 'Connexion réussie !' AS message");
