@@ -138,10 +138,10 @@
             </div>
         </section>
 
-        <?php require '../..partials/calling.php';?>
-        <?php require '../..partials/demande.php';?>
+        <?php require '../../partials/calling.php';?>
+        <?php require '../../partials/demande.php';?>
     </main>
-    <?php require '../..partials/footer.php';?>
+    <?php require '../../partials/footer.php';?>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../../script.js"></script>
